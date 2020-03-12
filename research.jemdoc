@@ -1,0 +1,13 @@
+# jemdoc: menu{MENU}{research.html}, notime, nofooter
+== Research Interest
+
+
+== Inertial Algorithms for Non-smooth Non-convex Optimization
+~~~
+{}{img_left}{fig/ipiano_thumbnail.png}{alt text}{160}{160}
+The inertial algorithms that we study are motivated from physics, namely from a dynamical system that describes the behaviour of a ball that is rolling down a surface subject to friction (also known as heavy-ball dynamical system). The motion of the ball accelerates due to inertia. In analogy to that, the considered algorithms generate a sequence of points that accelerates when it moves in the same direction as before. A classic method for smooth unconstrained optimization problems is the Heavy-ball method. It was introduced by Polyak in 1964 in a paper with the title "Some methods of speeding up the convergence of iteration methods" 
+\[[https://www.sciencedirect.com/science/article/abs/pii/0041555364901375 Polyak64]\], which suggests an improved performance of inertial algorithms.  The global convergence of the Heavy-ball method for non-convex problems was studied by Zavriev and Kostyuk 
+\[[https://link.springer.com/article/10.1007%2FBF01128757 ZK93]\]. For the mechanical interpretation, we refer to 
+\[[https://www.worldscientific.com/doi/10.1142/S0219199700000025 AGR00]\].
+~~~
+

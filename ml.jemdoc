@@ -1,0 +1,7 @@
+# jemdoc: menu{MENU}{ml.html}, notime, nofooter
+== Books--Machine Learning
+
+- [files/book/jain2017.pdf Non-convex Optimization for Machine Learning] \n
+Prateek Jain and Purushottam Kar \n
+Foundations and Trends in Machine Learning (2017)
+- [https://github.com/exacity/deeplearningbook-chinese deeplearningbook-chinese] 

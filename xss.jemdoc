@@ -1,0 +1,25 @@
+# jemdoc: {xss.html}, notime, nofooter
+
+== Shanshan Xu (S.Xu)
+
+~~~
+{}{img_left}{pic/xss.jpg}{alt text}{130}{160}
+[https://orcid.org/0000-0002-7882-5569 Ms. Shanshan Xu] (许珊珊)\n
+[http://www.math.uestc.edu.cn/ School of Mathematical Sciences] \n
+[https://www.uestc.edu.cn/ University of Electronic Science and Technology of China] \n
+Research interests: Image processing, Optimization algorithms. \n
+Email: [xss0702@gmail.com]
+{{ <span id="badgeCont912"><script type="text/javascript" src="https://publons.com/mashlets?el=badgeCont912&rid=AAF-4823-2020&size=small"></script></span> <a href="https://orcid.org/0000-0002-7882-5569"><img src="pic/orcid.svg" alt="" width="30" height="30" /></a>   <a href="https://www.researchgate.net/profile/Shanshan_Xu28"><img src="pic/researchgate.JPG" alt="" width="30" height="30" />  <a href="https://www.scopus.com/authid/detail.uri?authorId=57215214589"><img src="pic/scopus.jpg" alt="" width="30" height="30" /></a>  <a href="https://scholar.google.com/citations?user=Dqc8c3wAAAAJ&hl=en"><img src="pic/google.JPG" alt="" width="30" height="30" /></a>}}
+~~~
+
+~~~
+== Research
+- Variational inequality problem.
+- Image processing.
+
+== Papers (* Corresponding Author)
+. Bing Tan, _Shanshan Xu_, Songxiao Li\*. Inertial shrinking projection algorithms for solving hierarchical variational inequality problems. /J. Nonlinear Convex Anal./ 2020, in press. \[[./files/paper/TanXuLi2020JNCA.pdf PDF]\]
+. Bing Tan, _Shanshan Xu_, Songxiao Li\*. Modified inertial hybrid and shrinking projection algorithms for solving fixed point problems.  /Mathematics/ 2020, 8, 236. \[[https://www.mdpi.com/2227-7390/8/2/236/pdf Link]\]
+
+~~~
+

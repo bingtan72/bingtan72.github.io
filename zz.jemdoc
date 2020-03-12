@@ -1,0 +1,31 @@
+# jemdoc: {xss.html}, notime, nofooter
+
+== Zheng Zhou (Z.Zhou)
+
+~~~
+{}{img_left}{pic/zz.jpg}{alt text}{130}{160}
+[https://orcid.org/0000-0003-3847-436X Dr. Zheng Zhou] (周正)\n
+[http://www.iffs.uestc.edu.cn/ Institute of Fundamental and Frontier Sciences] \n
+[https://www.uestc.edu.cn/ University of Electronic Science and Technology of China] \n
+Research interests: Split equality problem. \n
+Email: [zhouzheng2272@163.com]
+{{<a href="https://orcid.org/0000-0003-3847-436X"><img src="pic/orcid.svg" alt="" width="30" height="30" /></a> }}
+~~~
+
+~~~
+== Research
+- Nonlinear Analysis, Variational Analysis.
+- Split equality problem.
+
+== Papers (* Corresponding Author)
+. _Zheng Zhou_\*, Bing Tan, Songxiao Li. An inertial shrinking projection algorithm for split common fixed point problems. /J. Appl. Anal. Comput./ 2020, in press. \[{{<a href="http://jaac.ijournal.cn/ch/reader/view%5fabstract.aspx?journal%5fid=jaac&file%5fno=201910190000001&flag=3">Link</a>}}\]
+. Bing Tan, _Zheng Zhou_, Xiaolong Qin\*. Accelerated projection-based forward-backward splitting algorithms for monotone inclusion problems. /J. Appl. Anal. Comput./ 2020, in press. \[{{<a href="http://jaac.ijournal.cn/ch/reader/view%5fabstract.aspx?journal%5fid=jaac&file%5fno=201911080000002&flag=3">Link</a>}}\]
+. _Zheng Zhou_, Si-June He, Jun Niu, Jian-Qiang Zhang\*. On the Strong Convergence of Split Equality Problems in Banach Spaces. / International Mathematical Forum/. 2016, 13(3): 123--136. \[[http://www.m-hikari.com/imf/imf-2018/1-4-2018/p/wangIMF1-4-2018.pdf Link]\]
+. Sijun He, Yingdong Mao, _Zheng Zhou_, Jian-Qiang Zhang\*. The generalized viscosity implicit rules of asymptotically nonexpansive mappings in Hilbert spaces. /Appl. Math. Sci./ 2017, 11(12): 549--560. \[[http://m-hikari.com/ams/ams-2017/ams-9-12-2017/p/zhangAMS9-12-2017.pdf Link]\]
+. Jun Niu, _Zheng Zhou_, Jian-Qiang Zhang\*, Li-Juan Qin. The Strong Convergence Theorems for the Split Equality Fixed Point Problems in Hilbert Spaces. /Appl. Math. Sci./ 2018, 12(6): 255--270. \[[https://pdfs.semanticscholar.org/749c/9035a1e8dbe0cdb386e68de3c22e10dcd38d.pdf Link]\]
+== Preprints
+. _Zheng Zhou_\*, Bing Tan, Songxiao Li. A new accelerated self-adaptive stepsize algorithm with excellent stability for split common fixed point problems. Submitted to /Optimization/.
+. _Bing Tan_, Zheng Zhou, Songxiao Li\*. Strong convergence of modified inertial Mann algorithms for nonexpansive mappings. Submitted to /Mathematics/.
+
+
+~~~

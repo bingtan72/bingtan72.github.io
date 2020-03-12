@@ -1,0 +1,57 @@
+# jemdoc: menu{MENU}{readings.html} , notime, nofooter
+== Reading Lists
+
+~~~
+These are some quite useful and interesting books and papers that I think of great importance for doing research in the field of optimization and computational intelligence. Some of them have been read, while some others are not. Never mind, research is life-long journey, keep on reading, learning and thinking! \n
+(*This page is still under construction, I will try to complete in an incremental manner.*)
+~~~
+
+== Books
+
+- {{<a href="opt.html"> Optimization</a>}}
+- {{<a href="ml.html"> Machine Learning</a>}}
+
+== Writing
+
+- [https://www.ee.cityu.edu.hk/~gchen/pdf/Writing.pdf 漫谈如何写好一篇英文科技论文-陈关荣院士]
+- [http://nlp.csai.tsinghua.edu.cn/~ly/talks/cwmt14_tut.pdf 机器翻译学术论文写作方法和技巧-刘洋]
+
+
+== Websites
+
+- [http://www.seas.ucla.edu/~vandenbe/236C/ ECE236C-Optimization Methods for Large-Scale Systems (Spring 2019)]. Prof. L. Vandenberghe, UCLA
+- [http://www.numerical-tours.com/matlab/ Matlab's tours].  Codes: [https://github.com/gpeyre/matlab-toolboxes matlab-toolboxes]
+- [http://www.stat.cmu.edu/~ryantibs/convexopt/ Convex Optimization: Fall 2019]. Instructor: Ryan Tibshirani
+- [https://github.com/stephenbeckr/AIMS AIMS South Africa Short Course on Optimization]. Instructor: Stephen Becker
+- [http://bicmr.pku.edu.cn/~wenzw/opt-2019-fall.html Convex Optimization: Fall 2019]. Instructor: Zaiwen Wen
+
+== Article
+
+- S.Ruder. [https://ruder.io/optimizing-gradient-descent/index.html An overview of gradient descent optimization algorithms]. arXiv preprint, arXiv:1609.04747. (2016). \n
+Note: [https://alanlee.fun/2017/10/08/gradient-descent-methods/ A version of Chinese translation]
+- Peter Ochs et al. [https://epubs.siam.org/doi/abs/10.1137/130942954 iPiano: Inertial Proximal Algorithm for Nonconvex Optimization]. \n
+Note: [http://www.mop.uni-saarland.de/research/inertial/index.shtml Homepage] \&nbsp [https://github.com/davidstutz/seminar-ipiano seminar-ipiano] \&nbsp [https://davidstutz.de/wordpress/wp-content/uploads/2016/06/slides.pdf Slides] \&nbsp [http://www.escience.cn/people/chenyunjin/RelatedCodes.html Codes]
+- Donghwan Kim, Jeffrey A. Fessler. [https://arxiv.org/abs/1608.03861 Another look at the fast iterative shrinkage/thresholding algorithm (FISTA)]. arXiv preprint, arXiv:1608.03861. (2016).
+
+~~~
+{}{}
+Variational Inequality
+~~~
+
+- Federica Tinti. [http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.516.3793&rep=rep1&type=pdf A MatLab collection of variational inequality problems].
+
+~~~
+{}{}
+Superiorization: theory and applications
+~~~
+
+- [http://math.haifa.ac.il/yair/bib-superiorization-censor.html Superiorization and Perturbation Resilience of Algorithms: A Bibliography compiled and continuously updated by Yair Censor].
+- /Inverse Problems/. [https://iopscience.iop.org/journal/0266-5611/page/Special-issue-superiorization-theory-and-applications Special issue on superiorization: theory and applications].
+
+~~~
+{}{}
+Manifold Optimization
+~~~
+
+- Jiang Hu, Xin Liu, Zaiwen Wen, Yaxiang Yuan. [https://arxiv.org/abs/1906.05450 A Brief Introduction to Manifold Optimization]. arXiv preprint, arXiv:1906.05450. (2019).
+

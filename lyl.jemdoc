@@ -1,0 +1,30 @@
+# jemdoc: {xss.html}, notime, nofooter
+
+== Yinglin Luo (L.Luo)
+
+~~~
+{}{img_left}{pic/lyl.jpg}{alt text}{130}{160}
+Dr. Yinglin Luo (罗英林)\n
+[http://www.iffs.uestc.edu.cn/ Institute of Fundamental and Frontier Sciences] \n
+[https://www.uestc.edu.cn/ University of Electronic Science and Technology of China] \n
+Research interests: Variational inequality, Fixed point theory. \n
+Email: [luoyinglink@163.com]
+{{<a href="https://orcid.org/0000-0003-1225-9434"><img src="pic/orcid.svg" alt="" width="30" height="30" /></a> <a href="https://www.researchgate.net/profile/Yinglin_Luo3"><img src="pic/researchgate.JPG" alt="" width="30" height="30" /></a> <a href="https://www.scopus.com/authid/detail.uri?authorId=57192154823"><img src="pic/scopus.jpg" alt="" width="30" height="30" /></a> <a href="https://mathscinet.ams.org/mathscinet/search/author.html?mrauthid=1191945"><img src="pic/mathscinet.jpg" alt="" width="70" height="30" /></a> }}
+~~~
+
+~~~
+== Research
+- Nonlinear Analysis, Variational Analysis.
+- Optimization Theory, Numerical Analysis.
+
+== Papers (* Corresponding Author)
+. _Yinglin Luo_. Weak and strong convergence results of forward-backward splitting methods for solving inclusion problems in Banach spaces. /J. Nonlinear Convex Anal./ 2020, 21(2): 341--353. \[[http://www.ybook.co.jp/online2/jncav21-2.html Link]\]
+. _Yinglin Luo_, Meijuan Shang\*, and Bing Tan. A general inertial viscosity type method for nonexpansive mappings and its applications in signal processing.  /Mathematics/ 2020, 8, 288. \[[https://www.mdpi.com/2227-7390/8/2/288 Link]\]
+. _Yinglin Luo_, Bing Tan\*. A self-adaptive inertial extragradient algorithm for solving pseudo-monotone variational inequality in Hilbert spaces. Accepted by  /J. Nonlinear Convex Anal./ (2019).
+. _Yinglin Luo_, Yongfu Su, and Wenbiao Gao. Homeomorphism metric space and the fixed point theorems. /J. Nonlinear Sci. Appl./  2017, 10: 5132--5141. \[[https://pdfs.semanticscholar.org/590f/40be39f6d4ccdc1fcdbf593ec18ef5469cfd.pdf Link]\]
+. _Yinglin Luo_, Yongfu Su, and Wenbiao Gao. Multivariate best proximity point theorems in metric spaces. /J. Nonlinear Sci. Appl./ 2016, 9: 5756--5765. \[[https://pdfs.semanticscholar.org/1bdd/2ebec75087407becad26e0c71df0d2fd933f.pdf Link ]\]
+. _Yinglin Luo_, Yongfu Su, and Wenbiao Gao. Generalized hybrid algorithms for fixed point and mixed equilibrium problems in Banach spaces. /J. Nonlinear Sci. Appl./ 2016, 9: 6312--6332. \[[https://www.emis.de/journals/TJNSA/includes/files/articles/Vol9_Iss12_6312--6332_Generalized_hybrid_algorithms_for_f.pdf Link]\]
+== Preprints
+. _Yinglin Luo_, Bing Tan, and Xiaolong Qin\*. An inertial splitting algorithm for solving inclusion problems and its applications in compressed sensing. Finished.
+
+~~~

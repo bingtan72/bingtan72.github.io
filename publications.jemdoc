@@ -1,0 +1,29 @@
+# jemdoc: menu{MENU}{publications.html}, notime, nofooter
+== Publications
+
+~~~
+- See [https://scholar.google.com/citations?user=EjcxbF4AAAAJ&hl=en My Google Scholar]
+- \* means Corresponding Author
+- Manuscripts are usually the technical reports submitted to journals or conference for possible publications.
+- These materials are presented to ensure a timely dissemination of scholarly and technical work. The copyright of these papers is owned by their publishers. Misuse of any of the posted below may result in plagiarism. By downloading any material from this site, you are assumed to agree with these terms.
+~~~
+
+== My collaborators
+- {{<a href="lly.html"> <b>Dr. Liya Liu</b></a> &nbsp &nbsp <a href="fjj.html"> <b>Dr. Jingjing Fan</b></a> &nbsp &nbsp <a href="lyl.html"> <b>Dr. Yinglin Luo</b></a>  &nbsp &nbsp <a href="zz.html"> <b>Dr. Zheng Zhou</b></a> &nbsp &nbsp <a href="xss.html"> <b>Ms. Shanshan Xu</b></a> }}
+
+== Journal papers
+. _Bing Tan_, Zheng Zhou, Xiaolong Qin\*. Accelerated projection-based forward-backward splitting algorithms for monotone inclusion problems. /J. Appl. Anal. Comput./ 2020, in press. \[{{<a href="http://jaac.ijournal.cn/ch/reader/view%5fabstract.aspx?journal%5fid=jaac&file%5fno=201911080000002&flag=3">Link</a>}}\] \[[./files/paper/bib/tan2020accelerated.bib Cite]\]
+. Zheng Zhou\*, _Bing Tan_, Songxiao Li. An inertial shrinking projection algorithm for split common fixed point problems. /J. Appl. Anal. Comput./ 2020, in press. \[{{<a href="http://jaac.ijournal.cn/ch/reader/view%5fabstract.aspx?journal%5fid=jaac&file%5fno=201910190000001&flag=3">Link</a>}}\] \[[./files/paper/bib/zhou2020inertial.bib Cite]\]
+. Liya Liu\*, _Bing Tan_, Sun Young Cho\*. On the resolution of variational inequality problems with a double-hierarchical structure. /J. Nonlinear Convex Anal./ 2020, 21(2): 377--386.  {{<a href=./files/paper/LiuTanCho2020JNCA.pdf><img src="pic/PDF.JPG" alt="" width="20" height="20" /></a>}} \[[http://www.ybook.co.jp/online2/jncav21-2.html Link]\]  \[[./files/paper/bib/liu2020resolution.bib Cite]\]
+. _Bing Tan_, Shanshan Xu, Songxiao Li\*. Modified inertial hybrid and shrinking projection algorithms for solving fixed point problems.  /Mathematics/ 2020, 8(2), 236. {{<a href="https://www.mdpi.com/2227-7390/8/2/236/pdf"><img src="pic/PDF.JPG" alt="" width="20" height="20" /></a>}} \[[https://www.mdpi.com/2227-7390/8/2/236/htm Link]\] \[[./files/paper/bib/tan2020modified.bib Cite]\]
+. Yinglin Luo, Meijuan Shang\*, _Bing Tan_. A general inertial viscosity type method for nonexpansive mappings and its applications in signal processing. /Mathematics/ 2020, 8(2), 288. {{<a href="https://www.mdpi.com/2227-7390/8/2/288/pdf"><img src="pic/PDF.JPG" alt="" width="20" height="20" /></a>}} \[[https://www.mdpi.com/2227-7390/8/2/288/htm Link]\] \[[./files/paper/bib/luo2020general.bib Cite]\]
+. _Bing Tan_, Shanshan Xu, Songxiao Li\*. Inertial shrinking projection algorithms for solving hierarchical variational inequality problems. /J. Nonlinear Convex Anal./ 2020, in press.  {{<a href=./files/paper/TanXuLi2020JNCA.pdf><img src="pic/PDF.JPG" alt="" width="20" height="20" /></a>}} \[[./files/paper/bib/tan2020inertial.bib Cite]\]
+. Yinglin Luo, _Bing Tan_\*. A self-adaptive inertial extragradient algorithm for solving pseudo-monotone variational inequality in Hilbert spaces. / J. Nonlinear Convex Anal./ 2020, in press. {{<a href=./files/paper/LuoTan2020JNCA.pdf><img src="pic/PDF.JPG" alt="" width="20" height="20" /></a>}} \[[./files/paper/bib/luo2020adaptive.bib Cite]\]
+
+
+== Preprints
+. Jingjing Fan, Xiaolong Qin\*, _Bing Tan_. Convergence of an inertial shadow Douglas-Rachford splitting for monotone inclusions. Submitted to /Numerical Functional Analysis and Optimization/.
+. _Bing Tan_, Songxiao Li, Xiaolong Qin\*. Strong convergence of inertial Mann algorithms for solving hierarchical fixed point problems. Submitted to /Applicable Analysis/.
+. _Bing Tan_, Zheng Zhou, Songxiao Li\*. Strong convergence of modified inertial Mann algorithms for nonexpansive mappings. Submitted to /Mathematics/.
+
+

@@ -1,0 +1,63 @@
+# jemdoc: menu{MENU}{opt.html}, notime, nofooter
+== Books--Optimization
+
+~~~
+{}{img_left}{fig/cvxbook.JPG}{alt text}{130}{160}
+[http://web.stanford.edu/~boyd/cvxbook/ Convex Optimization] \n
+[https://web.stanford.edu/~boyd/ Stephen Boyd] and [http://www.seas.ucla.edu/~vandenbe/ Lieven Vandenberghe] \n
+Cambridge University Press (2004)
+~~~
+
+~~~
+{}{img_left}{fig/num-opt.jfif}{alt text}{130}{160}
+[http://www.apmath.spbu.ru/cnsa/pdf/monograf/Numerical_Optimization2006.pdf Numerical Optimization (2nd Edition)] \n
+[https://scholar.google.com.hk/citations?user=gGNxMZ0AAAAJ&hl=zh-CN Jorge Nocedal] and [https://scholar.google.com.hk/citations?hl=zh-CN&user=VFQRIOwAAAAJ Stephen Wright] \n
+Springer (2006)
+~~~
+
+~~~
+{}{img_left}{fig/con-opt.jpg}{alt text}{130}{160}
+[files/book/con-opt.pdf Lectures on Convex Optimization] \n
+[https://scholar.google.com/citations?user=DJ8Ep8YAAAAJ&hl=zh-CN Yurii Nesterov] \n
+Springer (2018)
+~~~
+
+
+~~~
+{}{img_left}{fig/opt.jpg}{alt text}{130}{160}
+[files/book/opt.pdf Introductory Lectures on Convex Optimization: A basic course] \n
+[https://scholar.google.com/citations?user=DJ8Ep8YAAAAJ&hl=zh-CN Yurii Nesterov] \n
+Springer (2004)
+~~~
+
+~~~
+{}{img_left}{fig/beck.jpg}{alt text}{130}{160}
+[files/book/beck.pdf First-Order Methods in Optimization] \n
+[https://sites.google.com/site/fomsolver/home Amir Beck] \n
+SIAM (2017)
+~~~
+
+~~~
+{}{img_left}{fig/Hilbert.jpg}{alt text}{130}{160}
+[files/book/Hilbert.pdf Convex Analysis and Monotone Operator Theory in Hilbert Spaces] \n
+[https://people.ok.ubc.ca/bauschke/ Heinz H. Bauschke] and [https://pcombet.math.ncsu.edu/ Patrick L. Combettes]\n
+Springer (2017)
+~~~
+
+~~~
+{}{img_left}{fig/mat-cookbook.png}{alt text}{130}{160}
+[https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf The Matrix Cookbook] \n
+[https://www.researchgate.net/profile/Kaare_Petersen Kaare Brandt Petersen] and [https://scholar.google.dk/citations?user=XU9UtRIAAAAJ&hl=en Michael Syskind Pedersen] \n
+~~~
+
+
+
+
+
+
+
+
+
+
+
+

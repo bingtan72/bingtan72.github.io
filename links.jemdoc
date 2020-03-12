@@ -1,0 +1,138 @@
+# jemdoc: menu{MENU}{links.html} , notime, nofooter
+== Useful Links
+
+~~~
+These are some links that I think of important and useful for doing research, learning skills and so on.
+~~~
+
+
+~~~
+{}{raw}
+<a href="links.html#Peoples"> <b>Peoples</b></a> &nbsp &nbsp  
+<a href="links.html#Database"> <b>Database</b></a> &nbsp &nbsp
+<a href="links.html#Mathematic"> <b>Mathematic</b></a> &nbsp &nbsp
+<a href="links.html#Academic skills"> <b>Academic skills</b></a> &nbsp &nbsp
+<a href="links.html#LaTeX"> <b>LaTeX</b></a> &nbsp &nbsp
+<a href="links.html#Programming"> <b>Programming</b></a> &nbsp &nbsp
+<a href="links.html#Softwares"> <b>Softwares</b></a> &nbsp &nbsp
+<a href="links.html#Computer skills"> <b>Computer skills</b></a> &nbsp &nbsp
+~~~
+
+== {{Peoples <a name="Peoples"></a>}}
+
+
+~~~
+[https://web.stanford.edu/~boyd/ Stephen P. Boyd] 
+\&nbsp [http://www.seas.ucla.edu/~vandenbe/ Lieven Vandenberghe]
+\&nbsp [https://statweb.stanford.edu/~candes/ Emmanuel Candès]
+\&nbsp [https://sites.google.com/site/amirbeck314/ Amir Beck]
+\&nbsp [https://www.mat.univie.ac.at/~rabot/ Radu Ioan Bot]
+\&nbsp [https://iiduka.net/en/intro/researches/optimization Hideaki iiduka]
+\&nbsp [https://www.math.ucla.edu/~wotaoyin/index.html Wotao Yin]
+\&nbsp [https://amath.colorado.edu/faculty/becker/index.html Stephen Becker]
+\&nbsp [http://maths.nju.edu.cn/~hebma/ Bingsheng He]
+\&nbsp [http://www.mop.uni-saarland.de/index.shtml Peter Ochs]
+\&nbsp [http://bicmr.pku.edu.cn/~wenzw/index.html Zaiwen Wen]
+\&nbsp [https://jliang993.github.io/index.html Jingwei Liang]
+~~~
+
+== {{Database <a name="Database"></a>}}
+
+
+- [http://apps.webofknowledge.com/UA_GeneralSearch_input.do?product=UA&search_mode=GeneralSearch&SID=8BEAluL1Las5xUhaQsr&preferencesSaved= Web of Science]. Web of Science Core Collection A trusted, high-quality collection of journals, books and conference proceedings.
+- [https://www.scopus.com/search/form.uri?display=basic&zone=header&origin= Scopus]. The world's largest bibliographic database.
+- [https://www.researchgate.net/ ResearchGate], is a European commercial social networking site for scientists and researchers to share papers, ask and answer questions, and find collaborators.
+- [https://orcid.org/ ORCID]. ORCID provides a persistent digital identifier (an ORCID iD) that you own and control, and that distinguishes you from every other researcher. 
+- [https://publons.com/researcher/?is_core_collection=1&order_by=verified_reviews_performed_last_12_months Publons]. The home of expert peer review. Reviewer recognition, training, post-publication review and statistics.
+- [http://mathscinet.ams.org/mathscinet/index.html MathSciNet], is a searchable online bibliographic database created by the American Mathematical Society in 1996.
+- [http://www.pqdtcn.com/ ProQuest]. ProQuest full-text database is currently the only database in the world that provides high-quality foreign full-text articles.
+- [https://zbmath.org/ zbMATH], formerly Zentralblatt MATH, is a major international reviewing service providing reviews and abstracts for articles in pure and applied mathematics.
+- [http://new.gb.oversea.cnki.net/index/ cnki-zh] \&nbsp [http://new.oversea.cnki.net/index/ cnki-en]. Note: download PDF.
+
+== {{Mathematic <a name="Mathematic"></a>}}
+
+- [https://mathscinet.ams.org/mathscinet/ Mathscinet], is a searchable online bibliographic database created by the American Mathematical Society.
+- [https://mathscinet.ams.org/msnhtml/msc2020.pdf MSC2020]. MSC2020-Mathematical Sciences Classification System.
+- [https://mathscinet.ams.org/msnhtml/serials.pdf Abbreviations of Names of Serials]
+- [https://arxiv.org/ arXiv], is a repository of electronic preprints (known as e-prints) approved for posting after moderation, but not full peer review.
+- [http://www.arxiv-sanity.com/search?q= arxiv sanity preserver]. Web interface for browsing, search and filtering recent arxiv submissions
+- [http://www.optimization-online.org/ Optimization Online],  is a repository of e-prints about optimization and related topics.
+
+
+== {{Academic skills <a name="Academic skills"></a>}}
+
+
+
+- [https://lovescihub.wordpress.com/ Love Science,Love Sci-Hub!]. This page is to collect the new alternative domain of sci-hub which is refreshed every 5 minutes. 
+- [http://gen.lib.rus.ec/ Library Genesis], is a search engine for articles and books on various topics, which allows free access to content that is otherwise paywalled or not digitized elsewhere.
+- [https://booksc.org/ booksc1] \&nbsp [https://b-ok.cc/ booksc2]. The world's largest scientific articles store. 70,000,000+ articles for free.
+- [http://tool.yovisun.com/gs/ Google Mirror] \&nbsp [https://ac.scmor.com/ scmor]. Provide available Google search and Google mirror sites 
+- [https://paperswithcode.com/ paperswithcode]. Papers With Code highlights trending ML research and the code to implement it.
+- [https://zhuanlan.zhihu.com/p/20902898 HistCite] \&nbsp [https://www.citnetexplorer.nl/ CitNetExplorer]. Great literature analysis tools.
+
+== {{LaTeX <a name="LaTeX"></a>}}
+
+
+- [https://ctan.org/ ctan]. The Comprehensive TEX Archive Network (CTAN) is the central place for all kinds of material around TEX.
+- [https://www.latexstudio.net/ latexstudio], this is a very good chinese website of many LaTeX resources, including templates, tutorials and so on.
+- [https://www.overleaf.com/ Overleaf]. An online LaTeX editor that's easy to use. No installation, real-time collaboration, version control, hundreds of LaTeX templates, and more.
+- [https://lvjr.bitbucket.io/index.html lvjr]. A chinese website of learn LaTeX.
+- [http://atomurl.net/math/ TeX equation editor1] \&nbsp [http://upbyte.net/mathred/mathred.htm TeX equation editor2]. Great Tex mathematical formulas online editing sites
+- [https://www.tablesgenerator.com/ LaTeX Tables Generator]. Quickly create even complex LaTeX tables online with our generator.
+- [http://detexify.kirelabs.org/classify.html detexify]. Detexify LaTeX handwritten symbol recognition.
+- [https://hartwork.org/beamer-theme-matrix/ Beamer Theme Matrix]. This theme matrix shows examples of all variations of the Beamer LaTeX package's default themes and color themes.
+- [https://en.wikibooks.org/wiki/LaTeX wiki-LaTeX]. This is a guide to the LaTeX typesetting system. It is intended as a useful resource for everybody, from new users who wish to learn, to old hands who need a quick reference.
+- [https://www.ctan.org/tex-archive/info/lshort/chinese lshort-chinese]. The Not So Short Introduction To LaTeX (Chinese Edition). [https://www.ctan.org/tex-archive/info/lshort/english lshort-english] \&nbsp [https://liam.page/2014/09/08/latex-introduction/ latex-introduction]
+- [https://ridiqulous.com/latex-notes-details/ latex-notes-details] \&nbsp [https://zhuanlan.zhihu.com/p/29587837 latex-notes-zhihu] \&nbsp [https://www.weibo.com/ttarticle/p/show?id=2309403955741387052924 latex-notes-weibo]. Highly recommended.
+- [https://github.com/shifujun/UESTCthesis UESTCthesis],  is the official LaTeX template for the graduation thesis of the University of Electronic Science and Technology of China.
+- [https://wenda.latexstudio.net/article-5005.html IEEEtran] \&nbsp [https://www.latexstudio.net/archives/51668.html Elsevier]. LaTeX journal template.
+
+
+== {{Programming <a name="Programming"></a>}}
+
+
+- [https://www.jetbrains.com/pycharm/ PyCharm]. The Python IDE for professional developers.
+- [https://jemdoc.jaboc.net/ jemdoc], is a static site generator that is being widely used for creating simple academic websites.
+- [https://www.mathjax.org/ MathJax]. A JavaScript display engine for mathematics that works in all browsers. 
+- [http://www.mit.edu/~wsshin/jemdoc+mathjax.html jemdoc+MathJax], let jemdoc support MathJax
+- [https://matplotlib.org/gallery/index.html matplotlib],  is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.
+- [https://docs.anaconda.com/anaconda/user-guide/getting-started/ Anaconda], is the standard platform for Python data science.
+- [https://github.com/krlmlr/Excel2LaTeX Excel2LaTeX]. The Excel add-in for creating LaTeX tables.
+- [https://github.com/matlab2tikz/matlab2tikz matlab2tikz]. This program converts MATLAB figures to TikZ\/pgfplots figures for smooth integration into LaTeX.
+- [https://github.com/masumhabib/PlotPub PlotPub]. Publication quality plot in MATLAB.
+- [https://github.com/yishn/tikzcd-editor tikzcd-editor]. A simple visual editor for creating commutative diagrams. [https://tikzcd.yichuanshen.de/  try it out here].
+- [https://github.com/HereChen/The-Way-MATLAB-Learning MATLABTips]. MATLAB study notes. 
+
+== {{Softwares <a name="Softwares"></a>}}
+
+
+- [https://www.tug.org/texlive/ Texlive], is an easy (we hope) way to get up and running with the TeX document production system.
+- [http://www.texstudio.org/ TeXstudio]. LaTeX editor.
+- [https://www.luochenzhimu.com/archives/6254.html Adobe Acrobat DC]. Use Acrobat to convert, edit and sign PDF files.
+- [https://www.sumatrapdfreader.org/free-pdf-reader.html Sumatrapdf], is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.
+- [https://www.mathtype.cn/ Mathtype] \&nbsp [http://amyxun.com/ AxMath]. Equation Editor. 
+- [https://mathpix.com/ Mathpix]. Extract LaTeX from PDFs or handwritten notes in seconds just by taking a screenshot.
+- [https://notepad-plus-plus.org/ Notepad\+\+], is a free source code editor.
+- [http://www.kejianyuan.net/Soft/201004/20100404001228.html GeoGebra] \&nbsp [http://amyxun.com/ AxGlyph]. Graphing Calculator.
+- [http://support.typora.io/ Typora]. A minimal markdown editor.
+- [https://desktop.github.com/ GitHub Desktop]. Simplifies your development workflow. [https://www.jianshu.com/p/c70ca3a02087 Tutorial1] \&nbsp [https://www.cnblogs.com/specter45/p/github.html Tutorial2]
+- [https://molunerfinn.com/PicGo/ PicGo]. A simple & beautiful tool for pictures uploading built by vue-cli-electron-builder. 
+- [https://www.bandisoft.com/bandizip/ Bandizip]. Free zip, 7z, unzip, unrar Archiver.
+- [https://www.teamviewer.cn/cn/ Teamviewer]. The Remote Desktop Software.
+- [https://ww2.mathworks.cn/products/matlab.html MATLAB], is the easiest and most productive software environment for engineers and scientists.
+- [https://www.luochenzhimu.com/archives/5045.html Microsoft Office], is a family of client software, server software, and services developed by Microsoft.  
+- [https://www.huorong.cn/person5.html huorong]. Block ads, clean up trash, and more.
+- [https://www.listary.com/ Listary]. File Search & App Launcher.
+- [https://pandoc.org/ Pandoc]. A universal document converter. [https://pandoc.org/try/ Try pandoc!]
+
+== {{Computer skills <a name="Computer skills"></a>}}
+
+
+- [https://tools.shuax.com/chrome/ Download Chrome]. The installation package here is from the official Google without update module.
+- [https://zhitu.isux.us/ zhitu] \&nbsp [https://tiomg.org/compress-image tiomg] \&nbsp [https://www.picdiet.com/zh-cn picdiet] \&nbsp [https://www.gaitubao.com/ gaitubao]. Chinese website for image processing.
+- [https://www.luochenzhimu.com/ luochenzhimu] \&nbsp [http://www.dayanzai.me/ dayanzai]. Chinese website for downloading software.
+- [http://www.yishimei.cn/network/319.html MicroKMS]. A tool for activating Windows and office.
+- [https://zhimap.com/auth ZhiMap]. A Chinese website for mind maps that can insert mathematical formulas.
+- [http://xzc.cn/ xzc]. Used to collect files from multiple people, and the files will be saved in your network disk.
+
+
