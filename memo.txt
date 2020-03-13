@@ -35,12 +35,15 @@
 
 python jemdoc -c mysite.conf index.jemdoc
 python jemdoc -c mysite.conf team.jemdoc
+python jemdoc -c mysite.conf bio.jemdoc
+python jemdoc -c mysite.conf news.jemdoc
 python jemdoc -c mysite.conf publications.jemdoc
 python jemdoc -c mysite.conf research.jemdoc
 python jemdoc -c mysite.conf conference.jemdoc
 python jemdoc -c mysite.conf codes.jemdoc
 python jemdoc -c mysite.conf readings.jemdoc
 python jemdoc -c mysite.conf links.jemdoc
+python jemdoc -c mysite.conf notes.jemdoc
 python jemdoc -c mysite.conf resume.jemdoc
 python jemdoc -c mysite.conf opt.jemdoc
 python jemdoc -c mysite.conf ml.jemdoc
