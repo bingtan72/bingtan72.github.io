@@ -5,21 +5,55 @@
 This page will be constantly updated.
 ~~~
 
+== 我的分享
+- *\[2019.10.29\]* 西南石油大学理学院新生分享 \&nbsp \[[files/material/2019SWPU_slide.pdf Link]\] 
+- *\[2019.5.15\]* 基础院读研交流分享---西南石油大学 \&nbsp \[[files/material/Postgraduate_slide.pdf Link]\] 
+- *\[2018.10.25\]* 不忘初心、砥砺前行---中特课上的分享 \&nbsp \[[files/material/ZT-slide.pdf Link]\] 
+- *\[2018.10.12\]* 奋斗的青春最美丽---在最好的年华做最好的自己 \&nbsp \[[files/material/2018SWPU_slide.pdf Link]\] 
+- *\[2018.4.22\]* 奋斗的青春最美丽---一位大四学长的成长心得 \&nbsp \[[files/material/Experience.pdf Link]\] 
+- *\[2017.11.1\]* 大学生职业规划---理学院专场 \&nbsp \[[files/material/Freshman_sharing.pdf Link]\] 
+
+
+
+
+
+
+
 == 知乎
 - {{<a href="zhihu.html"> 我的知乎收藏</a>}}
 
 == 学习笔记
 
-=== 本科学习笔记
-- 啦啦
+=== 本科课程学习笔记
+- 应用多元统计分析  \&nbsp \[[files/material/StatisticsAnalysis.pdf Link]\] 
+- 数据结构  \&nbsp \[[files/material/DataStructure.pdf Link]\] 
+- SAS课程  \&nbsp \[[files/material/SAS.pdf Link]\] 
+- 算法分析与设计  \&nbsp \[[files/material/Algorithm.pdf Link]\] 
+- 博弈论 \&nbsp \[[files/material/GameTheory.pdf Link]\] 
+=== 研究生课程学习笔记
+- 数值分析 \&nbsp \[[files/material/SZFX.pdf Link]\] 
+- 最优化理论与方法 \&nbsp \[[files/material/OPT.pdf Link]\] 
+- 泛函分析 \&nbsp \[[files/material/FHFX.pdf Link]\] 
+- 图论 \&nbsp \[[files/material/TL.pdf Link]\] 
+- 数学理论与方法 \&nbsp \[[files/material/SXLL.pdf Link]\] 
 
+
+== LaTeX
+- 非常推荐的LaTeX学习资料 \&nbsp \[[https://github.com/bingtan72/LaTeX_Study Link]\] 
+- 一个非常简约美观的Beamer模板 \&nbsp \[[https://github.com/bingtan72/Beamer_Simple Link]\] 
+- 一个可以做标记的LaTeX文档模板 \&nbsp \[[https://github.com/bingtan72/LaTeX_Mark Link]\] 
+
+== 数学建模
+- 数学建模竞赛论文的写作方法---韩中庚 \&nbsp \[[files/material/Writing-HZG.pdf Link]\] 
+- 数学建模的一些建议---谭兵 \&nbsp \[[files/material/SXJM_suggest.pdf Link]\] 
 
 
 
 == 其他
-- [files/material/网络中的社交礼仪-谭兵.pdf 网络中的社交礼仪]
-
-
+- 网络中的社交礼仪 \&nbsp \[[files/material/etiquette.pdf Link]\] 
+- 十分钟就能学会并可以终生受用的技能  \&nbsp \[[files/material/skill.pdf Link]\]  \&nbsp \[[https://github.com/bingtan72/skill 项目地址]\]
+- 我的毕业设计答辩 Beamer, 同时也可作为 Split Bregman 方法的学习资料 \n
+分裂 Bregman 方法在图像处理中的一些应用 \&nbsp \[[files/material/SplitBregman_slide.pdf Link]\] 
 
 
 
