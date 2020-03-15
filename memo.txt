@@ -44,6 +44,7 @@ python jemdoc -c mysite.conf codes.jemdoc
 python jemdoc -c mysite.conf readings.jemdoc
 python jemdoc -c mysite.conf links.jemdoc
 python jemdoc -c mysite.conf notes.jemdoc
+python jemdoc -c mysite.conf zhihu.jemdoc
 python jemdoc -c mysite.conf resume.jemdoc
 python jemdoc -c mysite.conf opt.jemdoc
 python jemdoc -c mysite.conf ml.jemdoc
@@ -107,3 +108,26 @@ You can also type inline equations as $A x = b$.  Referencing equations is done 
 . _Bing Tan_\*, Shanshan Xu. Strong convergence of two inertial  projection algorithms in Hilbert spaces. Submitted to /Applied Set-Valued Analysis and Optimization/.
 . _Bing Tan_, Shanshan Xu, Songxiao Li, Xiaolong Qin\*. Inertial hybrid and shrinking projection algorithms for solving variational inequality problems. Submitted to /Journal of Nonlinear and Convex Analysis/.
 . Zheng Zhou\*, _Bing Tan_, Songxiao Li. A new accelerated self-adaptive stepsize algorithm with excellent stability for split common fixed point problems. Submitted to /Optimization/.
+
+
+
+=== Journal Papers:
+~~~
+{}{table}{TABLENAME}
+ |Author(s)  | Title | Journal | Info ||
+ J5 |*S. Khobahi* and M. Soltanalian | Model-Aware Deep Architectures for One-Bit Compressive Variational Autoencoding
+ | IEEE Transactions on Signal Processing | Submitted, 2019. \n \[[https://arxiv.org/abs/1911.12410 Preprint]\]||
+
+ 
+ 
+ J4 |*S. Khobahi*, A. Bose, A. R. Trivedi, and M. Soltanalian | Towards Interpretable Deep Learning Frameworks for Non-Convex Optimization and Signal Processing | IEEE Signal Processing Magazine | Submitted, 2019. ||
+
+
+ J3 | *S. Khobahi*, M. Soltanalian, F. Jiang, and A. Swindlehurst | Optimized Transmission for Parameter Estimation in Wireless Sensor Networks | IEEE Transactions on Signal and Information Processing over Networks | In press, 2019.\n \[[https://arxiv.org/abs/1908.00600 Preprint]\] ||
+
+
+  J2 | *S. Khobahi* and M. Soltanalian | One-Bit Signal Recovery via Adaptive Thresholding | IEEE Transactions on Signal Processing | Submitted, 2019. ||
+
+
+  J1 | M. M. Naghsh, E. Alian, *S. Khobahi*, and O. Rezaei | A Majorization\-Minimization Approach for Reducing Out-of-Band Radiations in OFDM Systems | IEEE Communication Letters | vol. 21, no. 8, pp. 1739-1742, Aug. 2017. \[[https://ieeexplore.ieee.org/document/7898464 IEEE Xplore]\]
+~~~
