@@ -1,2 +1,2 @@
 # homepage
-https://bingtan.github.io/
+https://bingtan72.github.io/
