@@ -8,7 +8,7 @@ These are some links that I think of important and useful for doing research, le
 
 ~~~
 {}{raw}
-<a href="links.html#Peoples"> <b>Peoples</b></a> &nbsp &nbsp  
+<a href="links.html#People"> <b>People</b></a> &nbsp &nbsp  
 <a href="links.html#Database"> <b>Database</b></a> &nbsp &nbsp
 <a href="links.html#Mathematic"> <b>Mathematic</b></a> &nbsp &nbsp
 <a href="links.html#Academic skills"> <b>Academic skills</b></a> &nbsp &nbsp
@@ -18,7 +18,7 @@ These are some links that I think of important and useful for doing research, le
 <a href="links.html#Computer skills"> <b>Computer skills</b></a> &nbsp &nbsp
 ~~~
 
-== {{Peoples <a name="Peoples"></a>}}
+== {{People <a name="Peoples"></a>}}
 
 
 ~~~
@@ -69,6 +69,7 @@ These are some links that I think of important and useful for doing research, le
 - [http://tool.yovisun.com/gs/ Google Mirror] \&nbsp [https://ac.scmor.com/ scmor]. Provide available Google search and Google mirror sites 
 - [https://paperswithcode.com/ paperswithcode]. Papers With Code highlights trending ML research and the code to implement it.
 - [https://zhuanlan.zhihu.com/p/20902898 HistCite] \&nbsp [https://www.citnetexplorer.nl/ CitNetExplorer]. Great literature analysis tools.
+- [https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen Grammarly for Chrome]. Grammarly is a writing assistant that goes deeper than grammar to offer you comprehensive writing feedback.
 
 == {{LaTeX <a name="LaTeX"></a>}}
 
@@ -78,6 +79,7 @@ These are some links that I think of important and useful for doing research, le
 - [https://www.overleaf.com/ Overleaf]. An online LaTeX editor that's easy to use. No installation, real-time collaboration, version control, hundreds of LaTeX templates, and more.
 - [https://lvjr.bitbucket.io/index.html lvjr]. A chinese website of learn LaTeX.
 - [http://atomurl.net/math/ TeX equation editor1] \&nbsp [http://upbyte.net/mathred/mathred.htm TeX equation editor2]. Great Tex mathematical formulas online editing sites
+- [https://webdemo.myscript.com/views/math/index.html# Math]. MyScript Handwriting Recognition. Hand write mathematical formulas and convert them to corresponding LaTeX codes.
 - [https://www.tablesgenerator.com/ LaTeX Tables Generator]. Quickly create even complex LaTeX tables online with our generator.
 - [http://detexify.kirelabs.org/classify.html detexify]. Detexify LaTeX handwritten symbol recognition.
 - [https://hartwork.org/beamer-theme-matrix/ Beamer Theme Matrix]. This theme matrix shows examples of all variations of the Beamer LaTeX package's default themes and color themes.

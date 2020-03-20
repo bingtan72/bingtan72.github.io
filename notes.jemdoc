@@ -13,7 +13,8 @@ This page will be constantly updated.
 - *\[2018.4.22\]* 奋斗的青春最美丽---一位大四学长的成长心得 \&nbsp \[[files/material/Experience.pdf Link]\] 
 - *\[2017.11.1\]* 大学生职业规划---理学院专场 \&nbsp \[[files/material/Freshman_sharing.pdf Link]\] 
 
-
+== 科研
+- 利用 Histcite 快速定位领域核心文献  \&nbsp \[[files/material/Histcite.pptx Link]\]
 
 
 
@@ -27,7 +28,7 @@ This page will be constantly updated.
 === 本科课程学习笔记
 - 应用多元统计分析  \&nbsp \[[files/material/StatisticsAnalysis.pdf Link]\] 
 - 数据结构  \&nbsp \[[files/material/DataStructure.pdf Link]\] 
-- SAS课程  \&nbsp \[[files/material/SAS.pdf Link]\] 
+- SAS 课程  \&nbsp \[[files/material/SAS.pdf Link]\] 
 - 算法分析与设计  \&nbsp \[[files/material/Algorithm.pdf Link]\] 
 - 博弈论 \&nbsp \[[files/material/GameTheory.pdf Link]\] 
 === 研究生课程学习笔记
@@ -39,9 +40,13 @@ This page will be constantly updated.
 
 
 == LaTeX
-- 非常推荐的LaTeX学习资料 \&nbsp \[[https://github.com/bingtan72/LaTeX_Study Link]\] 
-- 一个非常简约美观的Beamer模板 \&nbsp \[[https://github.com/bingtan72/Beamer_Simple Link]\] 
-- 一个可以做标记的LaTeX文档模板 \&nbsp \[[https://github.com/bingtan72/LaTeX_Mark Link]\] 
+- 非常推荐的 LaTeX 学习资料 \&nbsp \[[https://github.com/bingtan72/LaTeX_Study Link]\] 
+- 一个非常简约美观的 Beamer 模板 \&nbsp \[[https://github.com/bingtan72/Beamer_Simple Link]\] 
+- 一个可以做标记的 LaTeX 文档模板 \&nbsp \[[https://github.com/bingtan72/LaTeX_Mark Link]\] 
+- 使用 LaTeX 模板撰写毕业论文 (2019)---电子科技大学嵇灵  \&nbsp \[[files/material/2019LaTeX_UESTC.pdf Link]\] 
+- LaTeX 科技排版入门 (2018)---华东师范大学潘建瑜   \&nbsp \[[files/material/Latex_Talk2018.pdf Link]\] 
+- 谭兵的简历 \&nbsp \[[https://github.com/bingtan72/Resume_cn 中文]\]  \&nbsp \[[https://github.com/bingtan72/Resume_en 英文]\]
+
 
 == 数学建模
 - 数学建模竞赛论文的写作方法---韩中庚 \&nbsp \[[files/material/Writing-HZG.pdf Link]\] 
