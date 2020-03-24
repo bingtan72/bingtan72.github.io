@@ -1,20 +1,3 @@
-% jemdoc
-~~~
-{}{raw}
-<script type="text/javascript" src="//rf.revolvermaps.com/0/0/2.js?i=5ui9q29no9a&amp;m=6&amp;s=130&amp;c=ff0000&amp;t=1" async="async"></script>
-~~~
-
-~~~
-{}{raw}
-<!-- Begin ShinyStat Code -->
-<script type="text/javascript" src="//codice.shinystat.com/cgi-bin/getcod.cgi?USER=bingtan72"></script>
-<noscript>
-<a href="http://www.shinystat.com" target="_top">
-<img src="//www.shinystat.com/cgi-bin/shinystat.cgi?USER=bingtan72" alt="Free website counter" style="border:0px" /></a>
-</noscript>
-<!-- End ShinyStat Code -->
-~~~
-
 % html
 Step 1
 <-paste below the last item in index portion of html file->
@@ -40,7 +23,7 @@ Step 1
 
 <-paste above the </td>  of html file->
 
-Step 2 将GBK替换为utf-8
+Step 2 将utf-8替换为utf-8
 Step 3 将编码转为UTF-8-BOM编码
 Step 4 将publications中html中的<ol>替换为<ol reversed>，这可以实现倒序培训。
 Step 5 index.html插入</td></tr></table>上一行
