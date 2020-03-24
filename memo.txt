@@ -16,10 +16,13 @@
 ~~~
 
 % html
+Step 1
+<-paste below the last item in index portion of html file->
 
 <div class="menu-category">Visitor Stats.</div>
 <div><script type="text/javascript" src="//rf.revolvermaps.com/0/0/2.js?i=5ui9q29no9a&amp;m=6&amp;s=130&amp;c=ff0000&amp;t=1" async="async"></script>
 </div>
+
 <div>
 <!-- Begin ShinyStat Code -->
 <script type="text/javascript" src="//codice.shinystat.com/cgi-bin/getcod.cgi?USER=bingtan72"></script>
@@ -30,9 +33,20 @@
 <!-- End ShinyStat Code -->
 </div> 
 
+<div>
+<!-- clock widget start -->
+<script type="text/javascript"> var css_file=document.createElement("link"); css_file.setAttribute("rel","stylesheet"); css_file.setAttribute("type","text/css"); css_file.setAttribute("href","//s.bookcdn.com//css/cl/bw-cl-100x100.css"); document.getElementsByTagName("head")[0].appendChild(css_file); </script> <div id="tw_4_13214492"><div style="width:100px; height:100px; margin: 0 auto;"><a href="https://www.booked.net/time/chengdu-18975">Chengdu</a><br/></div></div> <script type="text/javascript"> function setWidgetData_13214492(data){ if(typeof(data) != 'undefined' && data.results.length > 0) { for(var i = 0; i < data.results.length; ++i) { var objMainBlock = ''; var params = data.results[i]; objMainBlock = document.getElementById('tw_'+params.widget_type+'_'+params.widget_id); if(objMainBlock !== null) objMainBlock.innerHTML = params.html_code; } } } var clock_timer_13214492 = -1; </script> <script type="text/javascript" charset="UTF-8" src="https://widgets.booked.net/time/info?ver=2&domid=&type=4&id=13214492&scode=2&city_id=18975&wlangid=1&mode=0&details=0&background=c9207b&color=ffffff&add_background=ffffff&add_color=c9207b&head_color=ffffff&border=0&transparent=0"></script>
+<!-- clock widget end -->
+<div>
+
+<-paste above the </td>  of html file->
+
+Step 2 将GBK替换为utf-8
+Step 3 将编码转为UTF-8-BOM编码
+Step 4 将publications中html中的<ol>替换为<ol reversed>，这可以实现倒序培训。
 
 %Commands
-
+conda activate python27
 python jemdoc -c mysite.conf index.jemdoc
 python jemdoc -c mysite.conf team.jemdoc
 python jemdoc -c mysite.conf bio.jemdoc
@@ -46,6 +60,7 @@ python jemdoc -c mysite.conf links.jemdoc
 python jemdoc -c mysite.conf notes.jemdoc
 python jemdoc -c mysite.conf zhihu.jemdoc
 python jemdoc -c mysite.conf resume.jemdoc
+python jemdoc -c mysite.conf pic.jemdoc
 python jemdoc -c mysite.conf opt.jemdoc
 python jemdoc -c mysite.conf ml.jemdoc
 python jemdoc1 -c mysite.conf xss.jemdoc
@@ -56,23 +71,18 @@ python jemdoc1 -c mysite.conf zz.jemdoc
 
 % index.jemdoc
 <a href="https://www.linkedin.com/in/bingtan72/"><img src="pic/mathscinet.jpg" alt="" width="70" height="30" /></a> <a href="https://www.linkedin.com/in/bingtan72/"><img src="pic/zbmath.jpg" alt="" width="80" height="25" /></a>
-
-% Table
+% research.jemdoc
 ~~~
-{}{table}{countries}
-*Date* | *Organizer* | *Reference(s)* ||
-Canada | Xiaolong Qin | 3.2 ||
-中华人民共和国 | 
-1300 million | 140 ||
-Kingdom of Denmark | 5.5 million | 130 ||
-New Zealand | 4.3 million | 15 ||
-United States of America | 300 million | 31
+{}{raw}
+<p><table class="imgtable"><tr><td>
+<img src="pic/bingtan.jpg" alt="need photo here" width="395" height="230" />&nbsp&nbsp&nbsp&nbsp&nbsp <img src="pic/bingtan.jpg" alt="need photo here" width="680" height="230" /></td>
+<td align="left"></td></tr></table></p>
 ~~~
 
 %%%%%%%%%%%%%%https://www.w3school.com.cn/tags/html_ref_urlencode.html%%%%%%%%%%%%%%%
 链接中遇到下划线用%5f代替
 jemdoc.css, template.css是模板文件，更改jemdoc和jemdoc1即可。
-
+jemdoc_blue.css是一个蓝色主题的模板
 
 
 %% MathJax Example
@@ -112,6 +122,18 @@ You can also type inline equations as $A x = b$.  Referencing equations is done 
 
 
 === Journal Papers:
+% Table
+~~~
+{}{table}{countries}
+*Date* | *Organizer* | *Reference(s)* ||
+Canada | Xiaolong Qin | 3.2 ||
+中华人民共和国 | 
+1300 million | 140 ||
+Kingdom of Denmark | 5.5 million | 130 ||
+New Zealand | 4.3 million | 15 ||
+United States of America | 300 million | 31
+~~~
+
 ~~~
 {}{table}{TABLENAME}
  |Author(s)  | Title | Journal | Info ||
@@ -131,3 +153,8 @@ You can also type inline equations as $A x = b$.  Referencing equations is done 
 
   J1 | M. M. Naghsh, E. Alian, *S. Khobahi*, and O. Rezaei | A Majorization\-Minimization Approach for Reducing Out-of-Band Radiations in OFDM Systems | IEEE Communication Letters | vol. 21, no. 8, pp. 1739-1742, Aug. 2017. \[[https://ieeexplore.ieee.org/document/7898464 IEEE Xplore]\]
 ~~~
+
+
+%%%%%%%%%%收藏的jemdoc网页-github.io%%%%%%%%%%%
+https://github.com/chentianyi1991/chentianyi1991.github.io 主题好看
+https://kwangsungjun.github.io/ 样式好看，很清新
