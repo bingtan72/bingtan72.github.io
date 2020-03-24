@@ -1,4 +1,4 @@
-Ôªø<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
@@ -8,7 +8,7 @@
 <meta name="google-site-verification" content="RmMp0-aosuY3qbSqMI5EucRVMfPy5HQrME5inlyzAXU" />
 <meta name="baidu-site-verification" content="EoayK3SKUg" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Codes</title>
+<title>Conference</title>
 <!-- MathJax -->
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
@@ -32,14 +32,14 @@ MathJax.Hub.Config({
 <div class="menu-category">Academic</div>
 <div class="menu-item"><a href="publications.html">Publications</a></div>
 <div class="menu-item"><a href="research.html">Research</a></div>
-<div class="menu-item"><a href="conference.html">Conference</a></div>
+<div class="menu-item"><a href="conference.html" class="current">Conference</a></div>
 <div class="menu-item"><a href="activity.html">Activity</a></div>
-<div class="menu-item"><a href="codes.html" class="current">Codes</a></div>
+<div class="menu-item"><a href="codes.html">Codes</a></div>
 <div class="menu-category">Miscellaneous</div>
 <div class="menu-item"><a href="readings.html">Readings</a></div>
 <div class="menu-item"><a href="links.html">Links</a></div>
 <div class="menu-item"><a href="notes.html">Notes</a></div>
-<div class="menu-category">‰∏≠Êñá</div>
+<div class="menu-category">÷–Œƒ</div>
 <div class="menu-item"><a href="resume.html">Resume</a></div>
 <div class="menu-item"><a href="pic.html">Pictures</a></div>
 <div class="menu-item"><a href="Love.html">Love</a></div>
@@ -63,52 +63,24 @@ MathJax.Hub.Config({
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>Codes</h1>
+<h1>Conference</h1>
 <div id="subtitle"></div>
 </div>
-<div class="infoblock">
-<div class="blockcontent">
-<p><a href="https://github.com/bingtan72" target=&ldquo;blank&rdquo;><b>See My Github</b></a> </p>
-</div></div>
 <ul>
-<li><p>Fast iterative shrinkage-thresholding algorithm (FISTA) <br /></p>
+<li><p>Jun. 2019. µÁ◊”ø∆ºº¥Û—ßª˘¥°”Î«∞—ÿ—–æø‘∫ŒÂ÷‹ƒÍ‘∫ ø∏ﬂ∑Â¬€Ã≥</p>
 </li>
 </ul>
-<p><a class="github-button" href="https://github.com/bingtan72/fasta-matlab" data-size="large" data-show-count="true" aria-label="Star bingtan72/fasta-matlab on GitHub">fasta-matlab</a> <a class="github-button" href="https://github.com/bingtan72/Faster-FISTA" data-size="large" data-show-count="true" aria-label="Star bingtan72/Faster-FISTA on GitHub">Faster-FISTA</a> <a class="github-button" href="https://github.com/bingtan72/FISTA" data-size="large" data-show-count="true" aria-label="Star bingtan72/Faster-FISTA on GitHub">FISTA</a> <a class="github-button" href="https://github.com/bingtan72/iterative-shrinkage-thresholding-algorithm" data-size="large" data-show-count="true" aria-label="Star bingtan72/iterative-shrinkage-thresholding-algorithm on GitHub">ISTA</a> <a class="github-button" href="https://github.com/bingtan72/fast-iterative-shrinkage-thresholding-algorithm" data-size="large" data-show-count="true" aria-label="Star bingtan72/fast-iterative-shrinkage-thresholding-algorithm on GitHub">FISTA</a>
-</p>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<p></p>
-<h2>MATLAB Toolbox</h2>
-<p></p>
+<table class="imgtable"><tr><td>
+<img src="https://raw.githubusercontent.com/bingtan72/picture/master/25.jpg" alt="" height="425px" />&nbsp;</td>
+<td align="left"></td></tr></table>
 <ul>
-<li><p><a href="https://www.manopt.org/tutorial.html" target=&ldquo;blank&rdquo;>Manopt</a>. With Manopt, you can solve optimization problems on manifolds using state-of-the-art algorithms, with minimal effort. </p>
-</li>
-<li><p><a href="https://github.com/hiroyuki-kasai/SGDLibrary" target=&ldquo;blank&rdquo;>SGDLibrary</a>. MATLAB/Octave library for stochastic optimization algorithms.</p>
-</li>
-<li><p><a href="https://sites.google.com/site/fomsolver/home" target=&ldquo;blank&rdquo;>FOM</a>, is a MATLAB toolbox containing a collection of first order methods for solving (mainly) convex optimization problems.</p>
-</li>
-<li><p><a href="http://cvxr.com/cvx/" target=&ldquo;blank&rdquo;>CVX</a>: Matlab Software for Disciplined Convex Programming.</p>
-</li>
-<li><p><a href="http://tfocs.stanford.edu/" target=&ldquo;blank&rdquo;>TFOCS</a>: Templates for First-Order Conic Solvers. <a href="https://amath.colorado.edu/faculty/becker/inverse.html" target=&ldquo;blank&rdquo;>Introduction</a></p>
-</li>
-<li><p><a href="https://statweb.stanford.edu/~candes/software/nesta/" target=&ldquo;blank&rdquo;>NESTA</a>: Nesterov's Algorithm.  A Fast and Accurate First-order Method for Sparse Recovery.</p>
-</li>
-<li><p><a href="https://epfl-lts2.github.io/unlocbox-html/doc/demos/demo_compress_sensing.html" target=&ldquo;blank&rdquo;>UNLocBoX</a>: Matlab convex optimization toolbox.</p>
-</li>
-<li><p><a href="https://yalmip.github.io/" target=&ldquo;blank&rdquo;>YALMIP</a>: MATLAB toolbox for optimization modeling.</p>
-</li>
-<li><p><a href="http://dm.unife.it/pn2o/software.html" target=&ldquo;blank&rdquo;>PN2O</a>: Parallel Algorithms and Numerical Nonlinear Optimization,</p>
-</li>
-<li><p><a href="https://people.eecs.berkeley.edu/~yang/software/l1benchmark/" target=&ldquo;blank&rdquo;>l1benchmark</a>: Fast \(\ell_1\) Minimization Algorithms.</p>
-</li>
-<li><p><a href="https://www.cs.umd.edu/~tomg/projects/fasta/" target=&ldquo;blank&rdquo;>FASTA</a>. Fast Adaptive Shrinkage/Thresholding Algorithm.</p>
-</li>
-<li><p><a href="https://ww2.mathworks.cn/matlabcentral/fileexchange/16204-toolbox-sparse-optmization" target=&ldquo;blank&rdquo;>Toolbox Sparse Optmization</a>: Optimization codes for sparsity related signal processing.
-
-
-</p>
+<li><p>Apr. 2019. The 12th National Conference on Mathematical Optimization, Nanjing, China.</p>
 </li>
 </ul>
+<table class="imgtable"><tr><td>
+<img src="pic/nj.jpg" alt="" height="425px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<p></p>
 </td>
 </tr>
 </table>

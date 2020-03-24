@@ -1,4 +1,4 @@
-ï»¿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
@@ -39,7 +39,7 @@ MathJax.Hub.Config({
 <div class="menu-item"><a href="readings.html">Readings</a></div>
 <div class="menu-item"><a href="links.html" class="current">Links</a></div>
 <div class="menu-item"><a href="notes.html">Notes</a></div>
-<div class="menu-category">ä¸­æ–‡</div>
+<div class="menu-category">ÖÐÎÄ</div>
 <div class="menu-item"><a href="resume.html">Resume</a></div>
 <div class="menu-item"><a href="pic.html">Pictures</a></div>
 <div class="menu-item"><a href="Love.html">Love</a></div>
@@ -87,7 +87,7 @@ MathJax.Hub.Config({
 <div class="blockcontent">
 <p><a href="https://web.stanford.edu/~boyd/" target=&ldquo;blank&rdquo;>Stephen P. Boyd</a> 
 &nbsp <a href="http://www.seas.ucla.edu/~vandenbe/" target=&ldquo;blank&rdquo;>Lieven Vandenberghe</a>
-&nbsp <a href="https://statweb.stanford.edu/~candes/" target=&ldquo;blank&rdquo;>Emmanuel CandÃ¨s</a>
+&nbsp <a href="https://statweb.stanford.edu/~candes/" target=&ldquo;blank&rdquo;>Emmanuel Cand¨¨s</a>
 &nbsp <a href="https://sites.google.com/site/amirbeck314/" target=&ldquo;blank&rdquo;>Amir Beck</a>
 &nbsp <a href="https://www.mat.univie.ac.at/~rabot/" target=&ldquo;blank&rdquo;>Radu Ioan Bot</a>
 &nbsp <a href="https://iiduka.net/en/intro/researches/optimization" target=&ldquo;blank&rdquo;>Hideaki iiduka</a>
