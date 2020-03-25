@@ -44,6 +44,7 @@ This page will be constantly updated.
 
 
 == LaTeX
+- {{<a href="latex.html"> LaTeX 常见问题与解决方法</a>}}
 - 非常推荐的 LaTeX 学习资料 \&nbsp \[[https://github.com/bingtan72/LaTeX_Study Link]\] 
 - 一个非常简约美观的 Beamer 模板 \&nbsp \[[https://github.com/bingtan72/Beamer_Simple Link]\] 
 - 一个可以做标记的 LaTeX 文档模板 \&nbsp \[[https://github.com/bingtan72/LaTeX_Mark Link]\] 
@@ -57,6 +58,9 @@ This page will be constantly updated.
 == 数学建模
 - 数学建模竞赛论文的写作方法---韩中庚 \&nbsp \[[files/material/Writing-HZG.pdf Link]\] 
 - 数学建模的一些建议---谭兵 \&nbsp \[[files/material/SXJM_suggest.pdf Link]\] 
+- 全国大学生数学建模竞赛 LaTeX 论文模板 \&nbsp \[[https://github.com/latexstudio/CUMCMThesis CUMCMThesis]\]  
+- 研究生数学建模 LaTeX 模板  \&nbsp \[[https://github.com/latexstudio/GMCMthesis GMCMthesis]\]
+
 
 == 实用技能
 - 6种最好的图片无损压缩工具 \[[https://blog.csdn.net/qq_41761551/article/details/81026184 Link]\]

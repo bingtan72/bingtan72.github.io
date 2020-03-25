@@ -44,6 +44,7 @@ python jemdoc -c mysite.conf readings.jemdoc
 python jemdoc -c mysite.conf links.jemdoc
 python jemdoc -c mysite.conf notes.jemdoc
 python jemdoc -c mysite.conf zhihu.jemdoc
+python jemdoc -c mysite.conf latex.jemdoc
 python jemdoc -c mysite.conf resume.jemdoc
 python jemdoc -c mysite.conf pic.jemdoc
 python jemdoc -c mysite.conf opt.jemdoc
