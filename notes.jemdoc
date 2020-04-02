@@ -20,10 +20,6 @@ This page will be constantly updated.
 == 科研
 - 利用 Histcite 快速定位领域核心文献  \&nbsp \[[files/material/Histcite.pptx Link]\]
 
-
-
-
-
 == 知乎
 - {{<a href="zhihu.html"> 我的知乎收藏</a>}}
 
@@ -45,13 +41,20 @@ This page will be constantly updated.
 
 == LaTeX
 - {{<a href="latex.html"> LaTeX 常见问题与解决方法</a>}}
+=== LaTeX 学习资料
 - 非常推荐的 LaTeX 学习资料 \&nbsp \[[https://github.com/bingtan72/LaTeX_Study Link]\] 
-- 一个非常简约美观的 Beamer 模板 \&nbsp \[[https://github.com/bingtan72/Beamer_Simple Link]\] 
-- 一个可以做标记的 LaTeX 文档模板 \&nbsp \[[https://github.com/bingtan72/LaTeX_Mark Link]\] 
+- LaTeX 科技排版入门 (2018)---华东师范大学潘建瑜   \&nbsp \[[files/material/Latex_Talk2018.pdf Link]\]
 - 刘海洋讲座原稿 《LaTeX 不快速的入门》 \&nbsp \[[https://github.com/bingtan72/TeX-Talk Link]\]
 - LaTeX 数学帮助 \&nbsp \[[https://zh.wikipedia.org/wiki/Help:%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F Link]\]
+ 
+=== 演示文档 Beamer 模板
+- 一个非常简约美观的 Beamer 模板 \&nbsp \[[https://github.com/bingtan72/Beamer_Simple Link]\] 
+- 胡老师《Biblatex 宏包使用和 GBT7714--2015 参考文献样式》源码分享 \&nbsp \[[https://latexstudio.net/index/details/index/mid/370.html Link]\]
+=== LaTeX 文档模板
+- 一个可以做标记的 LaTeX 文档模板 \&nbsp \[[https://github.com/bingtan72/LaTeX_Mark Link]\] 
+
+=== 其他
 - 使用 LaTeX 模板撰写毕业论文 (2019)---电子科技大学嵇灵  \&nbsp \[[files/material/2019LaTeX_UESTC.pdf Link]\] 
-- LaTeX 科技排版入门 (2018)---华东师范大学潘建瑜   \&nbsp \[[files/material/Latex_Talk2018.pdf Link]\] 
 - 谭兵的简历 \&nbsp \[[https://github.com/bingtan72/Resume_cn 中文]\]  \&nbsp \[[https://github.com/bingtan72/Resume_en 英文]\]
 
 
@@ -65,6 +68,9 @@ This page will be constantly updated.
 == 实用技能
 - 6种最好的图片无损压缩工具 \[[https://blog.csdn.net/qq_41761551/article/details/81026184 Link]\]
 
+
+== 兴趣
+- [https://www.w3school.com.cn/html/index.asp HTML 教程]
 == 其他
 - 网络中的社交礼仪 \&nbsp \[[files/material/etiquette.pdf Link]\] 
 - 十分钟就能学会并可以终生受用的技能  \&nbsp \[[files/material/skill.pdf Link]\]  \&nbsp \[[https://github.com/bingtan72/skill 项目地址]\]

@@ -9,6 +9,7 @@ These are some links that I think of important and useful for doing research, le
 ~~~
 {}{raw}
 <a href="links.html#People"> <b>People</b></a> &nbsp &nbsp  
+<a href="links.html#Writing"> <b>Writing</b></a> &nbsp &nbsp  
 <a href="links.html#Database"> <b>Database</b></a> &nbsp &nbsp
 <a href="links.html#Mathematic"> <b>Mathematic</b></a> &nbsp &nbsp
 <a href="links.html#Academic skills"> <b>Academic skills</b></a> &nbsp &nbsp
@@ -20,11 +21,12 @@ These are some links that I think of important and useful for doing research, le
 
 == {{People <a name="Peoples"></a>}}
 
-
 ~~~
 [https://web.stanford.edu/~boyd/ Stephen P. Boyd] 
 \&nbsp [http://www.seas.ucla.edu/~vandenbe/ Lieven Vandenberghe]
 \&nbsp [https://statweb.stanford.edu/~candes/ Emmanuel Candès]
+\&nbsp [https://pcombet.math.ncsu.edu/ P. L. Combettes]
+\&nbsp [https://people.ok.ubc.ca/bauschke/research.html H.H. Bauschke]
 \&nbsp [https://sites.google.com/site/amirbeck314/ Amir Beck]
 \&nbsp [https://www.mat.univie.ac.at/~rabot/ Radu Ioan Bot]
 \&nbsp [https://iiduka.net/en/intro/researches/optimization Hideaki iiduka]
@@ -35,6 +37,10 @@ These are some links that I think of important and useful for doing research, le
 \&nbsp [http://bicmr.pku.edu.cn/~wenzw/index.html Zaiwen Wen]
 \&nbsp [https://jliang993.github.io/index.html Jingwei Liang]
 ~~~
+
+== {{Writing <a name="Writing"></a>}}
+
+- [https://linggle.com/ linggle]. Language Reference Search Engines.
 
 == {{Database <a name="Database"></a>}}
 
@@ -60,8 +66,6 @@ These are some links that I think of important and useful for doing research, le
 
 
 == {{Academic skills <a name="Academic skills"></a>}}
-
-
 
 - [https://lovescihub.wordpress.com/ Love Science,Love Sci-Hub!]. This page is to collect the new alternative domain of sci-hub which is refreshed every 5 minutes. 
 - [http://gen.lib.rus.ec/ Library Genesis], is a search engine for articles and books on various topics, which allows free access to content that is otherwise paywalled or not digitized elsewhere.
@@ -110,7 +114,7 @@ These are some links that I think of important and useful for doing research, le
 
 == {{Softwares <a name="Softwares"></a>}}
 
-
+- [https://tools.shuax.com/chrome/ Chrome]. Google Chrome is a fast, free web browser. [https://zhuanlan.zhihu.com/p/105461498 Tampermonkey]
 - [https://www.tug.org/texlive/ Texlive], is an easy (we hope) way to get up and running with the TeX document production system.
 - [http://www.texstudio.org/ TeXstudio]. LaTeX editor.
 - [http://www.tikzedt.org/ TikzEdt], is a combined WYSIWYG/text editor designed for editing Tikz code. 
@@ -143,7 +147,6 @@ These are some links that I think of important and useful for doing research, le
 - [https://smallpdf.com/ smallpdf]. All-in-one easy-to-use online PDF tools.
 - [http://www.jonathanleroux.org/software/iguanatex/ IguanaTex]. A Free LaTeX Add-In for PowerPoint on Windows.
 - [https://services.nexodyne.com/email/ E-Mail Icon Generator]. For GMail, Hotmail, and many more! [http://tools.jb51.net/email/emaillogo Chinese version]
-
 
 
 
