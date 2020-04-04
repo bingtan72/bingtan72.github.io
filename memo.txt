@@ -1,5 +1,5 @@
 % html
-Step 1 将utf-8替换为utf-8，可以全部替换打开的文件。
+Step 1 将GBK替换为utf-8，可以全部替换打开的文件。
 Step 2 将编码转为UTF-8-BOM编码，用软件EditPlus全部替换编码，Document->File Encoding->File encoding multiple   %%https://www.tenlonstudio.com/5074.html  注意：转换路径中不要有中文
 Step 3 将publications中html中的<ol>替换为<ol reversed>，这可以实现倒序培训。
 Step 4 index.html插入</td></tr></table>上一行
