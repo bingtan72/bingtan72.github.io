@@ -142,7 +142,6 @@ def standardconf():
   <meta http-equiv="Content-Type" content="text/html;charset=GBK" />
   <meta name="google-site-verification" content="oyju0Mz3qXdK5eOnRVqUwdANI9c36Oa86-PoOV4qA4M" />
   <meta name="baidu-site-verification" content="qo2JwfS7nX" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   [defaultcss]
   <link rel="stylesheet" href="jemdoc.css" type="text/css" />
