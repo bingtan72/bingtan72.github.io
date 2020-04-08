@@ -17,6 +17,7 @@ These are some links that I think of important and useful for doing research, le
 <a href="links.html#Programming"> <b>Programming</b></a> &nbsp &nbsp
 <a href="links.html#Softwares"> <b>Softwares</b></a> &nbsp &nbsp
 <a href="links.html#Computer skills"> <b>Computer skills</b></a> &nbsp &nbsp
+<a href="links.html#Useful websites"> <b>Useful websites</b></a>
 ~~~
 
 == {{People <a name="Peoples"></a>}}
@@ -41,6 +42,7 @@ These are some links that I think of important and useful for doing research, le
 == {{Writing <a name="Writing"></a>}}
 
 - [https://linggle.com/ linggle]. Language Reference Search Engines.
+- [https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen Grammarly for Chrome]: Free Online Writing Assistant.
 
 == {{Database <a name="Database"></a>}}
 
@@ -70,7 +72,7 @@ These are some links that I think of important and useful for doing research, le
 - [https://lovescihub.wordpress.com/ Love Science,Love Sci-Hub!]. This page is to collect the new alternative domain of sci-hub which is refreshed every 5 minutes. 
 - [http://gen.lib.rus.ec/ Library Genesis], is a search engine for articles and books on various topics, which allows free access to content that is otherwise paywalled or not digitized elsewhere.
 - [https://booksc.org/ booksc1] \&nbsp [https://b-ok.cc/ booksc2]. The world's largest scientific articles store. 70,000,000+ articles for free.
-- [http://tool.yovisun.com/gs/ Google Mirror] \&nbsp [https://ac.scmor.com/ scmor]. Provide available Google search and Google mirror sites 
+- [http://tool.yovisun.com/gs/ Google Mirror] \&nbsp [https://ac.scmor.com/ scmor]. Provide available Google search and Google mirror sites. 
 - [https://paperswithcode.com/ paperswithcode]. Papers With Code highlights trending ML research and the code to implement it.
 - [https://zhuanlan.zhihu.com/p/20902898 HistCite] \&nbsp [https://www.citnetexplorer.nl/ CitNetExplorer]. Great literature analysis tools.
 - [https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen Grammarly for Chrome]. Grammarly is a writing assistant that goes deeper than grammar to offer you comprehensive writing feedback.
@@ -85,7 +87,7 @@ These are some links that I think of important and useful for doing research, le
 - [https://www.overleaf.com/ Overleaf]. An online LaTeX editor that's easy to use. No installation, real-time collaboration, version control, hundreds of LaTeX templates, and more.
 - [https://texdoc.net/ TeXdoc Online]. TeX and LaTeX documentation lookup system. [http://texdoc.net/texmf-dist/doc/latex/lshort-chinese/lshort-zh-cn.pdf lshort-zh-cn]
 - [https://lvjr.bitbucket.io/index.html lvjr]. A chinese website of learn LaTeX.
-- [http://atomurl.net/math/ TeX equation editor1] \&nbsp [http://upbyte.net/mathred/mathred.htm TeX equation editor2]. Great Tex mathematical formulas online editing sites
+- [http://atomurl.net/math/ TeX equation editor1] \&nbsp [http://upbyte.net/mathred/mathred.htm TeX equation editor2]. Great Tex mathematical formulas online editing sites.
 - [https://webdemo.myscript.com/views/math/index.html Math]. MyScript Handwriting Recognition. Hand write mathematical formulas and convert them to corresponding LaTeX codes.
 - [https://www.tablesgenerator.com/ LaTeX Tables Generator]. Quickly create even complex LaTeX tables online with our generator.
 - [http://detexify.kirelabs.org/classify.html detexify]. Detexify LaTeX handwritten symbol recognition.
@@ -99,11 +101,11 @@ These are some links that I think of important and useful for doing research, le
 
 == {{Programming <a name="Programming"></a>}}
 
-
+- [https://ww2.mathworks.cn/help/search.html?qdoc=plot&submitsearch= MATLAB Help Center]. Search the help documentation for MATLAB functions.
 - [https://www.jetbrains.com/pycharm/ PyCharm]. The Python IDE for professional developers.
 - [https://jemdoc.jaboc.net/ jemdoc], is a static site generator that is being widely used for creating simple academic websites.
 - [https://www.mathjax.org/ MathJax]. A JavaScript display engine for mathematics that works in all browsers. 
-- [http://www.mit.edu/~wsshin/jemdoc+mathjax.html jemdoc+MathJax], let jemdoc support MathJax
+- [http://www.mit.edu/~wsshin/jemdoc+mathjax.html jemdoc+MathJax], let jemdoc support MathJax.
 - [https://matplotlib.org/gallery/index.html matplotlib],  is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.
 - [https://docs.anaconda.com/anaconda/user-guide/getting-started/ Anaconda], is the standard platform for Python data science.
 - [https://github.com/krlmlr/Excel2LaTeX Excel2LaTeX]. The Excel add-in for creating LaTeX tables.
@@ -151,8 +153,8 @@ These are some links that I think of important and useful for doing research, le
 - [https://services.nexodyne.com/email/ E-Mail Icon Generator]. For GMail, Hotmail, and many more! [http://tools.jb51.net/email/emaillogo Chinese version]
 
 
-
-
+== {{Useful websites <a name="Useful websites"></a>}}
+- [https://www.quora.com/ Quora], is a place to gain and share knowledge. It's a platform to ask questions and connect with people who contribute unique insights and quality answers. \&nbsp [https://www.quora.com/Which-extension-is-the-best-for-using-VPN-in-browser example]
 
 
 
