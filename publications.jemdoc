@@ -26,4 +26,15 @@
 . Jingjing Fan, Xiaolong Qin\*, *Bing Tan*. Convergence of an inertial shadow Douglas-Rachford splitting for monotone inclusions. Submitted to Numerical Functional Analysis and Optimization.
 . *Bing Tan*, Songxiao Li, Xiaolong Qin\*. Strong convergence of inertial Mann algorithms for solving hierarchical fixed point problems. Submitted to Applicable Analysis.
 
+~~~
+{}{raw}
+<script type="text/javascript">
+<!--
+var arxiv_authorid = "tan_b_1";
+var arxiv_format = "arxiv";
+var arxiv_max_entries=0;       //show all articles
+//--></script>
+<script type="text/javascript" src="https://arxiv.org/js/myarticles.js"></script>
+<div id="arxivfeed"></div>
+~~~
 
