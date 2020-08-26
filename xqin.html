@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 
 <html>
@@ -41,6 +42,33 @@
         @media (max-width:600px) {#photo {display:none}}
         @media (max-width:600px) {#desktopButtons {display:none}}
         @media (min-width:601px) {#mobileButtons {display:none}}
+		
+        <!-- /* Style the collapsible content. Note: hidden by default */ -->
+
+		.collapsible {
+	    font-family: Optima, sans-serif;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+	    font-size: 102.5%;
+	    padding-bottom: 0.35em;
+        }
+
+        .active, .collapsible:hover {
+        background-color: #eee;
+        }
+
+	    .content {
+	    padding-top: 0.5em;
+        padding: 0 2em;
+        display: none;
+        overflow: hidden;
+        background-color: #f2f2f2;
+        }
     </style>
 </head>
 
@@ -110,30 +138,27 @@ max-width:750px; padding:20px; line-height:1.3">
 <div id="Biography" class="tabContent">
     <h2>Biography</h2>
 	
-    <div>
-    <p>
-    Dr. Xiaolong Qin received his M.S. and Ph.D. degrees from Tianjin Polytechnic University, China and Gyeongsang National University, Korea, respectively. 
+	<button type="button" class="collapsible"><b>[+] Here is my English introduction</b></button>
+    <div class="content">
+    <p>Dr. Xiaolong Qin received his M.S. and Ph.D. degrees from Tianjin Polytechnic University, China and Gyeongsang National University, Korea, respectively. 
 	He has addressed many international conferences as an invited speaker. 
 	He currently serves as an editorial board member for several international mathematical journals and has refereed for over 100 mathematical and engineering journals.	
 	</p>
-	<p>
-	Dr. Qin's research areas include nonlinear functional analysis, iterative methods for nonlinear equations (in particular, fixed point algorithms for inverse and ill-posed nonlinear equations), and optimization. Published more than 100 papers in international refereed-journals, for examples,《Nonlinear Analysis: Real Word Applications》,《Nonlinear Analysis: Theory, Method and Applications》,《Journal of Mathematical and Applications》,《Journal of Global Optimization》.
-    </p>
+    </div>
 	
-	
-	
-	<div class="container">
-  <button type="button" class="collapsible"><b>[+] Here is my Chinese introduction</b></button>
-  <div class="content">
-  <p>秦小龙，韩国庆尚国立大学理学博士，杭州师范大学理学院教授，博士生导师，四川省学术与技术带头人，自动化学会-粒计算与多尺度分析专委会理事，浙江省自然科学奖三等奖获得者(排名第一)。
+    <button type="button" class="collapsible"><b>[+] Here is my Chinese introduction</b></button>
+    <div class="content">
+    <p>秦小龙，韩国庆尚国立大学理学博士，杭州师范大学理学院教授，博士生导师，四川省学术与技术带头人，自动化学会-粒计算与多尺度分析专委会理事，浙江省自然科学奖三等奖获得者(排名第一)。
 	先后在加拿大艾伯塔大学、台湾中山大学，彰化师范大学，韩国庆南大学，沙特国王大学，吉达大学等担任访问(客座)教授，主要从事非线性泛函分析与最优化理论方面的研究。
 	近年来已在国际学术刊物发表论文100余篇，主持4项省部和国家级自然科学基金，并担任JNVA，JANO，ASVAO， FPTA，JNFA等国际期刊编委工作。
-  </p>
-  </div>
-
-</div>
-
-	</div>
+    </p>
+    </div>
+	
+	<h3>Research</h3>
+    <p>
+	Dr. Qin's research areas include nonlinear functional analysis, iterative methods for nonlinear equations (in particular, fixed point algorithms for inverse and ill-posed nonlinear equations), and optimization. 
+	Published more than 100 papers in international refereed-journals, for examples,《Nonlinear Analysis: Real Word Applications》,《Nonlinear Analysis: Theory, Method and Applications》,《Journal of Mathematical and Applications》,《Journal of Global Optimization》.
+    </p>
 	
     <h3>Editorial boards</h3>
 
@@ -293,7 +318,7 @@ function openTab(tabTitle) {
 document.getElementById("defaultOpen").click();
 </script>
 
-<br><br>
+<br>
 <hr style="border:1px solid #DCDCDC">
 <p style="font-size:66%; color:#A9A9A9">Page created by <a
 href="https://pcombet.math.ncsu.edu/" 
