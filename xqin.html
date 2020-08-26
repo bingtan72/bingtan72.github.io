@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Xiaolong Qin</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <style>
+        *{box-sizing:border-box}
+        .myColumn1{float:left; width:33.33%}
+        .myColumn2{float:left; width:50%}
+        .myRow:after{content:""; display:table; clear:both}
+
+        a{text-decoration:none; color:#CC0000}
+        a:focus{outline:0 !important}
+        a:hover{text-decoration:underline}
+	
+        .stretch{text-align:justify; margin-top:50px}
+        .stretch:after{content:""; display:inline-block; width:100%}
+
+        .myButton{
+            background-color:#CC0000;
+            border:1px solid #FFFFFF;
+            display:inline-block;
+            cursor:pointer;
+            color:#FFFFFF;
+            font-family:verdana;
+            font-size:16px;
+            padding:8px 20px;
+            font-weight:bold;
+        }
+        .myButton:active{background-color:#990000}
+        .myButton:focus{outline:0 !important}
+        .myButton:hover{text-decoration:underline}
+        .myButton::-moz-focus-inner{border:0}
+
+        @media (max-width:600px) {#photo {display:none}}
+        @media (max-width:600px) {#desktopButtons {display:none}}
+        @media (min-width:601px) {#mobileButtons {display:none}}
+    </style>
+</head>
+
+<body bgcolor="#FFFFFF" style="font-family:verdana; margin:auto;
+max-width:750px; padding:20px; line-height:1.3">
+
+<div class="row">
+    <div id="photo" class="column" style="float:right">
+        <img src="pic/qxl.png" alt="XQIN" style="width:163px; height:202px">
+    </div>
+
+    <div class="column">
+        <h1>Xiaolong Qin (X.Qin)</h1>
+        
+        <p>Distinguished  Professor, Highly Cited Researcher<br>
+        Department of Mathematics<br>
+        Hangzhou Normal University</p>
+        
+        <p><a href="https://publons.com/researcher/1449392/x-qin/" target="_blank"> <i class="ai ai-publons"></i> Publons</a><br>
+        <a href="https://scholar.google.com/citations?user=oesc6p4AAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a><br>
+        <i class="far fa-envelope"></i>&nbsp;&nbsp;qxlxajh@163.com</p>
+    </div>
+</div>
+
+<div id="desktopButtons" class="myRow" style="padding-top:30px; padding-bottom:15px">
+    <div class="myColumn1">
+        <a href="https://www.degruyter.com/view/title/560889"><img src="pic/ZQ-Book.jpg" alt="book" style="width:180px; height:252px"></a>
+
+<em style="font-size:75%; color:#808080">Published by De Gruyter in 2020</em>
+    </div>
+
+    <div class="myColumn1">
+        <button class="myButton" onclick="openTab('Publications')" style="margin-top:10px">Publications</button><br>
+        <button class="myButton" onclick="openTab('Citations')" style="margin-top:10px">Citations</button><br>
+        <button class="myButton" onclick="openTab('News')" style="margin-top:10px">News</button><br>
+        <button class="myButton" onclick="openTab('People')" style="margin-top:10px">People</button><br>
+        <a class="myButton" href="https://bingtan.me/team.html" target="_blank" style="margin-top:10px">Team</a>
+    </div>
+
+    <div class="myColumn1">
+        <button class="myButton" onclick="openTab('Talks')" style="margin-top:10px">Talks</button><br>
+        <button class="myButton" onclick="openTab('Teaching')" style="margin-top:10px">Teaching</button><br>
+        <button class="myButton" onclick="openTab('Conference')" style="margin-top:10px">Conference</button><br>
+        <button class="myButton" onclick="openTab('Biography')" style="margin-top:10px" id="defaultOpen">Biography</button><br>
+        <a class="myButton" href="http://jnva.biemdas.com/" target="_blank" style="margin-top:10px">JNVA</a><br>
+    </div>
+</div>
+
+<div id="mobileButtons" class="myRow" style="padding-top:30px; padding-bottom:15px">
+    <div class="myColumn2">
+        <button class="myButton" onclick="openTab('Publications')">Publications</button><br>
+        <button class="myButton" onclick="openTab('Citations')" style="margin-top:10px">Citations</button><br>
+        <button class="myButton" onclick="openTab('News')" style="margin-top:10px">News</button><br>
+        <button class="myButton" onclick="openTab('People')" style="margin-top:10px">People</button><br>
+        <a class="myButton" href="https://bingtan.me/team.html" target="_blank" style="margin-top:10px">Team</a>
+    </div>
+
+    <div class="myColumn2">
+        <button class="myButton" onclick="openTab('Talks')">Talks</button><br>
+        <button class="myButton" onclick="openTab('Teaching')" style="margin-top:10px">Teaching</button><br>
+        <button class="myButton" onclick="openTab('Conference')" style="margin-top:10px">Conference</button><br>
+        <button class="myButton" onclick="openTab('Biography')" style="margin-top:10px" id="defaultOpen">Biography</button><br>
+        <a class="myButton" href="http://jnva.biemdas.com/" target="_blank" style="margin-top:10px">JNVA</a><br>
+    </div>
+</div>
+
+<div id="Biography" class="tabContent">
+    <h2>Biography</h2>
+	
+    <div>
+    <p>
+    Dr. Xiaolong Qin received his M.S. and Ph.D. degrees from Tianjin Polytechnic University, China and Gyeongsang National University, Korea, respectively. 
+	He has addressed many international conferences as an invited speaker. 
+	He currently serves as an editorial board member for several international mathematical journals and has refereed for over 100 mathematical and engineering journals.	
+	</p>
+	<p>
+	Dr. Qin's research areas include nonlinear functional analysis, iterative methods for nonlinear equations (in particular, fixed point algorithms for inverse and ill-posed nonlinear equations), and optimization. Published more than 100 papers in international refereed-journals, for examples,《Nonlinear Analysis: Real Word Applications》,《Nonlinear Analysis: Theory, Method and Applications》,《Journal of Mathematical and Applications》,《Journal of Global Optimization》.
+    </p>
+	
+	
+	
+	<div class="container">
+  <button type="button" class="collapsible"><b>[+] Here is my Chinese introduction</b></button>
+  <div class="content">
+  <p>秦小龙，韩国庆尚国立大学理学博士，杭州师范大学理学院教授，博士生导师，四川省学术与技术带头人，自动化学会-粒计算与多尺度分析专委会理事，浙江省自然科学奖三等奖获得者(排名第一)。
+	先后在加拿大艾伯塔大学、台湾中山大学，彰化师范大学，韩国庆南大学，沙特国王大学，吉达大学等担任访问(客座)教授，主要从事非线性泛函分析与最优化理论方面的研究。
+	近年来已在国际学术刊物发表论文100余篇，主持4项省部和国家级自然科学基金，并担任JNVA，JANO，ASVAO， FPTA，JNFA等国际期刊编委工作。
+  </p>
+  </div>
+
+</div>
+
+	</div>
+	
+    <h3>Editorial boards</h3>
+
+    <ul>
+        <li>Journal of Nonlinear and Variational Analysis, 2017-present</li>
+        <li>Journal of Applied and Numerical Optimization, 2019-present</li>
+        <li>Applied Set-Valued Analysis and Optimization, 2019-present</li>
+        <li>Journal of Nonlinear Functional Analysis</li>
+		<li>Fixed Point Theory and Algorithms for Sciences and Engineering</li>
+        <li> Journal of Mathematical and Computational Science</li>        
+    </ul>
+
+    <h3>Scientific awards</h3>
+
+    <ul><li><strong>Clarivate Analytics Highly Cited Researcher</strong>, 2014--2019<br>
+    Recognizing the world's most influential researchers of the past decade, demonstrated by the production of multiple highly-cited papers that rank in the top 1% by citations for field and year in Web of Science.
+    </li></ul>
+
+    <ul><li><strong>Most Cited Chinese Researchers (Elsevier)</strong>, 2016--2019<br>
+    </li></ul>
+
+    <ul><li><strong>Top reviewers in Mathematics, Powered by Publons</strong>, 2019<br>
+    </li></ul>
+	
+	<ul><li><strong>Top reviewers in Cross-Field, Powered by Publons</strong>, 2019<br>
+    </li></ul>
+	
+    <h3>Academic positions</h3>
+    
+    <ul><li>
+    <strong>Hangzhou Normal University</strong>, 2020-present<br>
+    Department of Mathematics
+    </li></ul>
+
+    <ul><li>
+    <strong>University of Electronic Science and Technology of China</strong>, 2016-2019<br>
+    Institute of Fundamental and Frontier Sciences
+    </li></ul>
+   
+</div>
+
+<div id="Publications" class="tabContent">
+    <h2>Publications</h2>
+
+    See my <a href="https://www.scopus.com/authid/detail.uri?authorId=14023330000" target="_blank">Scopus</a>
+
+</div>
+
+<div id="Citations" class="tabContent">
+    <h2>Citations</h2>
+
+    <ul>
+    <li><a href="https://mathscinet.ams.org/mathscinet/MRAuthorID/790483" target="_blank">MathSciNet</a></li>
+    <li><a href="https://publons.com/researcher/1449392/x-qin/" target="_blank">Publons</a></li>
+    <li><a href="https://scholar.google.com/citations?user=oesc6p4AAAAJ" target="_blank">Google Scholar</a></li>
+    </ul>
+</div>
+
+
+<div id="News" class="tabContent">
+    <h2>News</h2>
+	
+    <ul>
+    <li> [2020.08] JNVA was indexed by Web of Science. <a href="https://mjl.clarivate.com:/search-results?issn=2560-6921&hide_exact_match_fl=true&utm_source=mjl&utm_medium=share-by-link&utm_campaign=search-results-share-this-journal" target="_blank">Link</a>  </li>
+    </ul>
+</div>
+
+<div id="People" class="tabContent">
+    <h2>People</h2>
+
+    <h3>Current Ph.D. students</h3>
+
+    <ul>
+    <li><strong>
+	Jingjing Fan</a>
+    </strong></li>
+    </ul>
+	
+	<ul>
+    <li><strong>
+	Yinglin Luo</a>
+    </strong></li>
+    </ul>
+	
+	<ul>
+    <li><strong>
+	Zheng Zhou</a>
+    </strong></li>
+    </ul>
+	
+    <ul>
+    <li><strong>
+	<a href="https://bingtan.me">Bing Tan</a>
+    </strong></li>
+    </ul>
+
+    <h3>Former students</h3>
+    
+    <ul><li>
+    <strong>Kai Jiang (M.Sc.)</strong>, University of Electronic Science and Technology of China, 2020<br>
+    <em>Thesis: Optimization and improvement of reinforcement learning based on maximum entropy model</em>
+    </li></ul>
+
+</div>
+
+
+<div id="Talks" class="tabContent">
+    <h2>Recent conference talks</h2>
+
+   Under construction.
+
+</div>
+
+
+<div id="Teaching" class="tabContent">
+    <h2>Teaching</h2>
+
+   Under construction.
+
+</div>
+
+<div id="Conference" class="tabContent">
+    <h2>Conferences already organized</h2>
+
+    <ul><li>
+    <strong>International Symposium on Nonlinear and Variational Analysis (2018,4)</strong> <br>
+	<i class="fa fa-map-marker" aria-hidden="true"></i> University of Electronic Science and Technology of China, Chengdu, China<br>
+    </li></ul>
+	
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script>
+function openTab(tabTitle) {
+    var i, tabContent;
+    tabContent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabContent.length; i++) {tabContent[i].style.display = "none"}
+    document.getElementById(tabTitle).style.display = "block";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+<br><br>
+<hr style="border:1px solid #DCDCDC">
+<p style="font-size:66%; color:#A9A9A9">Page created by <a
+href="https://pcombet.math.ncsu.edu/" 
+style="color:#708090">Patrick L. Combettes</a></p>
+
+</body>
+
+</html>
+
