@@ -1,16 +1,16 @@
 /* Default css file for jemdoc. */
 
 table#tlayout {
-    border: none;
-    border-collapse: separate;
-    background: white;
+	border: none;
+	border-collapse: separate;
+	background: white;
 }
 
 body {
 	background: white;
-	font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, sans-serif;
-	/*font-family: 'Lato', sans-serif;*/
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	padding-bottom: 8px;
+	font-size: 1.1em;
 	margin: 0;
 }
 
@@ -23,23 +23,25 @@ body {
 	font-size: 1.0em;
 	width: auto;
 	white-space: nowrap;
-    text-align: left;
-    vertical-align: top;
+	text-align: left;
+	vertical-align: top;
 }
 
 #layout-menu td {
 	background: #f4f4f4;
-    vertical-align: top;
+	vertical-align: top;
 }
 
 #layout-content {
 	padding-top: 0.0em;
 	padding-left: 1.0em;
 	padding-right: 1.0em;
-    border: none;
-    background: white;
-    text-align: left;
-    vertical-align: top;
+	border: none;
+	background: white;
+	text-align: left;
+	vertical-align: top;
+	min-width: 800px;
+	width: 1200px;
 }
 
 #layout-menu a {
@@ -48,7 +50,7 @@ body {
 }
 
 tt {
-    background: #ffffdd;
+	background: #ffffdd;
 }
 
 pre, tt {
@@ -57,9 +59,8 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #5ea85e;
+	color: #224b8d;
 	text-decoration: none;
-	font-weight: bold;
 }
 
 a:hover {
@@ -71,7 +72,7 @@ a:hover {
 	border-bottom: 1px gray solid;
 }
 #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-	color: #729ee6;
+	color: #527bbd;
 	text-decoration: none;
 }
 #layout-menu a:hover {
@@ -119,23 +120,12 @@ strong {
 
 
 h1, h2, h3 {
-	color: #2eac2e;
+	color: #527bbd;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
 	line-height: 1.0;
 	padding-top: 0.5em;
-	border-bottom: 1px solid #aaaaaa;
-}
-
-
-h1 {
-	color: #2eac2e;
-	margin-top: 0.7em;
-	margin-bottom: 0.3em;
-	padding-bottom: 0.2em;
-	line-height: 1.0;
-	padding-top: 1em;
 	border-bottom: 1px solid #aaaaaa;
 }
 
@@ -149,7 +139,7 @@ h2 {
 }
 
 h2 + h3 {
-    padding-top: 0.2em;
+	padding-top: 0.2em;
 }
 
 h3 {
@@ -310,7 +300,10 @@ span.comment, span.comment > *, span.string, span.string > * {
 }
 
 @media print {
-	#layout-menu { display: none; }
+	#layout-menu {
+		display: none;
+	}
+
 }
 
 #fwtitle {
@@ -349,32 +342,32 @@ img.eqwl {
 }
 
 table {
-    border: 2px solid black;
-    border-collapse: collapse;
+	border: 2px solid black;
+	border-collapse: collapse;
 }
 
 td {
-    padding: 2px;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    text-align: center;
-    border: 1px solid gray;
+	padding: 2px;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	text-align: center;
+	border: 1px solid gray;
 }
 
 table + table {
-    margin-top: 1em;
+	margin-top: 1em;
 }
 
 tr.heading {
-    font-weight: bold;
-    border-bottom: 2px solid black;
+	font-weight: bold;
+	border-bottom: 2px solid black;
 }
 
 img {
-    border: none;
+	border: none;
 }
 
 table.imgtable, table.imgtable td {
-    border: none;
-    text-align: left;
+	border: none;
+	text-align: left;
 }
