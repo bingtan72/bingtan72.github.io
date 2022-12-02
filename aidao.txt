@@ -1,0 +1,6 @@
+网站变灰代码，一行代码让网站整体变灰
+html {
+ filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+ -webkit-filter: grayscale(100%);
+}
+把代码加在网站的 jemdoc.css 文件。
