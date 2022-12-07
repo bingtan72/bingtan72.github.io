@@ -316,8 +316,3 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
-
-html {
- filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
- -webkit-filter: grayscale(100%);
- }

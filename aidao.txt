@@ -3,4 +3,4 @@ html {
  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
  -webkit-filter: grayscale(100%);
 }
-把代码加在网站的 jemdoc.css 文件。
+把代码加在网站的 jemdoc.css 文件（最后）。
