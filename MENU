@@ -2,24 +2,31 @@
 
 Bing Tan
 	Home			[index.html]
-	Team            [team.html]
+	Resume          [resume.html]
 	Biography       [bio.html]
+	Awards          [awards.html]
 	News            [news.html]
 
 Academic
 	Publications	[publications.html]
 	Research        [research.html]
+	Projects        [projects.html]
 	Conference		[conference.html]
 	Activities		[activities.html]
 	Codes			[codes.html]
 
-Miscellaneous
+Team
+	People          [people.html]
+
+Teaching
+    Courses         [courses.html]
+
+Resource
     Readings        [readings.html]	
 	Links           [links.html]
 	Notes           [notes.html]
 	
-中文
-    Resume          [resume.html]
+Other
 	Pictures        [pic.html]
 	Love            [Love.html]
 
