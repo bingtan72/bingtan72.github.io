@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" type="text/css" />
 <link rel="stylesheet" href="./bibtex.css" type="text/css" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="jemdoc-new.css" type="text/css" />
 <script src="./bootstrap/jquery.min.js" type="text/javascript"></script>
 <script src="./bootstrap/popper.min.js" type="text/javascript"></script>
 <script src="./bootstrap/bootstrap.min.js" type="text/javascript"></script>
@@ -330,5 +331,25 @@ Year: <a href="#2023">2023</a> /
 </td>
 </tr>
 </table>
+<script>
+function openNav() {
+    if (window.innerWidth <= 1200) {
+        document.getElementById("layout-menu").style.width = "280px";
+        document.getElementById("layout-content-container").style.marginLeft = "280.8px";
+        document.getElementById("layout-content-container").style.position = "fixed";
+    }
+}
+function closeNav() {
+    if (window.innerWidth <= 1200) {
+        document.getElementById("layout-menu").style.width = "0";
+        document.getElementById("layout-content-container").style.position = "static";
+        document.getElementById("layout-content-container").style.marginLeft = "0px";
+        setInterval(
+            function(){ location.reload() },
+            500
+        );
+    }
+}
+</script>
 </body>
 </html>
