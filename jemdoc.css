@@ -1,22 +1,54 @@
+/* Default css file for jemdoc. */
+:root{
+	--Maincol1: #63000a; /* #5D001E */ /* #d25300 */ /* #004400 */
+	--Maincol2: #a81624; /* #9A1750 */ /* #ff6400 */ /* #256b12 */
+	--Maincol3: #DA4453; /* #EE4C7C */ /* #ff7b26 */ /* #21A100 */
+	--Maincol4: #f66d7a; /* #E3AFBC */ /* #ff9c5b */ /* #6cb359 */
+	--menuBG:   #dadada; /* #E3E2DF */ /* #b68d72 */ /* #e4e4e4 */
+	--contentBG:#f7f7f7; /* #ffffff */ /* #ffd2b4 */ /* #F2F2F2 */
+}
+
+table#tlayout {
+    border: none;
+    border-collapse: separate;
+    background: var(--contentBG);
+}
+
 body {
-	background: white;
-	font-family: Times, serif;
-	font-size: 110%;
-	padding-bottom: 8px;	
-	width:100%;
-   max-width: 1100px;
+	background: var(--contentBG);
+	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+	color: #323232;
+	padding-bottom: 8px;
 	margin: 0;
 }
 
 #layout-menu {
-	background: #f4f4f4;
-	border: 1px solid #dddddd;
+	background: var(--menuBG);
+	border: 2px solid var(--Maincol4);
 	padding-top: 0.5em;
 	padding-left: 8px;
 	padding-right: 8px;
 	font-size: 1.0em;
-	width: auto;
+	width: 130px;
 	white-space: nowrap;
+    text-align: left;
+    vertical-align: top;
+}
+
+#layout-menu td {
+	background: white;
+    vertical-align: top;
+}
+
+#layout-content {
+	padding-top: 0.0em;
+	padding-left: 1.0em;
+	padding-right: 1.0em;
+    border: none;
+    background: var(--contentBG);
+    text-align: left;
+    vertical-align: top;
+	width: 1000px;
 }
 
 #layout-menu a {
@@ -25,12 +57,7 @@ body {
 }
 
 tt {
-	color: black;
-	background: #00FFFF;
-}
-
-tt.tthl {
-	color: black;
+    background: green;
 }
 
 pre, tt {
@@ -39,39 +66,32 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #000099;
+	color: var(--Maincol1);
 	text-decoration: none;
 }
 
-/* unvisited link */
-a:link {
-  color: #0000FF;
+a:link, a:active, a:visited {
+	color: var(--Maincol3);
 }
-
-/* visited link */
-a:visited {
-  color: #800080;
-}
-
 
 a:hover {
-	border-bottom: 1px gray dotted;
+	border-bottom: 1px var(--Maincol4) dotted;
 }
 
-layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #992b6d;    
-	border-bottom: 1px gray solid;
+#layout-menu a.current:link, #layout-menu a.current:visited {
+	color: var(--Maincol2);
+	border-bottom: 1px var(--Maincol2) solid;
 }
-layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-	color: #990000;
+#layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
+	color: var(--Maincol3);
 	text-decoration: none;
 }
-layout-menu a:hover {
+#layout-menu a:hover {
 	text-decoration: none;
 }
 
 div.menu-category {
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid var(--Maincol4);
 	margin-top: 0.8em;
 	padding-top: 0.2em;
 	padding-bottom: 0.1em;
@@ -86,7 +106,7 @@ div.menu-item {
 div#toptitle {
 	padding-bottom: 0.2em;
 	margin-bottom: 1.5em;
-	border-bottom: 3px double gray;
+	border-bottom: 3px double var(--Maincol1);
 }
 
 /* Reduce space if we begin the page with a title. */
@@ -101,12 +121,6 @@ div#subtitle {
 	padding-bottom: 0.1em;
 }
 
-#layout-content {
-	padding-top: 0.0em;
-	padding-left: 1.0em;
-	padding-right: 1.0em;
-}
-
 em {
 	font-style: italic;
 }
@@ -117,22 +131,23 @@ strong {
 
 
 h1, h2, h3 {
-	color: #990000;
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	color: var(--Maincol2);
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
 	line-height: 1.0;
 	padding-top: 0.5em;
-	border-bottom: 1px solid #aaaaaa;
+	border-bottom: 1px solid var(--Maincol1);
 }
 
 h1 {
-	font-size: 175%;
+	font-size: 165%;
 }
 
 h2 {
 	padding-top: 0.8em;
-	font-size: 135%;
+	font-size: 125%;
 }
 
 h2 + h3 {
@@ -140,7 +155,7 @@ h2 + h3 {
 }
 
 h3 {
-	font-size: 120%;
+	font-size: 110%;
 	border-bottom: none;
 }
 
@@ -158,10 +173,16 @@ pre {
 
 div#footer {
 	font-size: small;
-	border-top: 1px solid gray;
+	border-top: 1px solid var(--Maincol1);
 	padding-top: 0.1em;
 	margin-top: 4.0em;
+	color: var(--Maincol4);
 }
+
+div#footer a {
+	color: var(--Maincol4);
+}
+
 div#footer-text {
 	float: left;
 	padding-bottom: 8px;
@@ -233,13 +254,13 @@ div.codeblock, div.infoblock {
 
 div.blocktitle {
 	font-weight: bold;
-	color: #cd7b62;
+	color: orange;
 	margin-top: 1.2em;
 	margin-bottom: 0.1em;
 }
 
 div.blockcontent {
-	border: 1px solid silver;
+	border: 1px solid blue;
 	padding: 0.3em 0.5em;
 }
 
@@ -277,6 +298,9 @@ span.statement {
 span.builtin {
 	color: #000088;
 }
+span.special {
+	color: #990000;
+}
 span.operator {
 	color: #880000;
 }
@@ -312,10 +336,6 @@ div#toptitle h1, #layout-content div#toptitle h1 {
 	border-bottom: none;
 }
 
-img {
-    border: none;
-}
-
 img.eq {
 	padding: 0;
 	padding-left: 0.1em;
@@ -330,66 +350,33 @@ img.eqwl {
 	margin: 0;
 }
 
-
-invisible {
-	display: block;
-	color: white;
-	font-size: 50%;
-	line-height: 1px;
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
 }
 
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 0.0%;
+td {
+    padding: 2px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: center;
+    border: 1px solid gray;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+table + table {
+    margin-top: 1em;
 }
 
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
+tr.heading {
+    font-weight: bold;
+    border-bottom: 2px solid black;
 }
 
-/* Bottom left text */
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
+img {
+    border: none;
 }
 
-/* Top left text */
-.top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
-
-/* Top right text */
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
-
-/* Bottom right text */
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-}
-
-/* Centered text */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+table.imgtable, table.imgtable td {
+    border: none;
+    text-align: left;
 }
