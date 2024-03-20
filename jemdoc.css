@@ -49,7 +49,7 @@ body {
     background: var(--contentBG);
     text-align: left;
     vertical-align: top;
-    width: 80%; /* 相对于父元素宽度的90% */
+    width: 90%; /* 相对于父元素宽度的90% */
     max-width: 1000px; /* 设置最大宽度以防止内容在大屏幕上过宽 */}
 
 #layout-menu a {
