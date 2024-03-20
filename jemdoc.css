@@ -28,8 +28,8 @@ body {
 	padding-top: 0.5em;
 	padding-left: 8px;
 	padding-right: 8px;
-	font-size: 1.0em;
-	width: 140px;
+	font-size: 1.0sem;
+	width: 130px;
 	white-space: nowrap;
     text-align: left;
     vertical-align: top;
@@ -48,7 +48,7 @@ body {
     background: var(--contentBG);
     text-align: left;
     vertical-align: top;
-	width: 1000px;
+	width: 1100px;
 }
 
 #layout-menu a {
