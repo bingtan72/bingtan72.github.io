@@ -2,23 +2,17 @@
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<link rel="icon" href="school.ico" type="image/x-icon" />
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=GBK" />
-<meta name="google-site-verification" content="oyju0Mz3qXdK5eOnRVqUwdANI9c36Oa86-PoOV4qA4M" />
-<meta name="baidu-site-verification" content="qo2JwfS7nX" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="shortcut icon" type="image/png" href="http://khanhdang.github.com/favicon.ico"/>
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 <title></title>
-<!-- MathJax -->
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/latest.js?config=TeX-MML-AM_CHTML">
-</script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-	  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-</script>
-<!-- End MathJax -->
 </head>
 <body>
+<!-- Back to top button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
 <div id="layout-content">
 <p></p>
 <h2>Yinglin Luo (L.Luo)</h2>
@@ -61,5 +55,102 @@ Email: <a href="mailto:luoyinglink@163.com" target=&ldquo;blank&rdquo;>luoyingli
 <p></p>
 </div></div>
 </div>
+<!-- MathJax -->
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+<script>
+  function disableScrolling(){
+    var x=window.scrollX;
+    var y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
+  }
+  function enableScrolling(){
+      window.onscroll=function(){};
+  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-52343779-2');
+</script>
+<!-- End Google Analytics -->
+<script>
+    function myFunction() {
+      var navb = document.getElementById("myTopNav");
+      if (navb.classList.contains("responsive")) {
+          // enableScrolling();
+          navb.classList.remove("responsive");
+          // navb.style.height = "44px";
+          change('icon-menu');
+      } else {
+          // remove the button
+          // var mybutton = document.getElementById("myBtn");
+          // disableScrolling();
+          navb.classList.add("responsive");
+          // navb.style.height = "100%";
+          change('icon-menu');
+      }
+    }
+</script>
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  //window.onscroll = function() {scrollFunction()};
+  // move to stickFunction
+  function scrollFunction() {
+    if (window.pageYOffset > 200) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {stickFunction()};
+var viewPortWidth;
+var viewPortHeight;
+if (typeof window.innerWidth != 'undefined') {
+  viewPortWidth = window.innerWidth,
+  viewPortHeight = window.innerHeight
+}
+// Get the navbar
+var navbar = document.getElementById("myTopNav");
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickFunction() {
+  // if (viewPortWidth > 805) {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+  // }
+  if (window.pageYOffset > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+</script>
+<script>
+function change(iconID){
+  if(document.getElementById(iconID).className=="fa fa-bars"){
+    document.getElementById(iconID).className = "fa fa-times";
+  }else{
+    document.getElementById(iconID).className = "fa fa-bars";
+  }
+}
+</script>
 </body>
 </html>
