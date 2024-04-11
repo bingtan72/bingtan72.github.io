@@ -348,9 +348,9 @@ div.blockcontent {
 
 div.infoblock > div.blockcontent {
 	background: #fffbdd;
-	border: 1px solid #f9c513;
+	border: 1px solid #000000;
 	border-radius: 9px;
-	color: #f9c513;
+	color: #000000;
 }
 
 div.blockcontent p + ul, div.blockcontent p + ol {
