@@ -1,0 +1,752 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="oyju0Mz3qXdK5eOnRVqUwdANI9c36Oa86-PoOV4qA4M" />
+<meta name="baidu-site-verification" content="qo2JwfS7nX" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="icon" href="school.ico" type="image/x-icon" />
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./bootstrap/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<script src="./bootstrap/jquery.min.js" type="text/javascript"></script>
+<script src="./bootstrap/popper.min.js" type="text/javascript"></script>
+<script src="./bootstrap/bootstrap.min.js" type="text/javascript"></script>
+<title></title>
+</head>
+<body>
+<!-- Back to top button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+<div class="topnav" id="myTopNav" >
+<a href="index.html">Bing&nbsp;Tan</a>
+<a href="resume.html">Resume</a>
+<a href="news.html">News</a>
+<a href="calendar.html">Calendar</a>
+<a href="publications.html">Publications</a>
+<a href="research.html">Research</a>
+<a href="people.html">Group</a>
+<a href="courses.html">Courses</a>
+<a href="links.html" class="active">Links</a>
+<a href="pic.html">Pictures</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i id="icon-menu" class="fa fa-bars"></i>
+</a>
+</div>
+<div class="content">
+<h1>jemdoc &ndash; cheatsheet</h1>
+<h2>Basic formatting</h2>
+<ul>
+<li><p><i>/italics/</i></p>
+</li>
+<li><p><b>*bold*</b></p>
+</li>
+<li><p><tt>+monospace+</tt></p>
+</li>
+<li><p><tt>-</tt> is a hyphen (-)</p>
+</li>
+<li><p><tt>--</tt> is an en-dash (&ndash;)</p>
+</li>
+<li><p><tt>---</tt> is an em-dash (&#8201;&mdash;&#8201;)</p>
+</li>
+<li><p><tt>...</tt> is an ellipsis (&hellip;)</p>
+</li>
+<li><p><tt>~</tt> is a non-breaking space (&nbsp;)</p>
+</li>
+<li><p><tt>#</tt> begins a comment, for the remainder of the line</p>
+</li>
+<li><p><tt>\C</tt> is &copy;</p>
+</li>
+<li><p><tt>\R</tt> is &reg;</p>
+</li>
+<li><p><tt>\M</tt> is &middot;</p>
+</li>
+<li><p>&lsquo;singly quoted text&rsquo; is written <tt>`singly quoted text'</tt></p>
+</li>
+<li><p>&ldquo;doubly quoted text&rdquo; is written <tt>"doubly quoted text"</tt></p>
+</li>
+<li><p>jemdoc's apostrophes are converted automatically from <tt>jemdoc's</tt> input</p>
+</li>
+<li><p>the sequence <tt>\n</tt> <br /> forces a manual line break</p>
+</li>
+<li><p>paragraphs are separated by blank lines</p>
+</li>
+<li><p><tt>$inline LaTeX equation$</tt></p>
+</li>
+<li><p><tt>\( LaTeX equation on its own line \)</tt></p>
+</li>
+<li><p><tt>#</tt>s (and only <tt>#</tt>s) must be quoted in URLs</p>
+</li>
+</ul>
+<h2>Blocks</h2>
+<div class="codeblock">
+<div class="blocktitle">Code block syntax</div>
+<div class="blockcontent"><pre>
+~~~
+{Optionally empty title}{Optionally empty highlight mode}
+Code block with monospaced text.
+~~~
+</pre></div></div>
+<div class="infoblock">
+<div class="blocktitle">Information block</div>
+<div class="blockcontent">
+<p>Omit the second pair of braces in the first line of the block (or omit the whole
+first line altogether if you don't want a title) and you will get an
+<i>information block</i>. All the usual conventions apply in here.</p>
+</div></div>
+<h2>Headings and lists</h2>
+<p>Headings are defined by starting a line with <tt>=</tt>.</p>
+<ul>
+<li><p><tt>= Heading level 1</tt></p>
+</li>
+<li><p><tt>== Heading level 2</tt>, <i>etc.</i></p>
+</li>
+</ul>
+<p>Lists are defined with <tt>-</tt> for bulleted lists, <tt>.</tt> for numbered lists and <tt>:</tt>
+for lists of definitions. Here is some code and the resulting list:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+- Bullet level one
+    -- Bullet level two
+
+. Number level one
+    .. Number level two
+    .. Number level two (again)
+
+: {jemdoc} light markup
+: {asciidoc} a great alternative, but more complicated
+</pre></div></div>
+<div class="infoblock">
+<div class="blockcontent">
+<ul>
+<li><p>Bullet level one</p>
+<ul>
+<li><p>Bullet level two</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ol>
+<li><p>Number level one</p>
+<ol>
+<li><p>Number level two</p>
+</li>
+<li><p>Number level two (again)</p>
+</li>
+</ol>
+
+</li>
+</ol>
+<dl>
+<dt>jemdoc</dt>
+<dd><p>light markup</p></dd>
+<dt>asciidoc</dt>
+<dd><p>a great alternative, but more complicated</p></dd>
+</dl>
+</div></div>
+<h2>Preventing matches</h2>
+<ul>
+<li><p>a literal backslash (\) is written <tt>\\\\</tt> </p>
+</li>
+<li><p>the literal characters /, *, + and ~ and # are written <tt>\/</tt>, <tt>\*</tt>,
+<tt>\+</tt>, <tt>\~</tt> and <tt>\#</tt> to avoid the above formatting</p>
+</li>
+<li><p><tt>\...</tt> avoids an ellipsis</p>
+</li>
+<li><p><tt>-\-</tt> avoids an en-dash</p>
+</li>
+<li><p><tt>-\-\-</tt> avoids an em-dash</p>
+</li>
+<li><p><tt>\`</tt> gives a back-tick (`)</p>
+</li>
+<li><p><tt>\'</tt> gives an ordinary single quotation mark (')</p>
+</li>
+<li><p><tt>\"</tt> gives an ordinary double quotation mark (")</p>
+</li>
+</ul>
+<h2>Other stuff</h2>
+<ul>
+<li><p><tt>{{html text}}</tt> will insert <tt>html text</tt> directly into the output document
+without performing any substitutions. (This is for inline escaping; use
+<a href="extra.html" target=&ldquo;blank&rdquo;>raw blocks</a> for larger amounts of html.)</p>
+</li>
+<li><p><tt>%quoted tt%</tt> is an alias for <tt>+{{quoted tt}}+</tt>. It's not quite as
+robust, so use <tt>+{{plus signs with double brace blocks}}+</tt> if you run into
+problems with some characters.</p>
+</li>
+<li><p><tt>{\{text}\}</tt> <i>will</i> perform replacements and insert {{text}}.</p>
+</li>
+</ul>
+<p>These are some extended syntax options that may come in useful.</p>
+<h2>Left aligned image blocks</h2>
+<p>As seen <a href="http://stanford.edu/~jacobm" target=&ldquo;blank&rdquo;>here</a>, for example,
+left-aligned image blocks place an image and allow ordinary jemdoc marked-up
+text to flow around the right-hand side.</p>
+<div class="codeblock">
+<div class="blocktitle">Left-aligned image block syntax</div>
+<div class="blockcontent"><pre>
+~~~
+{}{img_left}{FILENAME.IMG}{alt text}{WIDTHpx}{HEIGHTpx}{IMGLINKTARGET}
+Ordinary jemdoc markup goes here.
+~~~
+</pre></div></div>
+<p>All arguments may be left blank, though you should specify an image filename,
+and alt text should be descriptive for reasons like
+<a href="http://en.wikipedia.org/wiki/Wikipedia:Alternative_text_for_images" target=&ldquo;blank&rdquo;>those given
+by Wikipedia</a>.</p>
+<h2>Raw blocks</h2>
+<p>When placing large amounts of raw html, you should use a raw block instead of
+<tt>{{inline html escaping}}</tt>. As well as cleaner syntax, raw blocks will avoid
+having <tt>&lt;p&gt;</tt> tags in the wrong places.</p>
+<div class="codeblock">
+<div class="blocktitle">Raw block syntax</div>
+<div class="blockcontent"><pre>
+~~~
+{}{raw}
+Any text here will be copied straight to the output file without processing.
+~~~
+</pre></div></div>
+<h2>Other character sets</h2>
+<p>Here's a quick example of how to include text in a language with a different
+character set.</p>
+<p>To include Korean (<span lang="ko" xml:lang="ko">한국말</span>),
+use something like this:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+{{&lt;span lang="ko" xml:lang="ko"&gt;}}한국말{{&lt;/span&gt;}}
+</pre></div></div>
+<p>(<a href="mailto:jacobm@stanford.edu" target=&ldquo;blank&rdquo;>Let me know</a> if you need better support for your
+language.)</p>
+<h2>Including other files</h2>
+<p>The line</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+#include{otherfile.jemdoc}
+</pre></div></div>
+<p>will include the contents of <tt>otherfile.jemdoc</tt> as if the contents were actually
+in the ordinary input file (that is, with full jemdoc substitutions).
+The line</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+#includeraw{otherfile.html}
+</pre></div></div>
+<p>will copy the contents of <tt>otherfile.html</tt> verbatim to the current position in
+the output file (that is, without any jemdoc substitutions).</p>
+<h1>jemdoc &ndash; html changes</h1>
+<p>jemdoc has a built-in default configuration. This configuration includes the
+particular html tags used when producing html. If you wish to adjust the html
+that jemdoc produces, you can provide a configuration file to override the
+built-in defaults.</p>
+<h2>Example html change</h2>
+<p>Suppose you wanted to add <a href="http://www.google.com/analytics/" target=&ldquo;blank&rdquo;>Google
+Analytics</a> tracking to your website. That requires adding a short section of
+html before the <tt>&lt;/body&gt;</tt> tag.</p>
+<p>First, find out which block needs to be changed by using</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+jemdoc --show-config
+</pre></div></div>
+<p>This prints the default html configuration. From this, the relevant
+configuration block (the one which includes the <tt>&lt;/body&gt;</tt> tag) has a title
+<tt>[bodyend]</tt>, and looks like</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+[bodyend]
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></div></div>
+<p>Create a new file <tt>mysite.conf</tt>, say, and put a new <tt>[bodyend]</tt> block
+inside it. The new file looks like this:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+[bodyend]
+&lt;script src="http://www.google-analytics.com/urchin.js" type="text/javascript"&gt;
+&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+_uacct = "UA-0000000-0";
+urchinTracker();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></div></div>
+<p>Include your new configuration file, with the <tt>-c</tt> option (<a href="using.html" target=&ldquo;blank&rdquo;>more
+details here</a>):</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+jemdoc -c mysite.conf index.jemdoc
+</pre></div></div>
+<p>This will pull in the new <tt>[bodyend]</tt> block from <tt>mysite.conf</tt>, but otherwise
+work as before.</p>
+<h1>jemdoc &ndash; latex equations</h1>
+<p>jemdoc includes support for LaTeX equations. LaTeX source embedded in jemdoc
+files is processed by calling <a href="http://www.latex-project.org/" target=&ldquo;blank&rdquo;><tt>latex</tt></a> and
+<a href="http://www.nongnu.org/dvipng/" target=&ldquo;blank&rdquo;><tt>dvipng</tt></a> (which must both be available for this
+feature). Resulting PNG images are then placed on the web page. Equations are
+typeset using pure LaTeX.</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>jemdoc equation support relies on several pieces, any of which may break. No
+guarantees! Support may be limited.</p>
+</div></div>
+<h2>Inline equations</h2>
+<p>The conjugate function \(f^\star(y) = \sup_{x \in X}(y^Tx - f(x))\) appears here
+inline, and is in the variable \(y\). Dollar signs (<tt>$</tt>) surround the LaTeX
+equation in the jemdoc source.</p>
+<div class="codeblock">
+<div class="blocktitle">Syntax</div>
+<div class="blockcontent"><pre>
+The sample function $f^\star(y) = \sup_{x \in X}(y^Tx - f(x))$
+appears here inline, and is in the variable $y$.
+</pre></div></div>
+<h2>Equations on separate lines</h2>
+<p>To render an equation on its own line, use backslash-escaped round brackets
+(<tt>\(</tt> and <tt>\)</tt>). For example, the identity</p>
+<p style="text-align:center">
+\[
+(I + XY)^{-1} = I - X(I + YX)^{-1}Y
+\]
+</p><p>is typeset on its own line. Yes, round brackets instead of square
+brackets&#8201;&mdash;&#8201;this is to avoid a conflict with ordinary square brackets that are
+escaped to avoid being a link.  Sorry.</p>
+<div class="codeblock">
+<div class="blocktitle">Syntax</div>
+<div class="blockcontent"><pre>
+The identity
+\(
+    (I \+ XY)^{-1} = I - X(I \+ YX)^{-1}Y
+\)
+is typeset on its own line.
+</pre></div></div>
+<p>Here, the line breaks (and other whitespace) are ignored. As always, the exact
+formatting details can be adjusted using CSS.</p>
+<h2>Notes</h2>
+<ul>
+<li><p>The baseline is carefully adjusted. The sequences m\(m\)m and y\(y\)y (<tt>m$m$m</tt>
+and <tt>y$y$y</tt>), for example, should be neatly aligned (modulo bad browsers).</p>
+</li>
+<li><p>Definition by cases will work as expected, for example, \(f(x)\), where</p>
+</li>
+</ul>
+<p style="text-align:center">
+\[
+  f(x) = \left\{
+  \begin{array}{ll}
+  3, &amp; x \leq 0 \\
+  5, &amp; x &gt; 0. \\
+  \end{array}\right.
+  \]
+</p><ul>
+<li><p>A random inequality might look like \(3x + 2y^{4k + 6} \geq z\).</p>
+</li>
+<li><p>This page takes about 0.7 seconds to process on an average machine, including
+making all the equations from scratch.</p>
+</li>
+<li><p>There are several configuration options for equations. They are detailed on
+the <a href="modelines.html" target=&ldquo;blank&rdquo;>modelines</a> page.</p>
+</li>
+</ul>
+<h2>Link Example</h2>
+<p>You can control the behavior of a link: by default the link opens in a new web broswer tab, but by putting a slash (<tt>/</tt>) character at the beginning of the link address you can make it open in the current web broswer tab.</p>
+<p>For example, <a href="mathjax.html" target=&ldquo;blank&rdquo;>[mathjax.html]</a> opens in a new web broswer tab, but <a href="mathjax.html">[/mathjax.html]</a> opens in the current web browser tab.  The link opening in a new tab is useful for linking an external website (like <a href="http://www.google.com" target=&ldquo;blank&rdquo;>http://www.google.com</a>), whereas the link opening in the current tab is useful for liking your jemdoc page (such as the page linked as a jemdoc menu item on the left panel).</p>
+<p>Unlike the link in the main text, a jemdoc menu item link on the left panel opens in the current tab by default, because you want to stay in the same tab while navigating menu items.  However, you can override this default behavior and make it open in a new tab by putting a backslash (<tt>\</tt>) character in the beginning of the link of the menu item.  This is useful when putting an external website as a menu item.  See this usage in &ldquo;Open in New Tab&rdquo; menu item on the left panel, which is defined in MENU file.</p>
+<h2>MathJax Example</h2>
+<p>In this modified version of <tt>jemdoc</tt>, a LaTeX equation block can be typed in as</p>
+<p style="text-align:center">
+\[
+\nabla \cdot \mathbf{D} = \rho_f\\
+\nabla \cdot \mathbf{B} = 0,\\
+\nabla \times \mathbf{E} = -\frac{\partial\mathbf{B}}{\partial t}\\
+\nabla \times \mathbf{H} = \mathbf{J}_f - \frac{\partial\mathbf{D}}{\partial t}.
+\]
+</p><p>You can also align equations using LaTeX's <tt>aligned</tt> block:</p>
+<p style="text-align:center">
+\[
+\begin{aligned}
+\nabla \cdot \mathbf{D} &amp;= \rho_f\\
+\nabla \cdot \mathbf{B} &amp;= 0\\
+\nabla \times \mathbf{E} &amp;= -\frac{\partial\mathbf{B}}{\partial t}\\
+\nabla \times \mathbf{H} &amp;= \mathbf{J}_f - \frac{\partial\mathbf{D}}{\partial t}.
+\end{aligned}
+\]
+</p><p>To number the equation block, wrap the equations with LaTeX's <tt>equation</tt> block:</p>
+<p style="text-align:center">
+\[
+\begin{equation}
+\begin{aligned}
+\nabla \cdot \mathbf{D} &amp;= \rho_f\\
+\nabla \cdot \mathbf{B} &amp;= 0\\
+\nabla \times \mathbf{E} &amp;= -\frac{\partial\mathbf{B}}{\partial t}\\
+\nabla \times \mathbf{H} &amp;= \mathbf{J}_f - \frac{\partial\mathbf{D}}{\partial t}.
+\end{aligned}
+\end{equation}
+\]
+</p><p>Instead, you can use LaTeX's <tt>align</tt> (not <tt>aligned</tt>) block to number the individual equations:</p>
+<p style="text-align:center">
+\[
+\begin{align}
+\nabla \cdot \mathbf{D} &amp;= \rho_f\label{eq:D}\\
+\nabla \cdot \mathbf{B} &amp;= 0\label{eq:B}\\
+\nabla \times \mathbf{E} &amp;= -\frac{\partial\mathbf{B}}{\partial t}\label{eq:E}\\
+\nabla \times \mathbf{H} &amp;= \mathbf{J}_f - \frac{\partial\mathbf{D}}{\partial t}\label{eq:H}
+\end{align}
+\]
+</p><p>You can also type inline equations as \(A x = b\).  Referencing equations is done as Eqs.&nbsp;\(\eqref{eq:E}\) and \(\eqref{eq:H}\).</p>
+<h1>jemdoc &ndash; add a menu</h1>
+<p>jemdoc provides an easy way to add a &lsquo;menu&rsquo; like the one you see at the left of
+this page. You should create a file called <tt>MENU</tt>, for example, in the current
+directory. This website's <tt>MENU</tt> looks something like this:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+jemdoc
+    home                [index.html]
+    download            [download.html]
+    revision history    [revision.html]
+    contact             [contact.html]
+
+user's guide
+    cheat sheet         [cheatsheet.html]
+    using               [using.html]
+
+goodies
+    add a menu          [menu.html]
+    other stuff         [stuff.html]
+</pre></div></div>
+<p>To use the menu, start the first line of <i>each</i> source file with a special
+comment like this one:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+# jemdoc: menu{MENU}{index.html}
+</pre></div></div>
+<p>(Replace <tt>index.html</tt> with the name of the relevant html page.) This will add a
+menu from the file called <tt>MENU</tt>, and underline and darken the menu entry
+corresponding to <tt>index.html</tt>.</p>
+<h2>Relative paths</h2>
+<p>Optionally, include a <tt>prefix</tt> which instructs jemdoc where the root of the menu
+is located relative to a particular page.</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+# jemdoc: menu{MENU}{pageinsubdir.html}{prefix}
+</pre></div></div>
+<h2>A note on menu widths</h2>
+<p>jemdoc will create menu entries that do not wrap. If you have a particularly
+long title, or menu item, insert manual linebreaks using <tt>\</tt><tt>n</tt> in your
+MENU file. Multi-line menu items will (by default) have their second and
+subsequent lines slightly indented.</p>
+<h1>jemdoc &ndash; modelines</h1>
+<p>jemdoc includes a mechanism for specifying options inside a source file. It is
+called a <i>modeline</i>, after the same concept in <a href="http://www.vim.org" target=&ldquo;blank&rdquo;>vim</a>.  To use
+a modeline, start your jemdoc source file (on the first line) with the exact
+string <tt>#&nbsp;jemdoc:</tt>. Follow this string with one or more <i>modeline options</i>,
+separated with commas (and any amount of white space).</p>
+<p>Multiple modelines can be included if they are all at the beginning of the file,
+and start with the same string. The modeline can be omitted altogether.</p>
+<h2>Modeline options</h2>
+<h3>General</h3>
+<ul>
+<li><p><tt>menu{MENUFILENAME}{CURRENTFILENAME}</tt><br />
+Place a <a href="menu.html" target=&ldquo;blank&rdquo;>menu</a> at the left of the page.</p>
+</li>
+<li><p><tt>nodefaultcss</tt><br />
+Clear the list of CSS stylesheets included by the page.</p>
+</li>
+<li><p><tt>addcss{CSSSHEET}</tt><br />
+Explicitly include an additional custom CSS stylesheet.</p>
+</li>
+<li><p><tt>addjs{scriptname}</tt><br />
+Explicitly include the javascript file <tt>scriptname.js</tt>.</p>
+</li>
+<li><p><tt>fwtitle</tt><br />
+Makes the page title <i>full width</i> so the menu <i>and</i> the body lie underneath
+the title.</p>
+</li>
+<li><p><tt>title{NEW TITLE}</tt><br />
+Manually sets the titlebar text to <tt>NEW TITLE</tt>.</p>
+</li>
+</ul>
+<h3>Extras</h3>
+<ul>
+<li><p><tt>analytics{ANALYTICS KEY}</tt><br />
+Adds Google Analytics support. The key is typically in the form
+<tt>UA-0000000-0</tt>. Sign up for Google Analytics
+<a href="http://www.google.com/analytics/" target=&ldquo;blank&rdquo;>here</a>.</p>
+</li>
+</ul>
+<h3>Footers</h3>
+<ul>
+<li><p><tt>notime</tt><br />
+Withhold the time from the &lsquo;Page generated&rsquo; footer.</p>
+</li>
+<li><p><tt>nodate</tt><br />
+Withhold the date and the time from the &lsquo;Page generated&rsquo; footer.</p>
+</li>
+<li><p><tt>showsource</tt><br />
+Include a link, in the footer, to the jemdoc source.</p>
+</li>
+<li><p><tt>nofooter</tt><br />
+Withhold the footer altogether (overrides the above options).</p>
+</li>
+</ul>
+<h3>Equations</h3>
+<ul>
+<li><p><tt>noeqs</tt><br />
+Disable LaTeX equation support.</p>
+</li>
+<li><p><tt>eqsize{SIZE}</tt><br />
+Adjust the size of the equations (default <tt>130</tt>).</p>
+</li>
+<li><p><tt>eqdir{EQDIR}</tt><br />
+Adjust the equation directory (default <tt>eqs</tt>).</p>
+</li>
+<li><p><tt>noeqcache</tt><br />
+Disable equation caching.</p>
+</li>
+<li><p><tt>addpackage{LATEX<u>PACKAGE</u>NAME}</tt><br />
+Includes support for <tt>LATEX<u>PACKAGE</u>NAME</tt> when compiling the equations.</p>
+</li>
+</ul>
+<h2>Examples</h2>
+<div class="codeblock">
+<div class="blocktitle">This page</div>
+<div class="blockcontent"><pre>
+# jemdoc: menu{MENU}{modelines.html}, showsource
+</pre></div></div>
+<div class="codeblock">
+<div class="blocktitle">Use a different stylesheet altogether</div>
+<div class="blockcontent"><pre>
+# jemdoc: nodefaultcss, addcss{custom.css}
+</pre></div></div>
+<div class="codeblock">
+<div class="blocktitle">Combine various options</div>
+<div class="blockcontent"><pre>
+# jemdoc: nodefaultcss, addcss{custom.css}{another.css}
+# jemdoc: showsource, addcss{yetanother.css}
+</pre></div></div>
+<h1>jemdoc &ndash; tables</h1>
+<p>jemdoc includes preliminary support for tables.</p>
+<div class="codeblock">
+<div class="blocktitle">Table syntax</div>
+<div class="blockcontent"><pre>
+~~~
+{}{table}{TABLENAME}
+first entry  | another entry ||
+as many rows | as you like   ||
+bottom row   | last entry
+~~~
+</pre></div></div>
+<p><tt>TABLENAME</tt> should either be replaced with a name&#8201;&mdash;&#8201;which becomes the table's
+<tt>css</tt> <tt>id</tt>&#8201;&mdash;&#8201;or be omitted.</p>
+<h2>Notes</h2>
+<ul>
+<li><p>There is no need to line up the <tt>|</tt> symbols. Extra whitespace is ignored.</p>
+</li>
+<li><p>The last row does not need a terminating <tt>||</tt>.</p>
+</li>
+<li><p>Individual tables can be customised by replacing <tt>TABLENAME</tt> with a unique
+name, and using custom css. For example, within
+a css file, <tt>#countries { background: gray; }</tt> will make the background of
+the <tt>countries</tt> table gray.</p>
+</li>
+<li><p>Rows in a table are numbered sequentially for easy formatting with css. For
+example, to make the entries in the first row of a table called <tt>countries</tt>
+bold, use <tt>#countries tr.r1 { font-weight: bold; }</tt>.</p>
+</li>
+</ul>
+<h2>Example</h2>
+<table id="countries">
+<tr class="r1"><td class="c1">country </td><td class="c2"> population </td><td class="c3"> people per square km </td></tr>
+<tr class="r2"><td class="c1">Canada </td><td class="c2"> 33 million </td><td class="c3"> 3.2 </td></tr>
+<tr class="r3"><td class="c1">
+<span lang="zh-Hans">中华人民共和国</span><br /> </td><td class="c2"> 1300 million </td><td class="c2"> 140 </td></tr>
+<tr class="r5"><td class="c1">Kingdom of Denmark </td><td class="c2"> 5.5 million </td><td class="c3"> 130 </td></tr>
+<tr class="r6"><td class="c1">New Zealand </td><td class="c2"> 4.3 million </td><td class="c3"> 15 </td></tr>
+<tr class="r7"><td class="c1">United States of America </td><td class="c2"> 300 million </td><td class="c3"> 31
+</td></tr></table>
+<h2>Underscore Example</h2>
+<p>Like <b>bold</b> and <i>italic</i>, <u>underscore</u> can be used for emphasis in this modified version of <tt>jemdoc</tt>.  Useful for highlighting different parts of a bibliography item as:</p>
+<p>1. <u>First Author</u>, Second Author, and <b>Corresponding Author</b>, &ldquo;Amazing Paper,&rdquo; <i>High-impact Journal</i>, vol.&nbsp;1, pp.&nbsp;1&ndash;10 (2014).</p>
+<h1>jemdoc &ndash; running jemdoc</h1>
+<p>Make sure
+<a href="http://www.python.org/" target=&ldquo;blank&rdquo;>Python</a> is installed, put jemdoc in your path somewhere,
+type in your file, and run</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+jemdoc index.jemdoc
+</pre></div></div>
+<p>This will use a default configuration for the html elements, and create an
+<tt>index.html</tt>.</p>
+<p>Even simpler, you can omit the extension, and jemdoc will still
+process the <tt>index.jemdoc</tt> file, as in</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+jemdoc index
+</pre></div></div>
+<h2>CSS</h2>
+<p>You will need to provide a <a href="http://www.w3.org/Style/CSS/" target=&ldquo;blank&rdquo;>CSS</a> file on your
+server. By default it should be called <tt>jemdoc.css</tt>. Here is an example
+<a href="dist/jemdoc.css" target=&ldquo;blank&rdquo;>jemdoc.css</a> file: download it and place it in the same
+directory as your html files. (Or customize it, or start from scratch!)</p>
+<h2>Change the configuration</h2>
+<p>To choose a different output file, use <tt>-o</tt>:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+jemdoc -o html/index.html index
+</pre></div></div>
+<p>You can specify a different output directory with <tt>-o</tt>:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+jemdoc -o html/ index
+</pre></div></div>
+<p>This will instead output to <tt>html/index.html</tt>.</p>
+<p>To change the html configuration (<a href="htmlchanges.html" target=&ldquo;blank&rdquo;>details here</a>), use <tt>-c</tt>:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+jemdoc -c mysite.conf index
+</pre></div></div>
+<p>Command line options may be combined. For example, the following command will
+use <tt>mysite.conf</tt>, reading syntax from <tt>index.jemdoc</tt> and outputting to
+<tt>html/index.html</tt>:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+jemdoc -c mysite.conf -o html/ index
+</pre></div></div>
+<h2>Other command line options</h2>
+<p>To check which version of jemdoc you are using, run the command</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+jemdoc --version
+</pre></div></div>
+<p>To get simple command-line help, you can run <tt>jemdoc</tt> without arguments, or</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+jemdoc --help
+</pre></div></div>
+<p>To show the html configuration (<a href="htmlchanges.html" target=&ldquo;blank&rdquo;>details here</a>), run</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+jemdoc --show-config
+</pre></div></div>
+<h2>Visitor Stats.
+</h2>
+<p>
+</p>
+<div><script type="text/javascript" src="//rf.revolvermaps.com/0/0/2.js?i=5ui9q29no9a&amp;m=6&amp;s=130&amp;c=ff0000&amp;t=1" async="async"></script>
+</div>
+<div>
+<!-- Begin ShinyStat Code -->
+<script type="text/javascript" src="//codice.shinystat.com/cgi-bin/getcod.cgi?USER=bingtan72"></script>
+<noscript>
+<a href="http://www.shinystat.com" target="_top">
+<img src="//www.shinystat.com/cgi-bin/shinystat.cgi?USER=bingtan72" alt="Free website counter" style="border:0px" /></a>
+</noscript>
+<!-- End ShinyStat Code -->
+</div>
+<!-- MathJax -->
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162688124-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-162688124-1');
+</script>
+<script>
+  function disableScrolling(){
+    var x=window.scrollX;
+    var y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
+  }
+  function enableScrolling(){
+      window.onscroll=function(){};
+  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-162688124-1');
+</script>
+<!-- End Google Analytics -->
+<script>
+    function myFunction() {
+      var navb = document.getElementById("myTopNav");
+      if (navb.classList.contains("responsive")) {
+          // enableScrolling();
+          navb.classList.remove("responsive");
+          // navb.style.height = "44px";
+          change('icon-menu');
+      } else {
+          // remove the button
+          // var mybutton = document.getElementById("myBtn");
+          // disableScrolling();
+          navb.classList.add("responsive");
+          // navb.style.height = "100%";
+          change('icon-menu');
+      }
+    }
+</script>
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  //window.onscroll = function() {scrollFunction()};
+  // move to stickFunction
+  function scrollFunction() {
+    if (window.pageYOffset > 200) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {stickFunction()};
+var viewPortWidth;
+var viewPortHeight;
+if (typeof window.innerWidth != 'undefined') {
+  viewPortWidth = window.innerWidth,
+  viewPortHeight = window.innerHeight
+}
+// Get the navbar
+var navbar = document.getElementById("myTopNav");
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickFunction() {
+  // if (viewPortWidth > 805) {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+  // }
+  if (window.pageYOffset > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+</script>
+<script>
+function change(iconID){
+  if(document.getElementById(iconID).className=="fa fa-bars"){
+    document.getElementById(iconID).className = "fa fa-times";
+  }else{
+    document.getElementById(iconID).className = "fa fa-bars";
+  }
+}
+</script>
+</body>
+</html>
