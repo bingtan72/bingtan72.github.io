@@ -18,7 +18,7 @@ html {
 }
 body {
 	background: white;
-	font-family: "Inter", Helvetica, sans-serif;
+	font-family: Myriad Web, Geneva, Arial, sans-serif;
 
 	width: 100%;
 	display: table-cell;
@@ -44,7 +44,7 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #1b357c;
+	color: #203E70;
 	text-decoration: none;
 }
 
@@ -69,7 +69,7 @@ a:hover  {
 div#toptitle {
 	padding-bottom: 0.2em;
 	margin-bottom: 1.5em;
-	border-bottom: 1px solid #bbbbbbbb;
+	border-bottom: 1px solid #203E70;
 }
 
 /* Reduce space if we begin the page with a title. */
@@ -92,7 +92,7 @@ b {
 }
 
 h1, h2, h3 {
-	color: #3a3a3a;
+	color: #203E70;
 	font-weight: bold;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
@@ -102,12 +102,12 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 115%;
+	font-size: 185%;
 }
 
 h2 {
 	padding-top: 0.8em;
-	font-size: 110%;
+	font-size: 145%;
 }
 
 h2 + h3 {
@@ -115,7 +115,7 @@ h2 + h3 {
 }
 
 h3 {
-	font-size: 105%;
+	font-size: 130%;
 	border-bottom: none;
 }
 
@@ -124,7 +124,7 @@ p {
 	margin-bottom: 0.8em;
 	padding: 0;
 	line-height: 1.3;
-	font-size: 100%;
+	font-size: 110%;
 	/* font-size: 1.0vw; */
 }
 
@@ -139,11 +139,11 @@ div#footer {
 	padding-top: 0.1em;
 	margin-top: 4.0em;
 	text-align: center;
-	color: #c0c0c0;
+	color: ##203E70;
 }
 
 div#footer a {
-	color: #404040;
+	color: #203E70;
 
 }
 
@@ -168,7 +168,7 @@ dl {
 }
 
 dd {
-	color: #222222;
+	color: #203E70;
 }
 
 dd > *:first-child {
@@ -404,27 +404,31 @@ table.imgtable, table.imgtable td {
 .topnav a {
   float: left;
   display: block;
-  color: #363636;
+  color: #203E70;
   text-align: center;
   padding: 20px 16px;
-  font-size: 115%;
+  /*font-weight: bold;*/ 
+  font-size: 130%;
 }
 
 .topnav a:hover {
   background-color: #eee;
-  color: #4CAF50;
-  /* font-weight: bold; */
+  color: #203E70;
+  /*font-weight: bold;*/ 
+  font-size: 130%;
 
 }
 
 .topnav a.active {
   background-color: white; 
-  color: #4CAF50;
+  color: #203E70;
+  font-weight: bold; 
+  font-size: 130%;
 }
 
 
 .topnav a:first-child{
-	color:  #4CAF50; 
+	color:  #203E70; 
 	font-weight: bolder;
 	/* background: url(images/bg_separator.gif) no-repeat right center; */
 }
@@ -461,7 +465,7 @@ table.imgtable, table.imgtable td {
 
 	.topnav a.active{
 		display: inline;
-		color:  #4CAF50; 
+		color:  #203E70; 
 		font-weight: normal;
 		text-align: left;
 		background: url(images/bg_separator.gif) no-repeat left center;
@@ -469,7 +473,7 @@ table.imgtable, table.imgtable td {
 	}
 	
 	.topnav a:first-child{
-		color:  #4CAF50; 
+		color:  #203E70; 
 		font-weight: bold;
 		text-align: left;
 		background: none;
@@ -482,7 +486,7 @@ table.imgtable, table.imgtable td {
 	display: block;
 	position: absolute;
 	right: 0px;
-	color:  #4CAF50; 
+	color:  #203E70; 
   }
 
   .topnav a:hover{
@@ -512,7 +516,7 @@ table.imgtable, table.imgtable td {
   	position: absolute;
     right: 0px;
 	top: 0;
-	color:  #4CAF50; 
+	color:  #203E70; 
 	background-color: white;
   }
   .topnav.responsive a {
@@ -585,7 +589,7 @@ table.imgtable, table.imgtable td {
   font-size: 12px;
   border: none;
   outline: none;
-  background-color: #4CAF50;
+  background-color: #203E70;
   color: white;
   cursor: pointer;
   padding: 12px;
@@ -601,7 +605,7 @@ table.imgtable, table.imgtable td {
   color: #fff;
 }
 #myBtn:hover {
-  background-color: #2d652f;
+  background-color: #203E70;
 }
 
 @media print {
@@ -617,7 +621,7 @@ table.imgtable, table.imgtable td {
 	}
 	.topnav a.active  {
 		background-color: #fff;
-		color:  #2d652f;
+		color:  #203E70;
 		font-weight: bolder;
 	}
 	.topnav a:first-child {
