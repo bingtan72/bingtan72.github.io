@@ -157,6 +157,9 @@ function stickFunction() {
 }
 </script>
 <script>
+document.addEventListener("DOMContentLoaded", function() {
+  loadDarkTheme();
+});
 function toggleDarkTheme() {
   document.body.classList.toggle("dark-theme");
   // Save dark theme state in localStorage
