@@ -25,6 +25,208 @@ body {
 	vertical-align: middle;
 }
 
+/* Updated dark theme CSS */
+/* Updated dark theme CSS */
+body.dark-theme {
+  color: #e1e1e1;
+  background: #121212;
+}
+
+body.dark-theme div#main-container {
+  background-color: #121212;
+}
+
+body.dark-theme a, body.dark-theme a > tt {
+  color: #80d4ff;
+}
+
+body.dark-theme a:hover, body.dark-theme a:hover > tt {
+  color: #ffc600;
+}
+
+body.dark-theme #layout-menu a.current:link, body.dark-theme #layout-menu a.current:visited {
+  color: #bababa;
+}
+
+body.dark-theme #layout-menu a:link, body.dark-theme #layout-menu a:visited, body.dark-theme #layout-menu a:hover {
+  color: #80d4ff;
+}
+
+body.dark-theme #layout-menu a:hover {
+  color: #ffc600;
+}
+
+body.dark-theme div#header {
+  background: #3e3e3e;
+}
+
+body.dark-theme div#layout-menu {
+  background: #2b2b2b;
+}
+
+body.dark-theme div.menu-item {
+  color: #e1e1e1;
+}
+
+body.dark-theme p {
+  color: #e1e1e1;
+}
+
+body.dark-theme div#footer {
+  color: #b0b0b0;
+}
+
+body.dark-theme div#footer a {
+  color: #80d4ff;
+}
+
+body.dark-theme div#footer a:hover {
+  color: #ffc600;
+}
+
+body.dark-theme div#layout-menu-container .closebtn .icon-text:hover {
+  color: #f3a0a7;
+}
+
+body.dark-theme tt {
+  background: #2b2b2b;
+  color: #e1e1e1;
+}
+
+body.dark-theme pre, body.dark-theme tt {
+  background: #2b2b2b;
+  color: #e1e1e1;
+}
+
+body.dark-theme h1, body.dark-theme h2, body.dark-theme h3 {
+  color: #80d4ff;
+}
+
+body.dark-theme div#layout-content {
+  background: #121212;
+  color: #e1e1e1;
+}
+
+body.dark-theme div#toptitle {
+  border-bottom: 1px solid #80d4ff;
+}
+
+body.dark-theme .topnav {
+  background-color: #2b2b2b;
+}
+
+body.dark-theme .topnav a {
+  color: #80d4ff;
+}
+
+body.dark-theme .topnav a:hover {
+  background-color: #3e3e3e;
+  color: #ffc600;
+}
+
+body.dark-theme .topnav a.active {
+  background-color: #2b2b2b;
+  color: #80d4ff;
+}
+
+body.dark-theme .topnav a:first-child {
+  color: #80d4ff;
+}
+
+body.dark-theme .topnav .icon {
+  color: #80d4ff;
+}
+
+body.dark-theme .topnav.responsive {
+  background-color: #2b2b2b;
+}
+
+body.dark-theme .topnav.responsive a {
+  color: #80d4ff;
+}
+
+body.dark-theme .topnav.responsive a:hover {
+  background-color: #3e3e3e;
+  color: #ffc600;
+}
+
+body.dark-theme #myBtn {
+  background-color: #80d4ff;
+  color: #121212;
+}
+
+body.dark-theme #myBtn:hover {
+  background-color: #ffc600;
+  color: #121212;
+}
+
+/* Dark theme adjustments for blue background areas */
+body.dark-theme .infoblock > div.blockcontent {
+  background: #1e3a5f; /* Darker blue for better contrast */
+  color: #e1e1e1; /* Light text for readability */
+}
+
+body.dark-theme .codeblock > div.blockcontent {
+  background: #1e3a5f; /* Darker blue for better contrast */
+  color: #e1e1e1; /* Light text for readability */
+}
+
+body.dark-theme .blocktitle {
+  color: #80d4ff; /* Light blue for titles to stand out */
+}
+
+body.dark-theme .infoblock p, 
+body.dark-theme .codeblock p {
+  color: #e1e1e1; /* Ensure text is light for readability */
+}
+
+body.dark-theme .infoblock li, 
+body.dark-theme .codeblock li {
+  color: #e1e1e1; /* Ensure list items are light */
+}
+
+body.dark-theme .infoblock a, 
+body.dark-theme .codeblock a {
+  color: #ffc600; /* Highlight links for better visibility */
+}
+
+body.dark-theme .infoblock a:hover, 
+body.dark-theme .codeblock a:hover {
+  color: #80d4ff; /* Hover effect for links */
+}
+
+body.dark-theme .infoblock pre, 
+body.dark-theme .codeblock pre {
+  background: #1e3a5f; /* Darker blue for code blocks */
+  color: #e1e1e1; /* Light text for code */
+}
+
+body.dark-theme .infoblock tt, 
+body.dark-theme .codeblock tt {
+  background: #1e3a5f; /* Darker blue for inline code */
+  color: #e1e1e1; /* Light text for inline code */
+}
+
+#theme-toggle {
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#theme-icon {
+  font-size: 1.2em;
+  color: #203E70; /* 默认图标颜色 */
+}
+
+body.dark-theme #theme-icon {
+  color: #e1e1e1; /* 黑暗模式下的图标颜色 */
+}
+
+
 .content {
 	padding-top: 10px;
 	padding-bottom: 10px;
