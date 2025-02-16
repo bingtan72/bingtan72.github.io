@@ -31,6 +31,9 @@
 <a href="courses.html" class="active">Courses</a>
 <a href="links.html">Links</a>
 <a href="pic.html">Pictures</a>
+<a href="javascript:toggleDarkTheme()" style="float:right; padding:20px; font-size:25px;">
+  <i id="theme-icon" class="fa fa-moon-o"></i>
+</a>
 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
   <i id="icon-menu" class="fa fa-bars"></i>
 </a>
@@ -41,9 +44,9 @@
 </div>
 <p></p>
 <h2>本科生课程</h2>
-<ol>
+<ol reversed>
 <li><p>2024年秋，数学分析A助教，指导教师：李嘉副教授</p>
-<ol>
+<ol reversed>
 <li><p>授课时间<br />
 上课时间：3&ndash;15周，对象：2024数学（师范）2班<br />
 周一，下午9&ndash;11节，时间：15:50&ndash;18:35，地点：08-0408<br />
@@ -53,10 +56,10 @@
 </li>
 <li><p>授课内容</p>
 </li>
-</ol>
+</ol reversed>
 
 </li>
-</ol>
+</ol reversed>
 <table id="lecture table">
 <tr class="r1"><td class="c1"></td><td class="c2">	</td><td class="c3"> 周一 </td><td class="c4"> 周二	</td><td class="c5"> 周三	</td><td class="c6"> 周四	</td><td class="c7"> 周五 </td><td class="c8">周六 </td><td class="c9">周末 </td></tr>
 <tr class="r2"><td class="c1">9月	</td><td class="c2"> 1周</td><td class="c2"> </td><td class="c2"> </td><td class="c2"> </td><td class="c2"> </td><td class="c2"> </td><td class="c2"> </td><td class="c2"> </td></tr>
@@ -186,11 +189,25 @@ function stickFunction() {
 }
 </script>
 <script>
-function change(iconID){
-  if(document.getElementById(iconID).className=="fa fa-bars"){
-    document.getElementById(iconID).className = "fa fa-times";
-  }else{
-    document.getElementById(iconID).className = "fa fa-bars";
+function toggleDarkTheme() {
+  document.body.classList.toggle("dark-theme");
+  // Save dark theme state in localStorage
+  localStorage.setItem("dark-theme", document.body.classList.contains("dark-theme"));
+  let icon = document.getElementById("theme-icon");
+    if (document.body.classList.contains("dark-theme")) {
+        icon.classList.remove("fa fa-moon-o");
+        icon.classList.add("fa fa-sun-o");  // 变成太阳图标
+    } else {
+        icon.classList.remove("fa fa-sun-o");
+        icon.classList.add("fa fa-moon-o");  // 变成月亮图标
+    }
+}
+function loadDarkTheme() {
+  const isDarkThemeEnabled = JSON.parse(localStorage.getItem("dark-theme"));
+  if (isDarkThemeEnabled) {
+    document.body.classList.add("dark-theme");
+  } else {
+    document.body.classList.remove("dark-theme");
   }
 }
 </script>

@@ -34,6 +34,9 @@
 <a href="courses.html">Courses</a>
 <a href="links.html">Links</a>
 <a href="pic.html">Pictures</a>
+<a href="javascript:toggleDarkTheme()" style="float:right; padding:20px; font-size:25px;">
+  <i id="theme-icon" class="fa fa-moon-o"></i>
+</a>
 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
   <i id="icon-menu" class="fa fa-bars"></i>
 </a>
@@ -83,23 +86,23 @@
 <img src="pic/felix.gif" alt="" width="100px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <h2>2024 <a id="2024"></a></h2>
-<ol>
+<ol reversed>
 <li><p>Danni Guo, Gang Cai*, <b>Bing Tan</b>. A variant of Mann-type subgradient extragradient method with double-projection for solving variational inequalities and fixed point problems. <i>Acta Applicandae Mathematicae</i>. 2024, online. (SCI, MathSciNet) <a href="files/paper/GCT-AAM2024.pdf" target="_blank"><img src="pic/PDF.JPG" alt="" width="20" height="20" /></a> [<a href="xx" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('guo2024aam')">Cite</a>] <div id="bib-guo2024aam" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent"> Guo, D., Cai, G., Tan, B.: A variant of Mann-type subgradient extragradient method with double-projection for solving variational inequalities and fixed point problems. <i>Acta Appl. Math.</i> <b>xx</b>, XX--XX (2024)</div></div></div>
 </p>
 </li>
-</ol>
-<h2>Revisions</h2>
-<p></p>
-<h2>Submitted</h2>
-<ol>
-<li><p>[16] <b>Bing Tan</b>*. Strong convergence of an inertial Tseng's extragradient algorithm for pseudomonotone variational inequalities with applications to optimal control problems. FPT</p>
+<li><p>Zheng Zhou, <b>Bing Tan</b>, Songxiao Li*. Adaptive inertial algorithms for solving split monotone variational inclusion and fixed point problems of demicontraction mappings. <i>Journal of Nonlinear and Convex Analysis</i>. 2025, 26(3), 2593&ndash;2604.  (SCI, MathSciNet)  <a href="files/paper/ZTL-JNCA2025.pdf" target="_blank">[PDF]</a> [<a href="http://yokohamapublishers.jp/online2/opjnca/vol26/p2593.html" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('ZhouJNCA2025SVIP')">Cite</a>] <div id="bib-ZhouJNCA2025SVIP" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">	Zhou, Z., Tan, B., Li, S.: Adaptive inertial algorithms for solving split monotone variational inclusion and fixed point problems of demicontraction mappings. <i>J. Nonlinear Convex Anal.</i> <b>26</b>, 2593--2604 (2025)</div></div></div></p>
 </li>
-<li><p>Zheng Zhou, <b>Bing Tan</b>, Songxiao Li*. Adaptive inertial algorithms for solving split monotone variational inclusion and fixed point problems of demicontraction mappings. 
+<li><p><b>Bing Tan</b>, Xiaolong Qin*. Strong convergence of an inertial Tseng's extragradient algorithm for pseudomonotone variational inequalities with applications to optimal control problems. <i>Journal of Applied and Numerical Optimization</i>. 2025, 7(2), 171&ndash;186. (EI) <a href="files/paper/TQ-JANO2025.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.23952/jano.7.2025.2.04" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tanjano2025')">Cite</a>] <div id="bib-tanjano2025" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Tan, B., Qin, X.: Strong convergence of an inertial Tseng's extragradient algorithm for pseudomonotone variational inequalities with applications to optimal control problems. <i>J. Appl. Numer. Optim.</i> <b>7</b>, 171--186 (2025)</div></div></div>
+</p>
+</li>
+<li><p>Habib ur Rehman, <b>Bing Tan</b>*,  Jen-Chih Yao. Relaxed inertial subgradient extragradient methods for equilibrium problems in Hilbert spaces: analysis of weak and strong convergence for solving the image recovery problem. <i>Communications in Nonlinear Science and Numerical Simulation</i>. 2025, xx, Article ID xx. (SCI, EI, MathSciNet) <a href="files/paper/RTY-CNSNS2025.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1016/j.cnsns.2025.108565" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('rtycnsnsep')">Cite</a>] <div id="bib-rtycnsnsep" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Rehman, H.u., Tan, B., Yao, J.C.: Relaxed inertial subgradient extragradient methods for equilibrium problems in Hilbert spaces: analysis of weak and strong convergence for solving the image recovery problem.  <i>Commun. Nonlinear Sci. Numer. Simul.</i> <b>xx</b>, Article ID xx (2025)</div></div></div>
+
+
 
 
 添加访问记录</p>
 </li>
-</ol>
+</ol reversed>
 <div align='center'>
 <a href="https://clustrmaps.com/site/1bq15"  target="_blank" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=8P5xnFWPcChJCgGWJAXUrS427JvJr5GBDdECrv61Eys&cl=ffffff" /></a>
 <script src="https://efreecode.com/js.js" id="eXF-bingtan-0" async defer></script>
@@ -215,11 +218,25 @@ function stickFunction() {
 }
 </script>
 <script>
-function change(iconID){
-  if(document.getElementById(iconID).className=="fa fa-bars"){
-    document.getElementById(iconID).className = "fa fa-times";
-  }else{
-    document.getElementById(iconID).className = "fa fa-bars";
+function toggleDarkTheme() {
+  document.body.classList.toggle("dark-theme");
+  // Save dark theme state in localStorage
+  localStorage.setItem("dark-theme", document.body.classList.contains("dark-theme"));
+  let icon = document.getElementById("theme-icon");
+    if (document.body.classList.contains("dark-theme")) {
+        icon.classList.remove("fa fa-moon-o");
+        icon.classList.add("fa fa-sun-o");  // 变成太阳图标
+    } else {
+        icon.classList.remove("fa fa-sun-o");
+        icon.classList.add("fa fa-moon-o");  // 变成月亮图标
+    }
+}
+function loadDarkTheme() {
+  const isDarkThemeEnabled = JSON.parse(localStorage.getItem("dark-theme"));
+  if (isDarkThemeEnabled) {
+    document.body.classList.add("dark-theme");
+  } else {
+    document.body.classList.remove("dark-theme");
   }
 }
 </script>

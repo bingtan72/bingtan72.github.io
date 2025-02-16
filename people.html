@@ -32,6 +32,9 @@
 <a href="courses.html">Courses</a>
 <a href="links.html">Links</a>
 <a href="pic.html">Pictures</a>
+<a href="javascript:toggleDarkTheme()" style="float:right; padding:20px; font-size:25px;">
+  <i id="theme-icon" class="fa fa-moon-o"></i>
+</a>
 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
   <i id="icon-menu" class="fa fa-bars"></i>
 </a>
@@ -246,11 +249,25 @@ function stickFunction() {
 }
 </script>
 <script>
-function change(iconID){
-  if(document.getElementById(iconID).className=="fa fa-bars"){
-    document.getElementById(iconID).className = "fa fa-times";
-  }else{
-    document.getElementById(iconID).className = "fa fa-bars";
+function toggleDarkTheme() {
+  document.body.classList.toggle("dark-theme");
+  // Save dark theme state in localStorage
+  localStorage.setItem("dark-theme", document.body.classList.contains("dark-theme"));
+  let icon = document.getElementById("theme-icon");
+    if (document.body.classList.contains("dark-theme")) {
+        icon.classList.remove("fa fa-moon-o");
+        icon.classList.add("fa fa-sun-o");  // 变成太阳图标
+    } else {
+        icon.classList.remove("fa fa-sun-o");
+        icon.classList.add("fa fa-moon-o");  // 变成月亮图标
+    }
+}
+function loadDarkTheme() {
+  const isDarkThemeEnabled = JSON.parse(localStorage.getItem("dark-theme"));
+  if (isDarkThemeEnabled) {
+    document.body.classList.add("dark-theme");
+  } else {
+    document.body.classList.remove("dark-theme");
   }
 }
 </script>

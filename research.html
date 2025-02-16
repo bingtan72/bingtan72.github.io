@@ -34,6 +34,9 @@
 <a href="courses.html">Courses</a>
 <a href="links.html">Links</a>
 <a href="pic.html">Pictures</a>
+<a href="javascript:toggleDarkTheme()" style="float:right; padding:20px; font-size:25px;">
+  <i id="theme-icon" class="fa fa-moon-o"></i>
+</a>
 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
   <i id="icon-menu" class="fa fa-bars"></i>
 </a>
@@ -65,12 +68,12 @@
 </ul>
 </td></tr></table>
 <h2>Projects</h2>
-<ol>
+<ol reversed>
 <li><p>求解单调包含问题的加速算法研究，重庆市自然科学基金面上项目，立项编号：CSTB2024NSCQ-MSX0354，执行时间：2024.7.1&ndash;2027.6.30，主持，10万元</p>
 </li>
 <li><p>均衡问题的算法设计与应用研究，中央高校基本科研业务费，立项编号：SWU-KQ24052，执行时间：2024.5.1-2027.4.30，主持，20万元</p>
 </li>
-</ol>
+</ol reversed>
 <h2>Conference</h2>
 <ul>
 <li><p>Dec. 2024. 重庆运筹学会年会，重庆.</p>
@@ -263,11 +266,25 @@ function stickFunction() {
 }
 </script>
 <script>
-function change(iconID){
-  if(document.getElementById(iconID).className=="fa fa-bars"){
-    document.getElementById(iconID).className = "fa fa-times";
-  }else{
-    document.getElementById(iconID).className = "fa fa-bars";
+function toggleDarkTheme() {
+  document.body.classList.toggle("dark-theme");
+  // Save dark theme state in localStorage
+  localStorage.setItem("dark-theme", document.body.classList.contains("dark-theme"));
+  let icon = document.getElementById("theme-icon");
+    if (document.body.classList.contains("dark-theme")) {
+        icon.classList.remove("fa fa-moon-o");
+        icon.classList.add("fa fa-sun-o");  // 变成太阳图标
+    } else {
+        icon.classList.remove("fa fa-sun-o");
+        icon.classList.add("fa fa-moon-o");  // 变成月亮图标
+    }
+}
+function loadDarkTheme() {
+  const isDarkThemeEnabled = JSON.parse(localStorage.getItem("dark-theme"));
+  if (isDarkThemeEnabled) {
+    document.body.classList.add("dark-theme");
+  } else {
+    document.body.classList.remove("dark-theme");
   }
 }
 </script>

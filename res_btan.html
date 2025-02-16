@@ -31,6 +31,9 @@
 <a href="courses.html">Courses</a>
 <a href="links.html">Links</a>
 <a href="pic.html">Pictures</a>
+<a href="javascript:toggleDarkTheme()" style="float:right; padding:20px; font-size:25px;">
+  <i id="theme-icon" class="fa fa-moon-o"></i>
+</a>
 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
   <i id="icon-menu" class="fa fa-bars"></i>
 </a>
@@ -104,7 +107,7 @@
 <p>暂无
 </p>
 <h3>※代表性论文（*指通讯作者）</h3>
-<ol>
+<ol reversed>
 <li><p><b>Bing Tan</b>, Xiaolong Qin, Xianfu Wang*. Alternated inertial algorithms for split feasibility problems. <i>Numerical Algorithms</i>. doi:10.1007/s11075-023-01589-8. (SCI，中科院三区，中国数学会应用数学类T2期刊) </p>
 </li>
 <li><p><b>Bing Tan</b>, Xiaolong Qin*, Sun Young Cho. Revisiting subgradient extragradient methods for solving variational inequalities. <i>Numerical Algorithms</i>. 2022, 90(4), 1593&ndash;1615. (SCI，中科院三区，中国数学会应用数学类T2期刊)</p>
@@ -122,7 +125,7 @@
 <li><p><b>Bing Tan</b>, Songxiao Li*. Modified inertial projection and contraction algorithms with non-monotonic step sizes for solving variational inequalities and their applications. <i>Optimization</i>. 2022,<br />ewline doi:10.1080/02331934.2022.2123705. (SCI， 中科院三区，中国数学会应用数学类T3期刊)
 </p>
 </li>
-</ol>
+</ol reversed>
 <h3>※招生信息</h3>
 <p>暂无</p>
 <h2>Visitor Stats.
@@ -235,11 +238,25 @@ function stickFunction() {
 }
 </script>
 <script>
-function change(iconID){
-  if(document.getElementById(iconID).className=="fa fa-bars"){
-    document.getElementById(iconID).className = "fa fa-times";
-  }else{
-    document.getElementById(iconID).className = "fa fa-bars";
+function toggleDarkTheme() {
+  document.body.classList.toggle("dark-theme");
+  // Save dark theme state in localStorage
+  localStorage.setItem("dark-theme", document.body.classList.contains("dark-theme"));
+  let icon = document.getElementById("theme-icon");
+    if (document.body.classList.contains("dark-theme")) {
+        icon.classList.remove("fa fa-moon-o");
+        icon.classList.add("fa fa-sun-o");  // 变成太阳图标
+    } else {
+        icon.classList.remove("fa fa-sun-o");
+        icon.classList.add("fa fa-moon-o");  // 变成月亮图标
+    }
+}
+function loadDarkTheme() {
+  const isDarkThemeEnabled = JSON.parse(localStorage.getItem("dark-theme"));
+  if (isDarkThemeEnabled) {
+    document.body.classList.add("dark-theme");
+  } else {
+    document.body.classList.remove("dark-theme");
   }
 }
 </script>
