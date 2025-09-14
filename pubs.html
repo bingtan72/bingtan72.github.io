@@ -73,22 +73,76 @@ document.addEventListener("DOMContentLoaded", function() {
 
 Thanks to my mentors and all my collaborators! I acknowledge my family for their encouragement and support in the past, present, and future. In particular, I thank the love of my life, Ms. Shanshan Xu, for her continued <a href="Love.html" target=&ldquo;blank&rdquo;>Love</a> for me. <br /><br />
 
-Bing Tan has published 71 papers in several mathematical journals, including 62 SCIE, 2 ESCI, and 6 EI (more than 30 EI-indexed articles). The first author of 47 papers and co-author of 24 papers. <br /><br />
+Bing Tan has published 74 papers in several mathematical journals, including 64 SCIE, 2 ESCI, and 7 EI (more than 30 EI-indexed articles). The first author of 49 papers and co-author of 25 papers. <br /><br />
 </p>
-<p style="font-size: 20px;"> By Author: <a href="pubs_author.html" target="_blank">By author newpage</a></p>
-<p style="font-size: 20px;"> By Topic: <a href="pubs_topic.html" target="_blank">By topic newpage</a></p> 
-<p style="font-size: 20px;"> By Chinese JCR: <a href="pubs_fq.html" target="_blank">By Chinese JCR newpage</a></p>  
-<p></p>
-<h4 class="by-year-view">[<b><font color="DarkRed">all papers</font></b> | <a href="#6" class="by-topic6-btn">2025</a> | <a href="#5" class="by-topic5-btn">2024</a> | <a href="#4" class="by-topic4-btn">2023</a> | <a href="#3" class="by-topic3-btn">2022</a> | <a href="#2" class="by-topic2-btn">2021</a> | <a href="#1" class="by-topic1-btn">2020</a>]</h4>
-<h4 class="by-topic6-view" style="display: none;">[<a href="#" class="by-year-btn">all papers</a> | <b><font color="DarkRed">2025</font></b> | <a href="#5" class="by-topic5-btn">2024</a> | <a href="#4" class="by-topic4-btn">2023</a> | <a href="#3" class="by-topic3-btn">2022</a> | <a href="#2" class="by-topic2-btn">2021</a> | <a href="#1" class="by-topic1-btn">2020</a>]</h4>
-<h4 class="by-topic5-view" style="display: none;">[<a href="#" class="by-year-btn">all papers</a> | <a href="#6" class="by-topic6-btn">2025</a> | <b><font color="DarkRed">2024</font></b>  | <a href="#4" class="by-topic4-btn">2023</a> | <a href="#3" class="by-topic3-btn">2022</a> | <a href="#2" class="by-topic2-btn">2021</a> | <a href="#1" class="by-topic1-btn">2020</a>]</h4>
-<h4 class="by-topic4-view" style="display: none;">[<a href="#" class="by-year-btn">all papers</a> | <a href="#6" class="by-topic6-btn">2025</a> | <a href="#5" class="by-topic5-btn">2024</a> | <b><font color="DarkRed">2023</font></b> | <a href="#3" class="by-topic3-btn">2022</a> | <a href="#2" class="by-topic2-btn">2021</a> | <a href="#1" class="by-topic1-btn">2020</a>]</h4>
-<h4 class="by-topic3-view" style="display: none;">[<a href="#" class="by-year-btn">all papers</a> | <a href="#6" class="by-topic6-btn">2025</a> | <a href="#5" class="by-topic5-btn">2024</a> | <a href="#4" class="by-topic4-btn">2023</a> | <b><font color="DarkRed">2022</font></b> | <a href="#2" class="by-topic2-btn">2021</a> | <a href="#1" class="by-topic1-btn">2020</a>]</h4>
-<h4 class="by-topic2-view" style="display: none;">[<a href="#" class="by-year-btn">all papers</a> | <a href="#6" class="by-topic6-btn">2025</a> | <a href="#5" class="by-topic5-btn">2024</a> | <a href="#4" class="by-topic4-btn">2023</a> | <a href="#3" class="by-topic3-btn">2022</a> | <b><font color="DarkRed">2021</font></b> | <a href="#1" class="by-topic1-btn">2020</a>]</h4>
-<h4 class="by-topic1-view" style="display: none;">[<a href="#" class="by-year-btn">all papers</a> | <a href="#6" class="by-topic6-btn">2025</a> | <a href="#5" class="by-topic5-btn">2024</a> | <a href="#4" class="by-topic4-btn">2023</a> | <a href="#3" class="by-topic3-btn">2022</a> | <a href="#2" class="by-topic2-btn">2021</a> | <b><font color="DarkRed">2020</font></b>]</h4>
-<p></p>
+<div id="year-links"></div>
+
+<script>
+$(document).ready(function(){
+
+    // 维护年份数组（按从新到旧）
+    const years = [2026, 2025, 2024, 2023, 2022, 2021, 2020];
+    const totalTopics = years.length; // topic 编号个数
+    const container = $("#year-links");
+
+    let html = "";
+
+    // 生成 by-year-view（全部年份）
+    html += `<h4 class="by-year-view">[<b><font color="DarkRed">all papers</font></b>`;
+    years.forEach((year, i) => {
+        let topicNum = totalTopics - i;
+        html += ` | <a href="#${topicNum}" class="by-topic${topicNum}-btn">${year}</a>`;
+    });
+    html += `]</h4>\n\n`;
+
+    // 生成每个 by-topicX-view
+    years.forEach((year, i) => {
+        let topicNum = totalTopics - i;
+        html += `<h4 class="by-topic${topicNum}-view" style="display: none;">[<a href="#" class="by-year-btn">all papers</a>`;
+        years.forEach((y, j) => {
+            let num = totalTopics - j;
+            if (j === i) {
+                html += ` | <b><font color="DarkRed">${y}</font></b>`;
+            } else {
+                html += ` | <a href="#${num}" class="by-topic${num}-btn">${y}</a>`;
+            }
+        });
+        html += `]</h4>\n\n`;
+    });
+
+    container.html(html);
+
+    // 循环绑定 .by-topicX-btn 点击事件
+    for (let i = 1; i <= totalTopics; i++) {
+        $(`.by-topic${i}-btn`).click(function(event){
+            event.preventDefault();
+            console.log(`切换到 topic${i}`);
+            $(".by-year-view").hide();
+            for (let j = 1; j <= totalTopics; j++) {
+                $(`.by-topic${j}-view`).hide();
+            }
+            $(`.by-topic${i}-view`).show();
+        });
+    }
+
+    // all papers 按钮
+    $(".by-year-btn").click(function(event){
+        event.preventDefault();
+        console.log("切换到 all papers");
+        for (let j = 1; j <= totalTopics; j++) {
+            $(`.by-topic${j}-view`).hide();
+        }
+        $(".by-year-view").show();
+    });
+
+});
+</script>
+<p>
+</p>
 <div class = "by-year-view">
 <ol reversed>
+<li><p><b>Bing Tan</b>, Jiawei Chen, Songxiao Li*, Xiaoqing Ou. Extragradient algorithms with double inertial for solving variational inequalities and applications to signal processing. <i>Communications in Nonlinear Science and Numerical Simulation</i>. 2026, 152, Article ID 109213. (SCI, EI, MathSciNet) <a href="files/paper/TCLO-CNSNS2026.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1016/j.cnsns.2025.109213" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tbtclocnsns2026')">Cite</a>] <div id="bib-tbtclocnsns2026" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Tan, B., Chen, J.W., Li, S., Ou, X.Q.: Extragradient algorithms with double inertial for solving variational inequalities and applications to signal processing. <i>Commun. Nonlinear Sci. Numer. Simul.</i>  <b>152</b>, Article ID 109213 (2026)</div></div></div></p>
+</li>
 <li><p><b>Bing Tan</b>, Xiaolong Qin*. Two relaxed inertial forward-backward-forward algorithms for solving monotone inclusions and an application to compressed sensing. <i>Canadian Journal of Mathematics</i>. 2025, doi:10.4153/S0008414X24000889.  (SCI, MathSciNet)   <a href="files/paper/TQ-CJM2025.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.4153/S0008414X24000889" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tbTanCJM2025')">Cite</a>] <div id="bib-tbTanCJM2025" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent"> Tan, B., Qin, X.: Two relaxed inertial forward-backward-forward algorithms for solving monotone inclusions and an application to compressed sensing. <i>Canad. J. Math.</i> doi:10.4153/S0008414X24000889 (2025)</div></div></div></p>
 </li>
 <li><p><b>Bing Tan</b>, Jiawei Chen, Songxiao Li*, Xiaoqing Ou. Extragradient algorithms for solving variational inequalities on Hadamard manifolds. <i>Numerical Algorithms</i>. 2025, DOI:10.1007/s11075-025-02068-y. (SCI, MathSciNet) <a href="files/paper/TCLO-NUMA2025.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1007/s11075-025-02068-y" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tbtannuma2025')">Cite</a>] <div id="bib-tbtannuma2025" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Tan, B., Chen, J.W., Li, S., Ou, X.Q.: Extragradient algorithms for solving variational inequalities on Hadamard manifolds. <i>Numer. Algorithms</i>  https://doi.org/10.1007/s11075-025-02068-y (2025)</div></div></div></p>
@@ -96,6 +150,8 @@ Bing Tan has published 71 papers in several mathematical journals, including 62 
 <li><p><b>Bing Tan</b>, Yekini Shehu, Tiexiang Li, Xiaolong Qin*. Perturbed reflected forward backward splitting algorithm for monotone inclusion. <i>Communications in Nonlinear Science and Numerical Simulation</i>. 2025, 142, Article ID 108565. (SCI, EI, MathSciNet) <a href="files/paper/TSLQ-CNSNS2025.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1016/j.cnsns.2024.108565" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tbtancnsnsmip')">Cite</a>] <div id="bib-tbtancnsnsmip" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Tan, B., Shehu, Y., Li, T., Qin, X.: Perturbed reflected forward backward splitting algorithm for monotone inclusion. <i>Commun. Nonlinear Sci. Numer. Simul.</i> <b>142</b>, Article ID 108565 (2025)</div></div></div></p>
 </li>
 <li><p><b>Bing Tan</b>, Hammed Anuoluwapo Abass*, Songxiao Li, Olawale Kazeem Oyewole. Two accelerated double inertial algorithms for variational inequalities on Hadamard manifolds. <i>Communications in Nonlinear Science and Numerical Simulation</i>. 2025, 145, Article ID 108734. (SCI, EI, MathSciNet) <a href="files/paper/TALO-CNSNS2025.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1016/j.cnsns.2025.108734" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tbtalocnsns')">Cite</a>] <div id="bib-tbtalocnsns" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Tan, B., Abass, H.A., Li, S., Oyewole, O.K.: Two accelerated double inertial algorithms for variational inequalities on Hadamard manifolds.  <i>Commun. Nonlinear Sci. Numer. Simul.</i> <b>145</b>, Article ID 108734 (2025)</div></div></div></p>
+</li>
+<li><p><b>Bing Tan</b>, Xiaolong Qin*. Strong convergence of an inertial Tseng's extragradient algorithm for pseudomonotone variational inequalities with applications to optimal control problems. <i>Journal of Applied and Numerical Optimization</i>. 2025, 7(2), 179&ndash;198. (EI) <a href="files/paper/TQ-JANO2025.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.23952/jano.7.2025.2.03" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tbtanjano2025')">Cite</a>] <div id="bib-tbtanjano2025" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Tan, B., Qin, X.: Strong convergence of an inertial Tseng's extragradient algorithm for pseudomonotone variational inequalities with applications to optimal control problems. <i>J. Appl. Numer. Optim.</i> <b>7</b>, 179--198 (2025)</div></div></div></p>
 </li>
 <li><p><b>Bing Tan</b>, Xiaolong Qin*. On relaxed inertial projection and contraction algorithms for solving monotone inclusion problems. <i>Advances in Computational Mathematics</i>. 2024, 50(4), Article ID 59.  (SCI, MathSciNet)   <a href="files/paper/TQ-ACOM2024.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1007/s10444-024-10156-1" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tbTanAcom2024')">Cite</a>] <div id="bib-tbTanAcom2024" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent"> Tan, B., Qin, X.: On relaxed inertial projection and contraction algorithms for solving monotone inclusion problems. <i>Adv. Comput. Math.</i> <b>50</b>, Article ID 59 (2024)</div></div></div></p>
 </li>
@@ -115,7 +171,7 @@ Bing Tan has published 71 papers in several mathematical journals, including 62 
 </li>
 <li><p><b>Bing Tan</b>, Pongsakorn Sunthrayuth*, Prasit Cholamjiak, Yeol Je Cho. Modified inertial extragradient methods for finding minimum-norm solution of the variational inequality problem with applications to optimal control problem. <i>International Journal of Computer Mathematics</i>. 2023, 100(3), 525&ndash;545. (SCI, EI, MathSciNet)  <a href="files/paper/TSCC-IJCM2023.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1080/00207160.2022.2137672" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tbtanijcm2023VIP')">Cite</a>] <div id="bib-tbtanijcm2023VIP" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Tan, B., Sunthrayuth, P., Cholamjiak, P., Cho, Y.J.: Modified inertial extragradient methods for finding minimum-norm solution of the variational inequality problem with applications to optimal control problem. <i>Int. J. Comput. Math.</i> <b>100</b>, 525--545 (2023)</div></div></div></p>
 </li>
-<li><p><b>Bing Tan</b>, Xiaolong Qin*, Sun Young Cho. Revisiting subgradient extragradient methods for solving variational inequalities. <i>Numerical Algorithms</i>. 2022, 90(4), 1593&ndash;1615. (SCI, MathSciNet)  <font color=red <b> <b>(<i>ESI Highly Cited Paper</i>)</b> </b></font> <a href="files/paper/TQC-NUMA2022.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1007/s11075-021-01243-1" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tbtanNUMA2022VIP')">Cite</a>] <div id="bib-tbtanNUMA2022VIP" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Tan, B., Qin, X., Cho, S.Y.: Revisiting subgradient extragradient methods for solving variational inequalities. <i>Numer. Algorithms</i> <b>90</b>, 1593--1615 (2022)</div></div></div></p>
+<li><p><b>Bing Tan</b>, Xiaolong Qin*, Sun Young Cho. Revisiting subgradient extragradient methods for solving variational inequalities. <i>Numerical Algorithms</i>. 2022, 90(4), 1593&ndash;1615. (SCI, MathSciNet)  <font color=red <b> <b>(<s><i>ESI Highly Cited Paper</i></s>)</b> </b></font> <a href="files/paper/TQC-NUMA2022.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1007/s11075-021-01243-1" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tbtanNUMA2022VIP')">Cite</a>] <div id="bib-tbtanNUMA2022VIP" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Tan, B., Qin, X., Cho, S.Y.: Revisiting subgradient extragradient methods for solving variational inequalities. <i>Numer. Algorithms</i> <b>90</b>, 1593--1615 (2022)</div></div></div></p>
 </li>
 <li><p><b>Bing Tan</b>, Xiaolong Qin*, Jen-Chih Yao. Strong convergence of inertial projection and contraction methods for pseudomonotone variational inequalities with applications to optimal control problems. <i>Journal of Global Optimization</i>. 2022, 82(3), 523&ndash;557. (SCI, EI, MathSciNet)  <a href="files/paper/TQY-JOGO2022.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1007/s10898-021-01095-y" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tbtanJOGO2022VIP')">Cite</a>] <div id="bib-tbtanJOGO2022VIP" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Tan, B., Qin, X., Yao, J.-C.: Strong convergence of inertial projection and contraction methods for pseudomonotone variational inequalities with applications to optimal control problems. <i>J. Global Optim.</i> <b>82</b>, 523--557 (2022)</div></div></div></p>
 </li>
@@ -183,11 +239,13 @@ Bing Tan has published 71 papers in several mathematical journals, including 62 
 </li>
 <li><p><b>Bing Tan</b>, Sun Young Cho*. An inertial Mann-like algorithm for fixed points of nonexpansive mappings in Hilbert spaces. <i>Journal of Applied and Numerical Optimization</i>. 2020, 2(3), 335&ndash;351. (EI) <a href="files/paper/TC-JANO2020.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.23952/jano.2.2020.3.05" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tbtanjano2020FPP')">Cite</a>] <div id="bib-tbtanjano2020FPP" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Tan, B., Cho, S.Y.: An inertial Mann-like algorithm for fixed points of nonexpansive mappings in Hilbert spaces. <i>J. Appl. Numer. Optim.</i> <b>2</b>, 335--351 (2020)</div></div></div></p>
 </li>
+<li><p>Lu-Chuan Ceng, Debdulal Ghosh, Habib ur Rehman*, <b>Bing Tan</b>*. Extragradient methods for solving bilevel split equilibrium problems with constraints. <i>Optimization</i>. 2025, doi:10.1080/02331934.2025.2532654.  (SCI, MathSciNet)  <a href="files/paper/CGRT-OPT2025.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1080/02331934.2025.2532654" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tbtanopt2025VIP')">Cite</a>] <div id="bib-tbtanopt2025VIP" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Ceng, L.C., Ghosh, D., Rehman, H.u., Tan, B.: Extragradient methods for solving bilevel split equilibrium problems with constraints. <i>Optimization</i>  doi:10.1080/02331934.2025.2532654 (2025)</div></div></div></p>
+</li>
 <li><p>Habib ur Rehman, <b>Bing Tan</b>*,  Jen-Chih Yao. Relaxed inertial subgradient extragradient methods for equilibrium problems in Hilbert spaces and their applications to image restoration. <i>Communications in Nonlinear Science and Numerical Simulation</i>. 2025, 146, Article ID 108795. (SCI, EI, MathSciNet) <a href="files/paper/RTY-CNSNS2025.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1016/j.cnsns.2025.108795" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tbrtycnsnsep')">Cite</a>] <div id="bib-tbrtycnsnsep" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Rehman, H.u., Tan, B., Yao, J.C.: Relaxed inertial subgradient extragradient methods for equilibrium problems in Hilbert spaces and their applications to image restoration.  <i>Commun. Nonlinear Sci. Numer. Simul.</i> <b>146</b>, Article ID 108795 (2025)</div></div></div></p>
 </li>
 <li><p>Liya Liu, Songxiao Li, <b>Bing Tan</b>*. Strong convergence of Bregman projection algorithms for solving split feasibility problems with applications. <i>Communications in Nonlinear Science and Numerical Simulation</i>. 2025, 140, Article ID 108374. (SCI, EI, MathSciNet) <a href="files/paper/LLT-CNSNS2025.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1016/j.cnsns.2024.108374" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tbliucnsns2025SFP')">Cite</a>] <div id="bib-tbliucnsns2025SFP" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Liu, L., Li, S., Tan, B.: Strong convergence of Bregman projection algorithms for solving split feasibility problems with applications. <i>Commun. Nonlinear Sci. Numer. Simul.</i> <b>140</b>, Article ID 108374 (2025)</div></div></div></p>
 </li>
-<li><p>Danni Guo*, Gang Cai, <b>Bing Tan</b>. Convergence analysis of subgradient extragradient method with inertial technique for solving variational inequalities and fixed point problems. <i>Communications in Nonlinear Science and Numerical Simulation</i>. 2025, 148, Article ID 108851. (SCI, EI, MathSciNet) <a href="files/paper/GCT-CNSNS2025.pdf" target="_blank"><img src="pic/PDF.JPG" alt="" width="20" height="20" /></a> [<a href="https://doi.org/10.1016/j.cnsns.2025.108851" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tbguo2025cnsns')">Cite</a>] <div id="bib-tbguo2025cnsns" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent"> Guo, D., Cai, G., Tan, B.: Convergence analysis of subgradient extragradient method with inertial technique for solving variational inequalities and fixed point problems. <i>Commun. Nonlinear Sci. Numer. Simul.</i> <b>148</b>, Article ID 108851 (2025)</div></div></div></p>
+<li><p>Danni Guo*, Gang Cai, <b>Bing Tan</b>. Convergence analysis of subgradient extragradient method with inertial technique for solving variational inequalities and fixed point problems. <i>Communications in Nonlinear Science and Numerical Simulation</i>. 2025, 148, Article ID 108851. (SCI, EI, MathSciNet) <a href="files/paper/GCT-CNSNS2025.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1016/j.cnsns.2025.108851" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tbguo2025cnsns')">Cite</a>] <div id="bib-tbguo2025cnsns" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent"> Guo, D., Cai, G., Tan, B.: Convergence analysis of subgradient extragradient method with inertial technique for solving variational inequalities and fixed point problems. <i>Commun. Nonlinear Sci. Numer. Simul.</i> <b>148</b>, Article ID 108851 (2025)</div></div></div></p>
 </li>
 <li><p>Zheng Zhou, <b>Bing Tan</b>, Songxiao Li*. Adaptive inertial algorithms for solving split monotone variational inclusion and fixed point problems of demicontraction mappings. <i>Journal of Nonlinear and Convex Analysis</i>. 2025, 26(3), 653&ndash;671.  (SCI, MathSciNet)  <a href="files/paper/ZTL-JNCA2025.pdf" target="_blank">[PDF]</a> [<a href="http://yokohamapublishers.jp/online2/opjnca/vol26/p653.html" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tbZhouJNCA2025SVIP')">Cite</a>] <div id="bib-tbZhouJNCA2025SVIP" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">	Zhou, Z., Tan, B., Li, S.: Adaptive inertial algorithms for solving split monotone variational inclusion and fixed point problems of demicontraction mappings. <i>J. Nonlinear Convex Anal.</i> <b>26</b>, 653--671 (2025)</div></div></div></p>
 </li>
@@ -235,6 +293,14 @@ Bing Tan has published 71 papers in several mathematical journals, including 62 
 </li>
 </ol reversed>
 </div>
+<div class="by-topic7-view" style="display: none;">
+<ol reversed>
+<li><p><b>Bing Tan</b>, Jiawei Chen, Songxiao Li*, Xiaoqing Ou. Extragradient algorithms with double inertial for solving variational inequalities and applications to signal processing. <i>Communications in Nonlinear Science and Numerical Simulation</i>. 2026, 152, Article ID 109213. (SCI, EI, MathSciNet) <a href="files/paper/TCLO-CNSNS2026.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1016/j.cnsns.2025.109213" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tclocnsns2026')">Cite</a>] <div id="bib-tclocnsns2026" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Tan, B., Chen, J.W., Li, S., Ou, X.Q.: Extragradient algorithms with double inertial for solving variational inequalities and applications to signal processing. <i>Commun. Nonlinear Sci. Numer. Simul.</i>  <b>152</b>, Article ID 109213 (2026)</div></div></div>
+
+</p>
+</li>
+</ol reversed>
+</div>
 <div class="by-topic6-view" style="display: none;">
 <ol reversed>
 <li><p><b>Bing Tan</b>, Xiaolong Qin*. Two relaxed inertial forward-backward-forward algorithms for solving monotone inclusions and an application to compressed sensing. <i>Canadian Journal of Mathematics</i>. 2025, doi:10.4153/S0008414X24000889.  (SCI, MathSciNet)   <a href="files/paper/TQ-CJM2025.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.4153/S0008414X24000889" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('TanCJM2025')">Cite</a>] <div id="bib-TanCJM2025" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent"> Tan, B., Qin, X.: Two relaxed inertial forward-backward-forward algorithms for solving monotone inclusions and an application to compressed sensing. <i>Canad. J. Math.</i> doi:10.4153/S0008414X24000889 (2025)</div></div></div></p>
@@ -245,11 +311,15 @@ Bing Tan has published 71 papers in several mathematical journals, including 62 
 </li>
 <li><p><b>Bing Tan</b>, Hammed Anuoluwapo Abass*, Songxiao Li, Olawale Kazeem Oyewole. Two accelerated double inertial algorithms for variational inequalities on Hadamard manifolds. <i>Communications in Nonlinear Science and Numerical Simulation</i>. 2025, 145, Article ID 108734. (SCI, EI, MathSciNet) <a href="files/paper/TALO-CNSNS2025.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1016/j.cnsns.2025.108734" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('talocnsns')">Cite</a>] <div id="bib-talocnsns" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Tan, B., Abass, H.A., Li, S., Oyewole, O.K.: Two accelerated double inertial algorithms for variational inequalities on Hadamard manifolds.  <i>Commun. Nonlinear Sci. Numer. Simul.</i> <b>145</b>, Article ID 108734 (2025)</div></div></div></p>
 </li>
+<li><p><b>Bing Tan</b>, Xiaolong Qin*. Strong convergence of an inertial Tseng's extragradient algorithm for pseudomonotone variational inequalities with applications to optimal control problems. <i>Journal of Applied and Numerical Optimization</i>. 2025, 7(2), 179&ndash;198. (EI) <a href="files/paper/TQ-JANO2025.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.23952/jano.7.2025.2.03" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tanjano2025')">Cite</a>] <div id="bib-tanjano2025" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Tan, B., Qin, X.: Strong convergence of an inertial Tseng's extragradient algorithm for pseudomonotone variational inequalities with applications to optimal control problems. <i>J. Appl. Numer. Optim.</i> <b>7</b>, 179--198 (2025)</div></div></div></p>
+</li>
+<li><p>Lu-Chuan Ceng, Debdulal Ghosh, Habib ur Rehman*, <b>Bing Tan</b>*. Extragradient methods for solving bilevel split equilibrium problems with constraints. <i>Optimization</i>. 2025, doi:10.1080/02331934.2025.2532654.  (SCI, MathSciNet)  <a href="files/paper/CGRT-OPT2025.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1080/02331934.2025.2532654" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tanopt2025VIP')">Cite</a>] <div id="bib-tanopt2025VIP" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Ceng, L.C., Ghosh, D., Rehman, H.u., Tan, B.: Extragradient methods for solving bilevel split equilibrium problems with constraints. <i>Optimization</i>  doi:10.1080/02331934.2025.2532654 (2025)</div></div></div></p>
+</li>
 <li><p>Habib ur Rehman, <b>Bing Tan</b>*,  Jen-Chih Yao. Relaxed inertial subgradient extragradient methods for equilibrium problems in Hilbert spaces and their applications to image restoration. <i>Communications in Nonlinear Science and Numerical Simulation</i>. 2025, 146, Article ID 108795. (SCI, EI, MathSciNet) <a href="files/paper/RTY-CNSNS2025.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1016/j.cnsns.2025.108795" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('rtycnsnsep')">Cite</a>] <div id="bib-rtycnsnsep" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Rehman, H.u., Tan, B., Yao, J.C.: Relaxed inertial subgradient extragradient methods for equilibrium problems in Hilbert spaces and their applications to image restoration.  <i>Commun. Nonlinear Sci. Numer. Simul.</i> <b>146</b>, Article ID 108795 (2025)</div></div></div></p>
 </li>
 <li><p>Liya Liu, Songxiao Li, <b>Bing Tan</b>*. Strong convergence of Bregman projection algorithms for solving split feasibility problems with applications. <i>Communications in Nonlinear Science and Numerical Simulation</i>. 2025, 140, Article ID 108374. (SCI, EI, MathSciNet) <a href="files/paper/LLT-CNSNS2025.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1016/j.cnsns.2024.108374" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('liucnsns2025SFP')">Cite</a>] <div id="bib-liucnsns2025SFP" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Liu, L., Li, S., Tan, B.: Strong convergence of Bregman projection algorithms for solving split feasibility problems with applications. <i>Commun. Nonlinear Sci. Numer. Simul.</i> <b>140</b>, Article ID 108374 (2025)</div></div></div></p>
 </li>
-<li><p>Danni Guo*, Gang Cai, <b>Bing Tan</b>. Convergence analysis of subgradient extragradient method with inertial technique for solving variational inequalities and fixed point problems. <i>Communications in Nonlinear Science and Numerical Simulation</i>. 2025, 148, Article ID 108851. (SCI, EI, MathSciNet) <a href="files/paper/GCT-CNSNS2025.pdf" target="_blank"><img src="pic/PDF.JPG" alt="" width="20" height="20" /></a> [<a href="https://doi.org/10.1016/j.cnsns.2025.108851" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('guo2025cnsns')">Cite</a>] <div id="bib-guo2025cnsns" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent"> Guo, D., Cai, G., Tan, B.: Convergence analysis of subgradient extragradient method with inertial technique for solving variational inequalities and fixed point problems. <i>Commun. Nonlinear Sci. Numer. Simul.</i> <b>148</b>, Article ID 108851 (2025)</div></div></div></p>
+<li><p>Danni Guo*, Gang Cai, <b>Bing Tan</b>. Convergence analysis of subgradient extragradient method with inertial technique for solving variational inequalities and fixed point problems. <i>Communications in Nonlinear Science and Numerical Simulation</i>. 2025, 148, Article ID 108851. (SCI, EI, MathSciNet) <a href="files/paper/GCT-CNSNS2025.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1016/j.cnsns.2025.108851" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('guo2025cnsns')">Cite</a>] <div id="bib-guo2025cnsns" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent"> Guo, D., Cai, G., Tan, B.: Convergence analysis of subgradient extragradient method with inertial technique for solving variational inequalities and fixed point problems. <i>Commun. Nonlinear Sci. Numer. Simul.</i> <b>148</b>, Article ID 108851 (2025)</div></div></div></p>
 </li>
 <li><p>Zheng Zhou, <b>Bing Tan</b>, Songxiao Li*. Adaptive inertial algorithms for solving split monotone variational inclusion and fixed point problems of demicontraction mappings. <i>Journal of Nonlinear and Convex Analysis</i>. 2025, 26(3), 653&ndash;671.  (SCI, MathSciNet)  <a href="files/paper/ZTL-JNCA2025.pdf" target="_blank">[PDF]</a> [<a href="http://yokohamapublishers.jp/online2/opjnca/vol26/p653.html" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('ZhouJNCA2025SVIP')">Cite</a>] <div id="bib-ZhouJNCA2025SVIP" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">	Zhou, Z., Tan, B., Li, S.: Adaptive inertial algorithms for solving split monotone variational inclusion and fixed point problems of demicontraction mappings. <i>J. Nonlinear Convex Anal.</i> <b>26</b>, 653--671 (2025)</div></div></div>
 
@@ -305,7 +375,7 @@ Bing Tan has published 71 papers in several mathematical journals, including 62 
 </div>
 <div class="by-topic3-view" style="display: none;">
 <ol reversed>
-<li><p><b>Bing Tan</b>, Xiaolong Qin*, Sun Young Cho. Revisiting subgradient extragradient methods for solving variational inequalities. <i>Numerical Algorithms</i>. 2022, 90(4), 1593&ndash;1615. (SCI, MathSciNet)  <font color=red <b> <b>(<i>ESI Highly Cited Paper</i>)</b> </b></font> <a href="files/paper/TQC-NUMA2022.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1007/s11075-021-01243-1" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tanNUMA2022VIP')">Cite</a>] <div id="bib-tanNUMA2022VIP" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Tan, B., Qin, X., Cho, S.Y.: Revisiting subgradient extragradient methods for solving variational inequalities. <i>Numer. Algorithms</i> <b>90</b>, 1593--1615 (2022)</div></div></div></p>
+<li><p><b>Bing Tan</b>, Xiaolong Qin*, Sun Young Cho. Revisiting subgradient extragradient methods for solving variational inequalities. <i>Numerical Algorithms</i>. 2022, 90(4), 1593&ndash;1615. (SCI, MathSciNet)  <font color=red <b> <b>(<s><i>ESI Highly Cited Paper</i></s>)</b> </b></font> <a href="files/paper/TQC-NUMA2022.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1007/s11075-021-01243-1" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tanNUMA2022VIP')">Cite</a>] <div id="bib-tanNUMA2022VIP" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Tan, B., Qin, X., Cho, S.Y.: Revisiting subgradient extragradient methods for solving variational inequalities. <i>Numer. Algorithms</i> <b>90</b>, 1593--1615 (2022)</div></div></div></p>
 </li>
 <li><p><b>Bing Tan</b>, Xiaolong Qin*, Jen-Chih Yao. Strong convergence of inertial projection and contraction methods for pseudomonotone variational inequalities with applications to optimal control problems. <i>Journal of Global Optimization</i>. 2022, 82(3), 523&ndash;557. (SCI, EI, MathSciNet)  <a href="files/paper/TQY-JOGO2022.pdf" target="_blank">[PDF]</a> [<a href="https://doi.org/10.1007/s10898-021-01095-y" target=&ldquo;blank&rdquo;>Link</a>] [<a href="javascript:toggleBibtex('tanJOGO2022VIP')">Cite</a>] <div id="bib-tanJOGO2022VIP" class="bibtex noshow"> <div class="infoblock"> <div class="blockcontent">Tan, B., Qin, X., Yao, J.-C.: Strong convergence of inertial projection and contraction methods for pseudomonotone variational inequalities with applications to optimal control problems. <i>J. Global Optim.</i> <b>82</b>, 523--557 (2022)</div></div></div></p>
 </li>
@@ -413,95 +483,8 @@ Bing Tan has published 71 papers in several mathematical journals, including 62 
 </p>
 <!--content here-->
 <a href="#top">Back to top</a>
-<p></p>
-<script>
- $(document).ready(function(){
-     // 绑定点击事件
-     $(".by-topic1-btn").click(function(event){
-         event.preventDefault(); // 阻止默认行为
-         console.log("切换到 learning");
-         $(".by-year-view").hide();
-         $(".by-topic1-view").show();
-         $(".by-topic2-view").hide();
-         $(".by-topic3-view").hide();
-         $(".by-topic4-view").hide();
-	    $(".by-topic5-view").hide();
-	    $(".by-topic6-view").hide();
-     });
-
-     $(".by-topic2-btn").click(function(event){
-         event.preventDefault(); // 阻止默认行为
-         console.log("切换到 sampling");
-         $(".by-year-view").hide();
-         $(".by-topic1-view").hide();
-         $(".by-topic2-view").show();
-         $(".by-topic3-view").hide();
-         $(".by-topic4-view").hide();
-	    $(".by-topic5-view").hide();
-	    $(".by-topic6-view").hide();
-     });
-
-     $(".by-topic3-btn").click(function(event){
-         event.preventDefault(); // 阻止默认行为
-         console.log("切换到 statistics");
-         $(".by-year-view").hide();
-         $(".by-topic1-view").hide();
-         $(".by-topic2-view").hide();
-         $(".by-topic3-view").show();
-         $(".by-topic4-view").hide();
-	    $(".by-topic5-view").hide();
-	    $(".by-topic6-view").hide();
-     });
-
-     $(".by-topic4-btn").click(function(event){
-         event.preventDefault(); // 阻止默认行为
-         console.log("切换到 optimization");
-         $(".by-year-view").hide();
-         $(".by-topic1-view").hide();
-         $(".by-topic2-view").hide();
-         $(".by-topic3-view").hide();
-         $(".by-topic4-view").show();
-	    $(".by-topic5-view").hide();
-	    $(".by-topic6-view").hide();
-     });
-	 
-	 $(".by-topic5-btn").click(function(event){
-         event.preventDefault(); // 阻止默认行为
-         console.log("切换到 optimization");
-         $(".by-year-view").hide();
-         $(".by-topic1-view").hide();
-         $(".by-topic2-view").hide();
-         $(".by-topic3-view").hide();
-         $(".by-topic4-view").hide();
-	    $(".by-topic5-view").show();
-	    $(".by-topic6-view").hide();
-     });
-	 
-	 $(".by-topic6-btn").click(function(event){
-         event.preventDefault(); // 阻止默认行为
-         console.log("切换到 optimization");
-         $(".by-year-view").hide();
-         $(".by-topic1-view").hide();
-         $(".by-topic2-view").hide();
-         $(".by-topic3-view").hide();
-         $(".by-topic4-view").hide();
-	    $(".by-topic5-view").hide();
-	    $(".by-topic6-view").show();
-     });
-
-     $(".by-year-btn").click(function(event){
-         event.preventDefault(); // 阻止默认行为
-         console.log("切换到 all papers");
-         $(".by-topic1-view").hide();
-         $(".by-topic2-view").hide();
-         $(".by-topic3-view").hide();
-         $(".by-topic4-view").hide();
-	    $(".by-topic5-view").hide();
-	    $(".by-topic6-view").hide();
-         $(".by-year-view").show();
-     });
- });
-</script>
+<p>
+</p>
 <h2>Visitor Stats.
 </h2>
 <p>
